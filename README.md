@@ -7,3 +7,7 @@ Integrations:
 - Partytown
 - React
 - Prettier Astro
+
+
+## First launch
+- `npm install`
