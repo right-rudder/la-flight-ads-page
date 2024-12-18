@@ -278,7 +278,7 @@ const Navbar = ({ pathname }) => {
         ></div>
 
         <ul className="px-4 pb-3 mt-5 pt-2 flex flex-col align-middle items-center">
-          {mobileNavbarLinks.map((item, index) => (
+          {navbarLinks.map((item, index) => (
             <li
               key={index}
               className="relative group border-b border-primary-100/20 last:border-none w-full text-center"
