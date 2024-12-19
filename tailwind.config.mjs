@@ -9,6 +9,7 @@ export default {
         sans2: ["Montserrat Variable", ...defaultTheme.fontFamily.sans],
         bebas: ["Bebas Neue", ...defaultTheme.fontFamily.sans],
         serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
+        tourney: ["Tourney Variable", ...defaultTheme.fontFamily.serif],
         stock: [
           "ui-sans-serif",
           "system-ui",
