@@ -87,9 +87,10 @@ const carouselId = "astro-carousel";
 
   document.addEventListener("DOMContentLoaded", () => {
     const carousel = document.querySelector(`#${carouselId}`);
-    let items = carousel.querySelectorAll("[data-carousel-item]");
-    let totalItems = items.length;
+    const items = carousel.querySelectorAll("[data-carousel-item]");
+    const totalItems = items.length;
     let currentIndex = 0;
+    let autoplayInterval;
 
     const showItem = (index) => {
       items.forEach((item, i) => {
@@ -110,19 +111,43 @@ const carouselId = "astro-carousel";
       showItem(currentIndex);
     };
 
+    const startAutoplay = () => {
+      autoplayInterval = setInterval(nextItem, 10000);
+    };
+
+    const stopAutoplay = () => {
+      clearInterval(autoplayInterval);
+    };
+
     carousel
       .querySelector("[data-carousel-next]")
-      .addEventListener("click", nextItem);
+      .addEventListener("click", () => {
+        stopAutoplay();  // Stop autoplay on user interaction
+        nextItem();
+        startAutoplay(); // Restart autoplay
+      });
 
     carousel
       .querySelector("[data-carousel-prev]")
-      .addEventListener("click", prevItem);
+      .addEventListener("click", () => {
+        stopAutoplay();  // Stop autoplay on user interaction
+        prevItem();
+        startAutoplay(); // Restart autoplay
+      });
 
     carousel.querySelectorAll("[data-carousel-slide-to]").forEach((button) => {
       button.addEventListener("click", () => {
+        stopAutoplay();  // Stop autoplay on user interaction
         currentIndex = Number(button.getAttribute("data-carousel-slide-to"));
         showItem(currentIndex);
+        startAutoplay(); // Restart autoplay
       });
     });
+
+    // Start the autoplay when the page loads
+    startAutoplay();
+
+    // Show the first item initially
+    showItem(currentIndex);
   });
 </script>
