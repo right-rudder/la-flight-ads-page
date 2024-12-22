@@ -1,6 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import homePage from "../data/homePage";
+import HomeHeader from "../components/HomeHeader.astro";
+import Welcome from "../components/Welcome.astro";
+import FleetComp from "../components/FleetComp.astro";
+import fleetCompData from "../data/fleetComp";
+import CTAColor from "../components/CTAColor.astro";
+import CTAFlight from "../data/CTAFlight.js";
 
 const { data } = homePage;
 ---
@@ -10,4 +16,8 @@ const { data } = homePage;
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
 >
+  <HomeHeader />
+  <Welcome />
+  <FleetComp content={fleetCompData}/>
+  <CTAColor content={CTAFlight}/>
 </BaseLayout>
