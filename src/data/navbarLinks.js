@@ -1,10 +1,5 @@
 export const navbarLinks = [
   {
-    name: "Start Here",
-    link: "/pilot-training-guide",
-    submenu: [],
-  },
-  {
     name: "Pilot Programs",
     link: "/programs",
     submenu: [
@@ -35,23 +30,14 @@ export const navbarLinks = [
     ],
   },
   {
-    name: "University Program",
-    link: "/university-program",
+    name: "Gallery",
+    link: "/gallery",
     submenu: [],
   },
   {
-    name: "Services",
-    link: "/services/maintenance",
-    submenu: [
-      {
-        name: "Maintenance",
-        link: "/services/maintenance",
-      },
-      {
-        name: "CATS Testing",
-        link: "/services/cats",
-      },
-    ],
+    name: "Financing",
+    link: "https://apply.stratus.finance/laflightacademy1303242",
+    submenu: [],
   },
   {
     name: "About",
