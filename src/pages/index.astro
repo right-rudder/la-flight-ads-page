@@ -7,6 +7,9 @@ import FleetComp from "../components/FleetComp.astro";
 import fleetCompData from "../data/fleetComp";
 import CTAColor from "../components/CTAColor.astro";
 import CTAFlight from "../data/CTAFlight.js";
+import Financing from "../components/Financing.astro";
+import FinancingData from "../data/financingData.js";
+import Carousel from "../components/Carousel.astro";
 
 const { data } = homePage;
 ---
@@ -19,5 +22,7 @@ const { data } = homePage;
   <HomeHeader />
   <Welcome />
   <FleetComp content={fleetCompData}/>
+  <Financing content={FinancingData} />
+  <Carousel />
   <CTAColor content={CTAFlight}/>
 </BaseLayout>
