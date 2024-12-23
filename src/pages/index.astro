@@ -10,6 +10,11 @@ import CTAFlight from "../data/CTAFlight.js";
 import Financing from "../components/Financing.astro";
 import FinancingData from "../data/financingData.js";
 import Carousel from "../components/Carousel.astro";
+import Testimonials from "../components/Testimonials.astro";
+import testimonialsData from "../data/testimonialsData.js";
+import Form from "../components/Form.astro";
+import indexFormData from "../data/indexFormData.js";
+
 
 const { data } = homePage;
 ---
@@ -24,5 +29,7 @@ const { data } = homePage;
   <FleetComp content={fleetCompData}/>
   <Financing content={FinancingData} />
   <Carousel />
+  <Testimonials content={testimonialsData} />
   <CTAColor content={CTAFlight}/>
+  <Form content={indexFormData}/>
 </BaseLayout>
