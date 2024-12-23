@@ -1,5 +1,4 @@
 import { navbarLinks } from "../data/navbarLinks.js";
-import { mobileNavbarLinks } from "../data/navbarLinks.js";
 import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
@@ -76,10 +75,10 @@ const Navbar = ({ pathname }) => {
   };
 
   return (
-    <nav className="w-full h-0 sticky inset-0 z-20 font-bebas">
+    <nav className="w-full h-0 sticky inset-0 z-50 font-tourney flex-1">
       <div
         className={`${
-          navBar || openMobile ? "bg-accent-600" : "bg-transparent"
+          navBar || openMobile ? "bg-primary-700" : "bg-transparent"
         } duration-500`}
       >
         <div className="px-5 max-w-7xl mx-auto top-0">
@@ -98,10 +97,10 @@ const Navbar = ({ pathname }) => {
                   aria-label={`${COMPANY_NAME} logo`}
                   title={COMPANY_NAME}
                   loading="lazy"
-                  className={`${navBar || openMobile ? "h-20 lg:h-24" : "h-20 lg:h-28"} object-contain duration-500`}
+                  className={`${navBar || openMobile ? "h-20 lg:h-26 bg-accent-500 p-2 px-8" : "h-20 lg:h-28"} object-contain duration-500`}
                 />
               </a>
-              <div className="hidden lg:flex 2xl:justify-end w-full text-2xl">
+              <div className="hidden lg:flex 2xl:justify-end w-full text-lg">
                 <ul className="flex justify-between align-middle w-11/12 gap-5 items-center">
                   {navbarLinks.map((item, index) => (
                     <li
@@ -114,9 +113,9 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="group-last:block font-medium text-2xl duration-300 hover:underline decoration-accent-300 decoration-4 underline-offset-[10px] group-last:italic border-accent whitespace-nowrap group-last:font-normal group-last:bg-white group-last:px-0 group-last:rounded-sm group-last:-skew-x-12 group-last:hover:bg-accent-500 group-last:hover:no-underline group-last:border group-last:hover:border-accent-500"
+                          className="group-last:block font-medium text-2xl duration-300 hover:underline decoration-accent-600 decoration-4 underline-offset-[10px] border-accent whitespace-nowrap group-last:font-normal group-last:bg-muted-400 group-last:px-0 group-last:rounded-sm group-last:hover:bg-accent-500 group-last:hover:no-underline group-last:hover:border-accent-500"
                         >
-                          <span className="relative font-medium block italic group-last:skew-x-12 text-white group-last:text-muted-950 group-last:py-3 group-last:px-5 group-last:hover:text-white">
+                          <span className="relative font-medium block text-white group-last:text-muted-950 group-last:py-3 group-last:px-5 group-last:hover:text-white">
                             {item.name}
                           </span>
                         </a>
@@ -132,7 +131,7 @@ const Navbar = ({ pathname }) => {
                           {item.submenu.map((subitem, subIndex) => (
                             <li
                               key={subIndex}
-                              className={`${isActive(subitem, pathname) ? "scale-110 bg-accent-600 text-white" : ""} relative -skew-x-12 hover:bg-accent-600 hover:scale-110 duration-200 px-3 hover:font-medium hover:shadow-sm drop-shadow-sm font-medium hover:text-white`}
+                              className={`${isActive(subitem, pathname) ? "scale-110 bg-accent-600 text-white" : ""} relative hover:bg-accent-600 hover:scale-110 duration-200 px-3 hover:font-medium hover:shadow-sm drop-shadow-sm font-medium hover:text-white`}
                               onMouseEnter={() => setSubHoveredIndex(subIndex)}
                               onMouseLeave={() => setSubHoveredIndex(null)}
                             >
@@ -288,7 +287,7 @@ const Navbar = ({ pathname }) => {
                 <a
                   href={item.link}
                   target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                  className="font-normal text-3xl block p-5 duration-300 text-white border-accent-200 whitespace-nowrap group-last:bg-accent-600 group-last:font-medium group-last:border-2 group-last:mt-5 group-last:py-4 group-last:px-8 group-last:-skew-x-12 group-last:text-center group-last:mx-5"
+                  className="font-normal text-3xl block p-5 duration-300 text-white border-accent-200 whitespace-nowrap group-last:bg-accent-600 group-last:font-medium group-last:border-2 group-last:mt-5 group-last:py-4 group-last:px-8 group-last:text-center group-last:mx-5"
                 >
                   {item.name}
                 </a>
