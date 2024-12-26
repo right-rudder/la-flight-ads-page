@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import ProgramSwiper from "../../components/ProgramSwiper.astro";
+import CTAColor from "../../components/CTAColor.astro";
+import CTAFlight from "../../data/CTAFlight.js";
+import PageSummary from "../../components/PageSummary.astro";
+import programsSwiper from "../../data/programs";
+import TrainingRoadmap from "../../components/TrainingRoadmap.astro";
+
+import programs from "../../data/programsSlug";
+export function getStaticPaths() {
+  return programs.map(({ data }) => {
+    return {
+      params: { slug: data.slug },
+      props: {
+        data,
+      },
+    };
+  });
+}
+
+const { data } = Astro.props;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={data.header} />
+  <PageSummary content={data.pageSummary} />
+  <TrainingRoadmap content={data.roadmap}/>
+  <ProgramSwiper content={programsSwiper} />
+  <CTAColor content={CTAFlight} />
+  <script src="../../scripts/creativeSwiper.js"></script>
+</BaseLayout>
