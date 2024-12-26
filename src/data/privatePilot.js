@@ -1,22 +1,22 @@
 const privatePilotCourse = {
   data: {
     slug: "private-pilot-course",
-    //SEO Header Stuff
-    pageTitle: "PRIVATE PILOT COURSE | Universal Flight Training",
+    // SEO Header Stuff
+    pageTitle: "PRIVATE PILOT COURSE | LA Flight Academy",
     pageDescription:
-      "Start your aviation journey with UFT’s Private Pilot Course. Learn the fundamentals of flying with expert instructors and modern aircraft, earning your PPL to explore the skies with confidence.",
+      "Begin your aviation journey with LA Flight Academy's Private Pilot Course. Train with experienced instructors at Van Nuys Airport and earn your Private Pilot License (PPL) to take your first step toward the skies.",
     pageKeywords:
-      "Private Pilot Course, PPL training Sarasota, learn to fly Florida, aviation school for beginners, private pilot license, introductory flight training",
+      "Private Pilot Course, PPL training Los Angeles, learn to fly California, flight school Van Nuys, private pilot license, pilot training for beginners",
 
-    //top header
+    // Top Header
     header: {
       stars: true,
       imagePath: "/src/assets/placeholder.jpg",
       imageAlt:
-        "universal flight training student flying solo over clearwater tampa",
+        "LA Flight Academy student preparing for their first solo flight at Van Nuys Airport",
       headerH1: `Private <br class="hidden lg:block" ><span class="text-accent-200">Pilot Course</span>`,
       paragraph:
-        `This course is the starting point for your aviation journey. Earning a private pilot certificate grants you the freedom to fly aircraft for personal and recreational enjoyment.`,
+        `This course is your first step in becoming a licensed pilot. Achieve your Private Pilot Certificate and gain the freedom to explore the skies for personal and recreational flying.`,
       buttons: [
         {
           name: "Enroll Today",
@@ -24,7 +24,7 @@ const privatePilotCourse = {
           primary: false,
         },
         {
-          name: "How To Guide",
+          name: "Learn More",
           link: "/pilot-training-guide",
           primary: false,
         },
@@ -34,8 +34,8 @@ const privatePilotCourse = {
     pageSummary: {
       title: `Private Pilot<br> Certificate`,
       paragraphs: [
-        "A Private Pilot Certificate, often known as a Private Pilot License (PPL), is a certification that allows you to operate an aircraft as pilot in command for personal use, though not for hire or compensation. With this certificate, you’re free to fly for leisure, travel, or simply to enjoy the skies on your terms.",
-        "This certification serves as the essential starting point in pilot training, laying the groundwork for your flying skills and experience. As you progress, it opens the path toward additional certifications like the instrument rating, commercial pilot license, and even the ATP (airline transport pilot) certification if you aspire to reach that level. It’s the foundation on which a rewarding aviation journey begins.",
+        "The Private Pilot Certificate (PPL) is your gateway to aviation, enabling you to act as pilot in command of an aircraft for personal and recreational purposes. It’s an essential milestone for aspiring aviators, providing foundational skills and knowledge for future training and certifications.",
+        "At LA Flight Academy, our comprehensive PPL program prepares you for every step of the journey, from ground school to flight training and your FAA checkride. Whether you aim to fly recreationally or pursue an aviation career, this course sets the foundation for your success.",
       ],
     },
 
@@ -43,75 +43,68 @@ const privatePilotCourse = {
       upperHeading: "Roadmap",
       heading: "Private Pilot License",
       descriptions: [
-        "Your aviation dreams are our priority. Whether you’re aiming for a professional career, building flight hours, or exploring for fun, we offer the ideal path to reach your goals.",
+        "Our Private Pilot License program combines personalized instruction, modern aircraft, and a supportive learning environment to help you achieve your goals efficiently and confidently.",
       ],
       steps: [
         {
           title: "Meet Eligibility Requirements",
           paragraphs: [
-            "To start your journey toward a Private Pilot License, you’ll need to meet a few basic eligibility requirements set by the FAA. Here at Universal Flight Training, we help guide you through this process, which includes obtaining a third-class medical certificate (or higher) from an FAA-authorized aviation medical examiner. This medical clearance ensures you’re ready to begin training and handle the responsibilities of flying.",
-            "In addition to the medical exam, you’ll need to be at least 17 years old and able to read, speak, write, and understand English. Once cleared, you’re ready to start flight training!",
+            "To begin your Private Pilot training, you must meet basic FAA requirements, including being at least 17 years old, obtaining a third-class medical certificate, and demonstrating proficiency in English. At LA Flight Academy, we guide you through the process to ensure a smooth start.",
           ],
           imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "Picture of a medical exam, sourced from unsplash, piture by CDC",
+          imageAlt: "Medical examination for flight training eligibility",
         },
         {
           title: "Ground School Training",
           paragraphs: [
-            "Universal Flight Training includes 10 hours of ground instruction, designed to equip you with essential knowledge on topics like airspace, weather, navigation, and aircraft systems. These ground lessons prepare you not only for your written exam but also for the practical aspects of flying, ensuring you’re ready to make quick and informed decisions in the cockpit.",
-            "Our experienced instructors provide personalized guidance, helping you understand the material thoroughly. With Universal’s ground school, you’ll be well-prepared to pass the FAA Knowledge Test, a critical step on your way to earning your Private Pilot License.",
+            "Our ground school equips you with essential knowledge in aerodynamics, navigation, weather, regulations, and more. With expert instructors and tailored study materials, you'll be prepared to ace the FAA Knowledge Test and build a solid foundation for flight training.",
           ],
           imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "Universal Flight school students attending ground school",
+          imageAlt: "LA Flight Academy students during a ground school session",
         },
         {
           title: "Flight Training",
           paragraphs: [
-            "With ground school underway, your flight training begins! Universal Flight Training offers 40 hours of aircraft time, 20 of which will be conducted with an instructor. During these flights, you’ll learn essential maneuvers such as takeoffs, landings, climbs, descents, and turns, gaining confidence and control as you progress. In addition, you’ll practice emergency procedures and work on honing your skills to meet FAA standards.",
-            "As part of the 40 hours, you’ll also complete at least 3 hours of simulated instrument training and 3 hours of night flying, essential skills for safe, well-rounded piloting.",
+            "Learn to fly at Van Nuys Airport with experienced instructors. Our program includes 40 hours of flight training, covering takeoffs, landings, maneuvers, and emergency procedures. Night flying and simulated instrument training are also integrated to ensure well-rounded skill development.",
           ],
           imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "UFT student and instructor",
+          imageAlt: "Student pilot and instructor preparing for flight at Van Nuys",
         },
         {
           title: "Solo Flight Experience",
           paragraphs: [
-            "A major milestone in your training is your first solo flight. Once your instructor feels you’re ready, you’ll fly alone as pilot in command (PIC) for the first time. At Universal Flight Training, we’ll prepare you thoroughly for this experience, ensuring you feel confident and capable. You’ll complete 10 solo hours, practicing maneuvers, navigation, and cross-country flying.",
-            "Solo flying is a thrilling experience that represents a big step toward becoming a licensed pilot. It reinforces your independence and ability to manage the aircraft without direct assistance.",
+            "Experience the thrill of flying solo! Under your instructor's guidance, you'll gain the confidence to act as pilot in command, practicing maneuvers and cross-country flights independently.",
           ],
           imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "UFT student flying solo over Tampa",
+          imageAlt: "LA Flight Academy student on their first solo flight",
         },
         {
           title: "Cross-Country and Night Training",
           paragraphs: [
-            "Part of the PPL requirements includes cross-country flights and additional night training. At Universal Flight Training, we provide guided cross-country training to prepare you for navigating longer flights to unfamiliar airports. You’ll plan routes, monitor fuel consumption, communicate with various air traffic controllers, and handle weather challenges along the way.",
-            "Night flying training is also essential. It helps you build confidence in navigating and operating in reduced visibility. These skills expand your capability to fly in different conditions and prepare you for real-world situations you’ll encounter as a licensed pilot.",
+            "Prepare for cross-country and night flying with structured lessons designed to build confidence and proficiency. Navigate to unfamiliar airports, communicate with ATC, and operate safely in low-visibility conditions.",
           ],
           imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "UFT plane flying at night",
+          imageAlt: "LA Flight Academy aircraft on a cross-country training flight",
         },
         {
           title: "Pass the FAA Knowledge Test",
           paragraphs: [
-            "Before moving to your checkride, you’ll need to pass the FAA Knowledge Test, a written exam covering key topics from ground school. At Universal Flight Training, our ground school sessions are designed to thoroughly prepare you for this exam. We provide test preparation materials and practice exams to ensure you’re ready to succeed.",
-            "Our instructors will support you every step of the way, helping you master the material and pass with confidence.",
+            "Our ground school and study materials thoroughly prepare you for the FAA Knowledge Test, ensuring you have the knowledge and confidence to pass on your first attempt.",
           ],
           imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "Picture of a person taking a test, sourced from unsplash, piture by Jason Coudriet",
+          imageAlt: "Student taking the FAA Knowledge Test",
         },
         {
           title: "Prepare for and Pass the Checkride",
           paragraphs: [
-            "The final step is the checkride, an FAA-administered test that includes both an oral and practical exam. During the oral portion, you’ll demonstrate your knowledge of aviation principles, regulations, and safety procedures. In the practical portion, you’ll perform a series of flight maneuvers with an FAA examiner to showcase your flying skills.",
-            "At Universal Flight Training, our instructors prepare you thoroughly for this assessment, providing mock checkrides and personalized feedback to help you succeed. Once you pass, you’ll receive your Private Pilot Certificate and can act as PIC in a single-engine airplane under Visual Flight Rules (VFR).",
+            "The final step is the FAA checkride, where you'll demonstrate your knowledge and skills to an examiner. At LA Flight Academy, we provide mock checkrides and detailed feedback to help you succeed with confidence.",
           ],
           imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "Picture of two people flying an airplane, sourced from unsplash, piture by Avel Chuklanov",
+          imageAlt: "Pilot and examiner conducting a checkride",
         },
       ],
       finalParagraph:
-        "Completing your Private Pilot License with Universal Flight Training gives you the skills and certification to fly confidently and independently.",
+        "Completing your Private Pilot License at LA Flight Academy is your first step toward exploring the skies with confidence and independence.",
       finalButton: {
         name: "Enroll Now",
         link: "/enroll-now",
