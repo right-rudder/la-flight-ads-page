@@ -17,23 +17,23 @@ if (!images[content.imagePath]) {
 
 ---
 
-<section class="h-[90vh] flex relative">
+<section class="h-min flex relative">
   <Image
     src={images[content.imagePath]()}
     alt={content.imageAlt}
     loading={"lazy"}
-    class="relative inset-0 -z-0 object-cover object-center w-6/12 h-full"
+    class="relative -z-0 object-cover w-6/12"
   />
   <div class="w-3/12 bg-muted-400 z-10 absolute h-full left-[40%] skew-x-12"/>
-  <div class="z-20 w-full mx-auto bg-muted-400 flex flex-col justify-center itens-center gap-5">
+  <div class="z-20 w-full mx-auto py-8 bg-muted-400 flex flex-col justify-center itens-center gap-5">
     <h2 class="text-4xl"
     set:html={content.header}>
     </h2>
     <div class="h-1 w-24 bg-primary-700 rounded-sm"></div>
     {
       content.fleet?.map((plane) => (
-        <div class="flex gap-4 items-center">
-          <TbPlaneTilt  className="h-11 w-11 text-primary-800 hover:animate-pulse"/>
+        <div class="flex gap-4 items-center group">
+          <TbPlaneTilt  className="h-11 w-11 text-primary-800 group-hover:animate-pulse"/>
           <div class="w-8/12">
             <h3 set:html={plane.name}></h3>
             <p set:html={plane.description}></p>
