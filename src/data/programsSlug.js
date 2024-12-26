@@ -1,19 +1,17 @@
 import privatePilot from "./privatePilot";
-// import proPilot from "./proPilot";
-// import cadetPilot from "./cadetPilot";
-// import sobrecargoDeAviacion from "./sobrecargoDeAviacion";
-// import oficialDeOperaciones from "./oficialDeOperaciones";
-// import tecnicoEnMantenimiento from "./tecnicoEnMantenimiento";
-// import cursosComplementares from "./cursosComplementares";
+import instrumentRating from "./instrumentRating";
+import commercialPilot from "./commercialPilot";
+import multiEngine from "./multiEngine";
+import cfi from "./cfi";
+import advancedTraining from "./advancedTraining";
 
 const programs = [
   privatePilot,
-  // proPilot,
-  // cadetPilot,
-  // sobrecargoDeAviacion,
-  // oficialDeOperaciones,
-  // tecnicoEnMantenimiento,
-  // cursosComplementares
+  instrumentRating,
+  commercialPilot,
+  multiEngine,
+  cfi,
+  advancedTraining,
 ];
 
 export default programs;
