@@ -35,7 +35,7 @@ if (!images[content.imagePath]) {
         <div class="flex gap-4 items-center group">
           <TbPlaneTilt  className="h-11 w-11 text-primary-800 group-hover:animate-pulse"/>
           <div class="w-8/12">
-            <h3 set:html={plane.name}></h3>
+            <h3 set:html={`${plane.name} ${plane.rates}`}></h3>
             <p set:html={plane.description}></p>
           </div>
         </div>
