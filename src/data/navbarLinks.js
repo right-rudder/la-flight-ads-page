@@ -13,7 +13,7 @@ export const navbarLinks = [
       },
       {
         name: "Commercial Pilot",
-        link: "/programs/commercial-pilot-training",
+        link: "/programs/commercial-pilot",
       },
       {
         name: "Multi-Engine Rating",
@@ -21,18 +21,13 @@ export const navbarLinks = [
       },
       {
         name: "Flight Instructor",
-        link: "/programs/certified-flight-instructor-cfi",
+        link: "/programs/certified-flight-instructor",
       },
       {
-        name: "Sport Pilot",
-        link: "/programs/sport-pilot",
+        name: "Advanced Training",
+        link: "/programs/advanced-trainings",
       },
     ],
-  },
-  {
-    name: "Gallery",
-    link: "/gallery",
-    submenu: [],
   },
   {
     name: "Financing",
