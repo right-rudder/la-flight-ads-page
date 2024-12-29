@@ -269,7 +269,7 @@ const Navbar = ({ pathname }) => {
         </a>
 
         <div
-          className={`absolute w-full h-44 bg-accent-300 top-0 z-20 duration-500 ease-in-out  ${
+          className={`absolute w-full h-44 bg-accent-600 top-0 z-20 duration-500 ease-in-out  ${
             openMobile
               ? "translate-x-0 opacity-90"
               : "-translate-x-full opacity-0"
@@ -283,17 +283,17 @@ const Navbar = ({ pathname }) => {
               className="relative group border-b border-primary-100/20 last:border-none w-full text-center"
               onClick={() => handleItemClick(index)}
             >
-              {item.link ? (
+              {item.mobileLink ? (
                 <a
                   href={item.link}
                   target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                  className="font-normal text-3xl block p-5 duration-300 text-white border-accent-200 whitespace-nowrap group-last:bg-accent-600 group-last:font-medium group-last:border-2 group-last:mt-5 group-last:py-4 group-last:px-8 group-last:text-center group-last:mx-5"
+                  className="font-normal text-3xl block p-5 duration-300 text-accent-600 border-accent-200 whitespace-nowrap group-last:bg-accent-600 group-last:text-white group-last:font-medium group-last:border-2 group-last:mt-5 group-last:py-4 group-last:px-8 group-last:text-center group-last:mx-5"
                 >
                   {item.name}
                 </a>
               ) : (
-                <div className="font-normal relafont-thinfull justify-center flex cursor-pointer text-2xl duration-300  border-accent whitespace-nowrap">
-                  <p>{item.name}</p>
+                <div className="font-tourney relafont-thinfull justify-center flex cursor-pointer text-3xl duration-300  border-accent whitespace-nowrap">
+                  <p className="font-tourney text-accent-600">{item.name}</p>
                   <div
                     className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-primary/30 -rotate-90" : "bg-primary/30 rotate-90"} 
                     `}
@@ -306,17 +306,17 @@ const Navbar = ({ pathname }) => {
               )}
               {item.submenu && item.submenu.length > 0 && (
                 <ul
-                  className={`mx-auto whitespace-nowrap left-0 duration-500 overflow-hidden mb-5 ${hoveredIndex === index ? "max-h-[50rem]" : "max-h-0"}`}
+                  className={`mx-auto whitespace-nowrap left-0 duration-500 overflow-hidden  ${hoveredIndex === index ? "max-h-[50rem] mb-5" : "max-h-0"}`}
                 >
                   {item.submenu.map((subitem, subIndex) => (
                     <li
                       key={subIndex}
-                      className="relative border-b border-primary-100/20 w-full"
+                      className="relative border-b border-primary-100/20 w-full text-accent-600 font-bold"
                       onClick={(event) => handleSubItemClick(event, subIndex)}
                     >
                       {subitem.link ? (
                         <a
-                          className="p-1 block font-normal text-lg"
+                          className="p-1 block font-bold text-lg"
                           href={subitem.link}
                           target={`${subitem.link.includes("http") ? "_blank" : "_self"}`}
                         >
@@ -362,7 +362,7 @@ const Navbar = ({ pathname }) => {
           ))}
         </ul>
 
-        <div className="p-5 px-10 font-normal flexfont-thinustify-center align-middle items-center gap-5 overflow-hidden">
+        <div className="p-5 px-10 font-bold flexfont-thinustify-center align-middle items-center gap-5 overflow-hidden">
           <div className="flex gap-3 items-center">
             <a aria-labelledby="Call Us Now" title="Call Us Now"
               href={`tel:${PHONE_NUMBER}`}
