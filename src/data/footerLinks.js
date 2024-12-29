@@ -11,10 +11,6 @@ export const footerLinks = [
         link: "/discovery-flight",
       },
       {
-        name: "University",
-        link: "/university-program",
-      },
-      {
         name: "Flight Training",
         link: "/programs",
       },
@@ -28,32 +24,28 @@ export const footerLinks = [
     title: "Programs",
     links: [
       {
-        name: "Professional Pilot",
-        link: "/pilot-training-guide",
-      },
-      {
         name: "Private Pilot",
         link: "/programs/private-pilot-course",
       },
       {
-        name: "Instrument",
+        name: "Instrument Rating",
         link: "/programs/instrument-rating",
       },
       {
         name: "Commercial Pilot",
-        link: "/programs/commercial-pilot-training",
+        link: "/programs/commercial-pilot",
       },
       {
-        name: "Multi-Engine",
+        name: "Multi-Engine Rating",
         link: "/programs/multi-engine-rating",
       },
       {
         name: "Flight Instructor",
-        link: "/programs/certified-flight-instructor-cfi",
+        link: "/programs/certified-flight-instructor",
       },
       {
-        name: "Sport Pilot",
-        link: "/programs/sport-pilot",
+        name: "Advanced Training",
+        link: "/programs/advanced-trainings",
       },
     ],
   },
@@ -61,12 +53,12 @@ export const footerLinks = [
     title: "About",
     links: [
       {
-        name: "Our Crew",
-        link: "/about/our-crew",
+        name: "Crew",
+        link: "/about/crew",
       },
       {
-        name: "Our Fleet",
-        link: "/about/our-fleet",
+        name: "Fleet",
+        link: "/about/fleet",
       },
       {
         name: "Blog",
