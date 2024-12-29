@@ -17,15 +17,15 @@ if (!images[content.imagePath]) {
 
 ---
 
-<section class="h-min flex relative">
+<section class="h-min flex flex-col lg:flex-row relative">
   <Image
     src={images[content.imagePath]()}
     alt={content.imageAlt}
     loading={"lazy"}
-    class="relative -z-0 object-cover w-6/12"
+    class="relative -z-0 object-cover lg:w-6/12"
   />
-  <div class="w-3/12 bg-muted-400 z-10 absolute h-full left-[40%] skew-x-12"/>
-  <div class="z-20 w-full mx-auto py-8 bg-muted-400 flex flex-col justify-center itens-center gap-5">
+  <div class="w-3/12 bg-muted-400 z-10 absolute h-full invisible lg:visible lg:left-[40%] skew-x-12"/>
+  <div class="z-20 w-full mx-auto px-5 lg:px-0 py-8 bg-muted-400 flex flex-col justify-center itens-center gap-5">
     <h2 class="text-4xl"
     set:html={content.header}>
     </h2>
