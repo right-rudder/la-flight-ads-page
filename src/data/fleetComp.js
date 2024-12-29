@@ -19,11 +19,6 @@ const fleetCompData = {
         `LA Flight Academy’s fleet is meticulously maintained to provide a safe, modern, and reliable training environment. Explore our range of Cessna and Piper aircraft, ideal for both beginners and advanced pilots.`,
       buttons: [
         {
-          name: "View Fleet Details",
-          link: "/fleet-details",
-          primary: false,
-        },
-        {
           name: "Enroll Today",
           link: "/enroll-now",
           primary: false,
