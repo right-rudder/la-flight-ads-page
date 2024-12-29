@@ -42,7 +42,7 @@ export const LOCATIONS = [
     state: "CA",
     zip: "91406",
     gMaps: "https://maps.app.goo.gl/HMpiYABaAeTVrubEA",
-    phone: "[SET GHL PHONE NUMBER]",
+    phone: "(818) 636-3131",
     forwardPhone: "(818) 636-3131"
   },
 ];
