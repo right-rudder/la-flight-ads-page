@@ -11,10 +11,10 @@ const instrumentRating = {
     // Top Header
     header: {
       stars: true,
-      imagePath: "/src/assets/placeholder.jpg",
+      imagePath: "/src/assets/LAFA-IR-cover.jpg",
       imageAlt:
         "LA Flight Academy student learning IFR flying in a Cessna cockpit",
-      headerH1: `Instrument <br class="hidden lg:block" ><span class="text-accent-200">Rating </span>`,
+      headerH1: `Instrument <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">Rating </span>`,
       paragraph:
         `Elevate your piloting expertise with an Instrument Rating. Master flying in diverse weather conditions, navigate with precision, and unlock the ability to operate under instrument flight rules (IFR).`,
       buttons: [
@@ -25,7 +25,7 @@ const instrumentRating = {
         },
         {
           name: "Training Guide",
-          link: "/pilot-training-guide",
+          link: "/path",
           primary: false,
         },
       ],
@@ -52,8 +52,8 @@ const instrumentRating = {
             "To begin the Instrument Rating , you must hold a Private Pilot License (PPL) and meet the FAA’s medical requirements. At LA Flight Academy, we’ll guide you through every step of the process to ensure you’re ready to begin advanced training.",
             "Additionally, you’ll need proficiency in English for communication and interpretation of IFR flight procedures. If you’re ready to enhance your piloting skills, this course is the next step in your journey.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "Pilot holding a PPL certificate",
+          imagePath: "/src/assets/lafa-plane-1.jpg",
+          imageAlt: "LAFA plane's propeler",
         },
         {
           title: "Ground School Training",
@@ -61,7 +61,7 @@ const instrumentRating = {
             "Our ground school curriculum provides 15 hours of instruction focused on topics such as advanced weather theory, instrument navigation, IFR flight planning, and the National Airspace System. These lessons lay the foundation for understanding the complex world of instrument flying.",
             "With the guidance of our experienced instructors, you’ll prepare to pass the FAA Instrument Rating Knowledge Test, which assesses your understanding of instrument flight principles and regulations.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/avery-evans-studying.jpg",
           imageAlt: "Students in a classroom at LA Flight Academy",
         },
         {
@@ -70,7 +70,7 @@ const instrumentRating = {
             "Using advanced flight simulators, you’ll gain hands-on experience with IFR procedures and navigation. Simulators provide a safe and effective way to practice scenarios such as entering holding patterns, flying instrument approaches, and handling emergency situations.",
             "These sessions are designed to build your proficiency and confidence in operating solely by reference to instruments.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/Flight-Simulation-Training.webp",
           imageAlt: "Student practicing on an IFR simulator",
         },
         {
@@ -79,7 +79,7 @@ const instrumentRating = {
             "Your in-aircraft training begins with mastering IFR procedures, such as precision and non-precision approaches, departure and arrival procedures, and en-route navigation. You’ll log 40 hours of instrument time, including 15 hours with an instructor.",
             "During this phase, you’ll practice flying under simulated or actual instrument conditions, ensuring you develop the skills to confidently handle real-world IFR scenarios.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/lafa-flight-training.jpg",
           imageAlt: "Instructor and student flying under IFR conditions",
         },
         {
@@ -88,7 +88,7 @@ const instrumentRating = {
             "The FAA requires at least one IFR cross-country flight of 250 nautical miles, demonstrating your ability to plan and execute a flight using instrument navigation. At LA Flight Academy, we’ll help you prepare for this critical milestone, ensuring you feel confident in your planning and decision-making abilities.",
             "This phase of training will test your ability to communicate with air traffic control, handle in-flight adjustments, and manage complex navigation challenges.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/lafa-plane-over-mountains.jpg",
           imageAlt: "Aircraft cockpit during a cross-country IFR flight",
         },
         {
@@ -97,7 +97,7 @@ const instrumentRating = {
             "Before advancing to your checkride, you’ll need to pass the FAA Instrument Rating Knowledge Test. This exam covers advanced topics from ground school, such as weather patterns, navigation, and IFR procedures.",
             "Our ground school sessions and study materials are designed to prepare you thoroughly, giving you the tools and confidence needed to succeed.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/jason-coudriet-studying.jpg",
           imageAlt: "Student reviewing FAA test materials",
         },
         {
@@ -106,7 +106,7 @@ const instrumentRating = {
             "The final step is the FAA Instrument Rating Checkride, which includes both an oral and practical exam. During the oral portion, you’ll demonstrate your understanding of IFR rules, procedures, and navigation. In the flight portion, you’ll showcase your ability to operate an aircraft solely by reference to instruments.",
             "At LA Flight Academy, we provide mock checkrides and individualized coaching to ensure you’re fully prepared to succeed. Once you pass, you’ll be certified to fly under Instrument Flight Rules (IFR), opening new possibilities for your aviation journey.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/LAFA-PP-cover.jpg",
           imageAlt: "Student pilot celebrating after passing their checkride",
         },
       ],
