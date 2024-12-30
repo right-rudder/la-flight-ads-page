@@ -26,7 +26,7 @@ const programs = {
       imageAlt: "LAFA aircraft in flight, viewed from behind the pilots",
       description:
         "Pursue your career as a professional pilot with our structured Commercial Pilot Course.",
-      link: "/programs/commercial-pilot-training",
+      link: "/programs/commercial-pilot",
     },
     {
       title: "Multi-Engine Rating",
@@ -42,7 +42,7 @@ const programs = {
       imageAlt: "LAFA instructor checking on plane instruments",
       description:
         "Share your passion for flying and inspire the next generation of pilots by becoming a Certified Flight Instructor.",
-      link: "/programs/certified-flight-instructor-cfi",
+      link: "/programs/certified-flight-instructor",
     },
     {
       title: "Advanced Training & Add-Ons",
