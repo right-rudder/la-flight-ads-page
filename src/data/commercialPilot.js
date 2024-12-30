@@ -11,10 +11,10 @@ const commercialPilot = {
     // Top Header
     header: {
       stars: true,
-      imagePath: "/src/assets/placeholder.jpg",
+      imagePath: "/src/assets/LAFA-CP-cover.jpg",
       imageAlt:
-        "LA Flight Academy student preparing for a flight in a Piper aircraft",
-      headerH1: `Commercial <br class="hidden lg:block" ><span class="text-accent-200">Pilot</span>`,
+        "LAFA aircraft in flight, viewed from behind the pilots",
+      headerH1: `Commercial <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">Pilot</span>`,
       paragraph:
         `Take the next step toward a career in aviation with a Commercial Pilot License (CPL). At LA Flight Academy, we provide advanced training that prepares you for the professional world of aviation while refining your piloting skills.`,
       buttons: [
@@ -25,7 +25,7 @@ const commercialPilot = {
         },
         {
           name: "Training Guide",
-          link: "/pilot-training-guide",
+          link: "/path",
           primary: false,
         },
       ],
@@ -52,8 +52,8 @@ const commercialPilot = {
             "To enroll in the Commercial Pilot program, you must hold a valid Private Pilot License (PPL), an Instrument Rating, and meet FAA medical requirements (at least a Second-Class Medical Certificate).",
             "You’ll also need to have logged a minimum of 250 flight hours by the end of the program, including time as Pilot-in-Command (PIC). Our team will work with you to review your logbook and ensure you’re ready to begin this next stage of training.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "Pilot holding a PPL certificate",
+          imagePath: "/src/assets/lafa-plane-2.jpg",
+          imageAlt: "LAFA plane viewed from behind",
         },
         {
           title: "Ground School Training",
@@ -61,7 +61,7 @@ const commercialPilot = {
             "Our ground school sessions provide in-depth instruction on advanced aerodynamics, commercial flight operations, FAA regulations, and safety protocols. We’ll also cover topics such as weight and balance, performance calculations, and advanced navigation techniques.",
             "These classes are designed to prepare you for the FAA Commercial Pilot Knowledge Test, ensuring you have a solid foundation in the theoretical aspects of commercial flying.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/avery-evans-studying.jpg",
           imageAlt: "Students in a classroom at LA Flight Academy",
         },
         {
@@ -70,7 +70,7 @@ const commercialPilot = {
             "As part of the CPL requirements, you’ll train in a complex aircraft equipped with retractable landing gear, a constant-speed propeller, and flaps. This training sharpens your skills in handling advanced systems and prepares you for the challenges of commercial aviation.",
             "Our fleet includes aircraft specifically designed to meet the FAA’s complex training requirements, giving you hands-on experience with systems used in professional operations.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/lafa-inside-plane.jpg",
           imageAlt: "Pilot operating a complex aircraft cockpit",
         },
         {
@@ -79,7 +79,7 @@ const commercialPilot = {
             "During this phase, you’ll refine your skills in precision maneuvers, emergency procedures, and advanced navigation. You’ll log at least 100 hours as Pilot-in-Command (PIC) and complete specific cross-country flight requirements.",
             "This training ensures you’re proficient in advanced flight techniques, from chandelles and lazy eights to steep spirals and simulated engine failures.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/lafa-taking-out-plane-for-lesson.jpg",
           imageAlt: "Instructor and student performing flight maneuvers",
         },
         {
@@ -88,7 +88,7 @@ const commercialPilot = {
             "As part of the FAA requirements, you’ll complete cross-country flights of at least 300 nautical miles, demonstrating your ability to plan and execute long-distance operations.",
             "These flights test your proficiency in navigation, fuel management, and decision-making, ensuring you’re ready for real-world commercial flight operations.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/lafa-flight-training.jpg",
           imageAlt: "Student pilot preparing for a cross-country flight",
         },
         {
@@ -97,7 +97,7 @@ const commercialPilot = {
             "Before advancing to the checkride, you’ll need to pass the FAA Commercial Pilot Knowledge Test. This exam evaluates your understanding of advanced aerodynamics, regulations, and commercial operations.",
             "Our instructors provide personalized support and access to study materials, helping you build confidence and achieve success on the test.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/jason-coudriet-studying.jpg",
           imageAlt: "Student reviewing FAA test materials",
         },
         {
@@ -106,8 +106,8 @@ const commercialPilot = {
             "The final step in earning your Commercial Pilot License is passing the FAA CPL Checkride. This rigorous evaluation includes an oral exam to assess your theoretical knowledge and a practical flight test to demonstrate your advanced skills.",
             "With mock checkrides, one-on-one coaching, and individualized feedback, LA Flight Academy ensures you’re fully prepared to meet and exceed the FAA standards.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "Student pilot celebrating after passing their checkride",
+          imagePath: "/src/assets/pilot-and-examiner-checkride.jpg",
+          imageAlt: "Pilot and examiner conducting a checkride",
         },
       ],
       finalParagraph:
