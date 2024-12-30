@@ -75,7 +75,7 @@ const Navbar = ({ pathname }) => {
   };
 
   return (
-    <nav className="w-full h-0 sticky inset-0 z-50 font-tourney flex-1">
+    <nav className="w-full h-0 sticky inset-0 z-50 font-tourney">
       <div
         className={`${
           navBar || openMobile ? "bg-primary-700" : "bg-transparent"
