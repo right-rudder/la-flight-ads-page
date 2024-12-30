@@ -11,10 +11,10 @@ const cfi = {
     // Top Header
     header: {
       stars: true,
-      imagePath: "/src/assets/placeholder.jpg",
+      imagePath: "/src/assets/LAFA-CFI-cover.jpg",
       imageAlt:
         "Certified Flight Instructor training in progress at LA Flight Academy",
-      headerH1: `Certified Flight <br class="hidden lg:block" ><span class="text-accent-200">Instructor</span>`,
+      headerH1: `Certified Flight <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">Instructor</span>`,
       paragraph:
         `Take the next step in your aviation career by becoming a Certified Flight Instructor. At LA Flight Academy, our CFI program equips you with the skills and confidence to teach aspiring pilots and help shape the future of aviation.`,
       buttons: [
@@ -25,7 +25,7 @@ const cfi = {
         },
         {
           name: "Training Guide",
-          link: "/pilot-training-guide",
+          link: "/path",
           primary: false,
         },
       ],
@@ -52,7 +52,7 @@ const cfi = {
             "To begin your CFI training, you must hold a Commercial Pilot License (CPL) or Airline Transport Pilot (ATP) certificate and be at least 18 years old. You’ll also need a valid medical certificate and proficiency in English.",
             "We recommend completing the Certified Ground Instructor (CGI) certificate to complement your CFI training, although it’s not required.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/lafa-plane-3.jpg",
           imageAlt: "Student reviewing eligibility for CFI training",
         },
         {
@@ -61,7 +61,7 @@ const cfi = {
             "Ground training emphasizes instructional techniques, advanced aerodynamics, and FAA regulations. You’ll learn how to teach complex maneuvers, evaluate students, and conduct thorough pre-flight briefings.",
             "Our comprehensive ground school ensures you are well-prepared to pass the FAA Fundamentals of Instructing (FOI) exam and excel in your teaching role.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/avery-evans-studying.jpg",
           imageAlt: "CFI candidate studying FAA teaching techniques",
         },
         {
@@ -70,7 +70,7 @@ const cfi = {
             "Flight training hones your ability to instruct while refining your own flying skills. You’ll practice teaching key maneuvers from the right seat, such as steep turns, stalls, emergency procedures, and landings.",
             "Our experienced instructors provide real-world insights and mentorship, helping you master the art of aviation education.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/LAFA-CP-cover.jpg",
           imageAlt: "CFI trainee practicing instructional techniques",
         },
         {
@@ -79,7 +79,7 @@ const cfi = {
             "A successful CFI is not just knowledgeable but also approachable and adaptable. During training, you’ll refine your ability to communicate effectively with diverse student personalities and learning styles.",
             "We provide you with the tools to develop your own teaching methods while ensuring adherence to FAA standards.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/jason-coudriet-studying.jpg",
           imageAlt: "Instructor mentoring a student during flight training",
         },
         {
@@ -88,8 +88,8 @@ const cfi = {
             "The FAA CFI practical test includes an oral exam and a flight test where you’ll demonstrate both your knowledge and ability to teach. This rigorous evaluation ensures you’re ready to take on the responsibility of flight instruction.",
             "At LA Flight Academy, we prepare you with mock exams, detailed feedback, and extensive practice to ensure your success on the checkride.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "CFI candidate celebrating after passing the FAA practical test",
+          imagePath: "/src/assets/pilot-and-examiner-checkride.jpg",
+          imageAlt: "Pilot and examiner conducting a checkride",
         },
       ],
       finalParagraph:
