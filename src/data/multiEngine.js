@@ -11,10 +11,10 @@ const multiEngineRating = {
     // Top Header
     header: {
       stars: true,
-      imagePath: "/src/assets/placeholder.jpg",
+      imagePath: "/src/assets/LAFA-ME-cover.jpg",
       imageAlt:
         "LA Flight Academy student flying a multi-engine Piper Seminole aircraft",
-      headerH1: `Multi-Engine <br class="hidden lg:block" ><span class="text-accent-200">Rating</span>`,
+      headerH1: `Multi-Engine <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">Rating</span>`,
       paragraph:
         `Master the complexities of multi-engine flight and take your piloting skills to the next level. At LA Flight Academy, we provide focused training to help you earn your Multi-Engine Rating quickly and efficiently, opening up a world of opportunities in aviation.`,
       buttons: [
@@ -25,7 +25,7 @@ const multiEngineRating = {
         },
         {
           name: "Training Guide",
-          link: "/pilot-training-guide",
+          link: "/path",
           primary: false,
         },
       ],
@@ -52,7 +52,7 @@ const multiEngineRating = {
             "To begin training, you must hold a valid Private Pilot License (PPL) or higher. Instrument proficiency is recommended to enhance your training experience, although it is not required.",
             "We also recommend having logged time in complex aircraft or higher-performance planes to familiarize yourself with advanced flight systems.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/N120B.jpg",
           imageAlt: "Pilot reviewing logbook for multi-engine eligibility",
         },
         {
@@ -61,7 +61,7 @@ const multiEngineRating = {
             "Ground school covers critical concepts such as multi-engine aerodynamics, weight and balance, single-engine operations, and system failures. You’ll learn how to handle emergencies like engine-out scenarios and how to manage asymmetric thrust.",
             "This foundational knowledge prepares you to safely and confidently operate multi-engine aircraft in all phases of flight.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/avery-evans-studying.jpg",
           imageAlt: "Students in a classroom discussing multi-engine theory",
         },
         {
@@ -70,7 +70,7 @@ const multiEngineRating = {
             "You’ll conduct hands-on training in one of our multi-engine aircraft, such as the Piper Seminole, gaining experience with advanced systems like twin-engine performance, variable pitch propellers, and retractable gear.",
             "Our instructors will guide you through critical maneuvers, including engine-out procedures, Vmc demonstrations, and precision landings, ensuring you’re confident in the cockpit of a twin-engine aircraft.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/lafa-flight-lesson.jpg",
           imageAlt: "Instructor and student flying a multi-engine aircraft",
         },
         {
@@ -79,7 +79,7 @@ const multiEngineRating = {
             "A key aspect of multi-engine training involves mastering engine-out operations. You’ll learn to maintain control during single-engine flight, troubleshoot system failures, and safely navigate to an airport.",
             "This training ensures you can effectively manage emergencies, increasing your proficiency and safety as a multi-engine pilot.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/LAFA-CFI-cover.jpg",
           imageAlt: "Student practicing single-engine procedures in flight",
         },
         {
@@ -88,8 +88,8 @@ const multiEngineRating = {
             "The final step in earning your Multi-Engine Rating is passing the FAA Practical Test. This checkride includes an oral exam and a flight test where you’ll demonstrate your knowledge and skills in multi-engine operations.",
             "Our program prepares you with mock checkrides, personalized feedback, and advanced flight practice to ensure you pass with confidence.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "Student celebrating after passing the multi-engine checkride",
+          imagePath: "/src/assets/pilot-and-examiner-checkride.jpg",
+          imageAlt: "Pilot and examiner conducting a checkride",
         },
       ],
       finalParagraph:
