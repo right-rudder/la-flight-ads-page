@@ -11,10 +11,10 @@ const privatePilotCourse = {
     // Top Header
     header: {
       stars: true,
-      imagePath: "/src/assets/placeholder.jpg",
+      imagePath: "/src/assets/lafa-private-pilot.jpg",
       imageAlt:
         "LA Flight Academy student preparing for their first solo flight at Van Nuys Airport",
-      headerH1: `Private <br class="hidden lg:block" ><span class="text-accent-200">Pilot Course</span>`,
+      headerH1: `Private <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">Pilot Course</span>`,
       paragraph:
         `This course is your first step in becoming a licensed pilot. Achieve your Private Pilot Certificate and gain the freedom to explore the skies for personal and recreational flying.`,
       buttons: [
@@ -25,7 +25,7 @@ const privatePilotCourse = {
         },
         {
           name: "Learn More",
-          link: "/pilot-training-guide",
+          link: "/path",
           primary: false,
         },
       ],
@@ -51,15 +51,15 @@ const privatePilotCourse = {
           paragraphs: [
             "To begin your Private Pilot training, you must meet basic FAA requirements, including being at least 17 years old, obtaining a third-class medical certificate, and demonstrating proficiency in English. At LA Flight Academy, we guide you through the process to ensure a smooth start.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
-          imageAlt: "Medical examination for flight training eligibility",
+          imagePath: "/src/assets/lafa-cfi-enrolling-new-student.jpg",
+          imageAlt: "LA Flight Academy CFI enrolling a new student",
         },
         {
           title: "Ground School Training",
           paragraphs: [
             "Our ground school equips you with essential knowledge in aerodynamics, navigation, weather, regulations, and more. With expert instructors and tailored study materials, you'll be prepared to ace the FAA Knowledge Test and build a solid foundation for flight training.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/avery-evans-studying.jpg",
           imageAlt: "LA Flight Academy students during a ground school session",
         },
         {
@@ -67,7 +67,7 @@ const privatePilotCourse = {
           paragraphs: [
             "Learn to fly at Van Nuys Airport with experienced instructors. Our program includes 40 hours of flight training, covering takeoffs, landings, maneuvers, and emergency procedures. Night flying and simulated instrument training are also integrated to ensure well-rounded skill development.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/lafa-taking-out-plane-for-lesson.jpg",
           imageAlt: "Student pilot and instructor preparing for flight at Van Nuys",
         },
         {
@@ -75,7 +75,7 @@ const privatePilotCourse = {
           paragraphs: [
             "Experience the thrill of flying solo! Under your instructor's guidance, you'll gain the confidence to act as pilot in command, practicing maneuvers and cross-country flights independently.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/lafa-archer-blog-cover.jpg",
           imageAlt: "LA Flight Academy student on their first solo flight",
         },
         {
@@ -83,7 +83,7 @@ const privatePilotCourse = {
           paragraphs: [
             "Prepare for cross-country and night flying with structured lessons designed to build confidence and proficiency. Navigate to unfamiliar airports, communicate with ATC, and operate safely in low-visibility conditions.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/lafa-plane-over-mountains.jpg",
           imageAlt: "LA Flight Academy aircraft on a cross-country training flight",
         },
         {
@@ -91,7 +91,7 @@ const privatePilotCourse = {
           paragraphs: [
             "Our ground school and study materials thoroughly prepare you for the FAA Knowledge Test, ensuring you have the knowledge and confidence to pass on your first attempt.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/jason-coudriet-studying.jpg",
           imageAlt: "Student taking the FAA Knowledge Test",
         },
         {
@@ -99,7 +99,7 @@ const privatePilotCourse = {
           paragraphs: [
             "The final step is the FAA checkride, where you'll demonstrate your knowledge and skills to an examiner. At LA Flight Academy, we provide mock checkrides and detailed feedback to help you succeed with confidence.",
           ],
-          imagePath: "/src/assets/placeholder.jpg",
+          imagePath: "/src/assets/pilot-and-examiner-checkride.jpg",
           imageAlt: "Pilot and examiner conducting a checkride",
         },
       ],
