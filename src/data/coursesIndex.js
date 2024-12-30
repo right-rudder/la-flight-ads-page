@@ -25,7 +25,7 @@ const coursesIndex = {
         },
         {
           name: "Program Guide",
-          link: "/pilot-training-guide",
+          link: "/path",
           primary: false,
         },
       ],
