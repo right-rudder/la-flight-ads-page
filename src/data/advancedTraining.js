@@ -12,10 +12,10 @@ const advancedTrainings = {
     header: {
       stars: true,
       imagePath: "/src/assets/lafa-advanced-training.jpg",
-      imageAlt: "Pilot undergoing advanced flight training in a complex aircraft",
-      headerH1: `Advanced <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">Trainings</span>`,
-      paragraph:
-        `Refine your skills and elevate your proficiency with LA Flight Academy’s advanced trainings. Designed for licensed pilots, these programs cover specialized areas like multi-engine operations, spin recovery, and high-performance aircraft, ensuring you're prepared for every challenge in the skies.`,
+      imageAlt:
+        "Pilot undergoing advanced flight training in a complex aircraft",
+      headerH1: `Advanced <br>Trainings</span>`,
+      paragraph: `Refine your skills and elevate your proficiency with LA Flight Academy’s advanced trainings. Designed for licensed pilots, these programs cover specialized areas like multi-engine operations, spin recovery, and high-performance aircraft, ensuring you're prepared for every challenge in the skies.`,
       buttons: [
         {
           name: "Enroll Today",
@@ -52,7 +52,8 @@ const advancedTrainings = {
             "Hands-on sessions focus on systems management, emergency procedures, and efficient performance in a variety of scenarios.",
           ],
           imagePath: "/src/assets/lafa-archer-blog-cover.jpg",
-          imageAlt: "Pilot training on a complex aircraft with retractable gear",
+          imageAlt:
+            "Pilot training on a complex aircraft with retractable gear",
         },
         {
           title: "High-Performance Aircraft Training",
@@ -70,7 +71,8 @@ const advancedTrainings = {
             "Our accelerated program helps you master multi-engine aircraft in as little as 1.5 weeks, making it a popular choice for pilots nationwide.",
           ],
           imagePath: "/src/assets/LAFA-ME-cover.jpg",
-          imageAlt: "Pilot learning multi-engine operations in an advanced aircraft",
+          imageAlt:
+            "Pilot learning multi-engine operations in an advanced aircraft",
         },
         {
           title: "Spin Training",
@@ -79,7 +81,8 @@ const advancedTrainings = {
             "This program emphasizes safety and control, equipping you with critical knowledge to prevent accidents and respond effectively under pressure.",
           ],
           imagePath: "/src/assets/lafa-plane-over-mountains.jpg",
-          imageAlt: "Instructor demonstrating spin recovery techniques to a pilot",
+          imageAlt:
+            "Instructor demonstrating spin recovery techniques to a pilot",
         },
         {
           title: "BFRs and IPCs",
@@ -88,7 +91,8 @@ const advancedTrainings = {
             "Our experienced CFIs ensure a thorough and efficient review process, so you can return to flying with renewed confidence and expertise.",
           ],
           imagePath: "/src/assets/lafa-school.jpg",
-          imageAlt: "Pilot completing a Biennial Flight Review with an instructor",
+          imageAlt:
+            "Pilot completing a Biennial Flight Review with an instructor",
         },
       ],
       finalParagraph:

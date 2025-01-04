@@ -14,9 +14,8 @@ const instrumentRating = {
       imagePath: "/src/assets/LAFA-IR-cover.jpg",
       imageAlt:
         "LA Flight Academy student learning IFR flying in a Cessna cockpit",
-      headerH1: `Instrument <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">Rating </span>`,
-      paragraph:
-        `Elevate your piloting expertise with an Instrument Rating. Master flying in diverse weather conditions, navigate with precision, and unlock the ability to operate under instrument flight rules (IFR).`,
+      headerH1: `Instrument <br>Rating </span>`,
+      paragraph: `Elevate your piloting expertise with an Instrument Rating. Master flying in diverse weather conditions, navigate with precision, and unlock the ability to operate under instrument flight rules (IFR).`,
       buttons: [
         {
           name: "Enroll Today",

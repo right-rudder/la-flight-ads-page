@@ -11,9 +11,6 @@ import programsSwiper from "../data/programs";
 import Roadmap from "../data/roadmap-to-commercial-pilot.js";
 
 const { data } = pilotTrainingGuide;
-const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
-);
 ---
 
 <BaseLayout
@@ -24,7 +21,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
 
-  <TrainingRoadmap content={Roadmap}/>
+  <TrainingRoadmap content={Roadmap} />
 
   <ProgramSwiper content={programsSwiper} />
   <CTAColor content={flyWithUsCTA} />

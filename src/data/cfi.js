@@ -14,9 +14,8 @@ const cfi = {
       imagePath: "/src/assets/LAFA-CFI-cover.jpg",
       imageAlt:
         "Certified Flight Instructor training in progress at LA Flight Academy",
-      headerH1: `Certified Flight <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">Instructor</span>`,
-      paragraph:
-        `Take the next step in your aviation career by becoming a Certified Flight Instructor. At LA Flight Academy, our CFI program equips you with the skills and confidence to teach aspiring pilots and help shape the future of aviation.`,
+      headerH1: `Certified Flight <br>Instructor</span>`,
+      paragraph: `Take the next step in your aviation career by becoming a Certified Flight Instructor. At LA Flight Academy, our CFI program equips you with the skills and confidence to teach aspiring pilots and help shape the future of aviation.`,
       buttons: [
         {
           name: "Enroll Today",

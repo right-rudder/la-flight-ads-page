@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import homePage from "../data/homePage";
 import HomeHeader from "../components/HomeHeader.astro";
 import Welcome from "../components/Welcome.astro";
 import FleetComp from "../components/FleetComp.astro";
@@ -14,7 +13,7 @@ import Testimonials from "../components/Testimonials.astro";
 import testimonialsData from "../data/testimonialsData.js";
 import Form from "../components/Form.astro";
 import indexFormData from "../data/indexFormData.js";
-
+import homePage from "../data/homePage";
 
 const { data } = homePage;
 ---
@@ -26,10 +25,10 @@ const { data } = homePage;
 >
   <HomeHeader />
   <Welcome />
-  <FleetComp content={fleetCompData}/>
+  <FleetComp content={fleetCompData} />
   <Financing content={FinancingData} />
   <Carousel />
   <Testimonials content={testimonialsData} />
-  <CTAColor content={CTAFlight}/>
-  <Form content={indexFormData}/>
+  <CTAColor content={CTAFlight} />
+  <Form content={indexFormData} />
 </BaseLayout>

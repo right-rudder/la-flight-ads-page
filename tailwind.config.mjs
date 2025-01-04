@@ -5,10 +5,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Vipnagorgialla", ...defaultTheme.fontFamily.sans],
         sans2: ["Montserrat Variable", ...defaultTheme.fontFamily.sans],
+        sans: ["Quicksand Variable", ...defaultTheme.fontFamily.sans],
         bebas: ["Bebas Neue", ...defaultTheme.fontFamily.sans],
-        serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
+        serif: ["Roboto Slab Variable", ...defaultTheme.fontFamily.serif],
         tourney: ["Tourney Variable", ...defaultTheme.fontFamily.serif],
         stock: [
           "ui-sans-serif",
@@ -22,44 +22,44 @@ export default {
       },
       colors: {
         accent: {
-					'50': '#fef2f2',
-					'100': '#fee2e3',
-					'200': '#fecacb',
-					'300': '#fca5a7',
-					'400': '#f87174',
-					'500': '#ef3e42', //main
-					'600': '#dc262a',
-					'700': '#b91c20',
-					'800': '#991b1e',
-					'900': '#7f1d1f',
-					'950': '#450a0b',
-				},
+          50: "#fef2f2",
+          100: "#fee2e3",
+          200: "#fecacb",
+          300: "#fca5a7",
+          400: "#f87174",
+          500: "#ef3e42", //main
+          600: "#dc262a",
+          700: "#b91c20",
+          800: "#991b1e",
+          900: "#7f1d1f",
+          950: "#450a0b",
+        },
         primary: {
-					'50': '#f0f8ff',
-					'100': '#dff0ff',
-					'200': '#b9e1fe',
-					'300': '#7bcbfe',
-					'400': '#34b0fc',
-					'500': '#0a97ed',
-					'600': '#0077cb',
-					'700': '#005a9c', //main
-					'800': '#055187',
-					'900': '#0a4370',
-					'950': '#072a4a',
-				},
+          50: "#f0f8ff",
+          100: "#dff0ff",
+          200: "#b9e1fe",
+          300: "#7bcbfe",
+          400: "#34b0fc",
+          500: "#0a97ed",
+          600: "#0077cb",
+          700: "#005a9c", //main
+          800: "#055187",
+          900: "#0a4370",
+          950: "#072a4a",
+        },
         muted: {
-					'50': '#f9fafa',
-					'100': '#f3f4f4',
-					'200': '#e6e7e8',
-					'300': '#d1d5d6',
-					'400': '#a5acaf', //main
-					'500': '#959ca0',
-					'600': '#777e82',
-					'700': '#61676a',
-					'800': '#505658',
-					'900': '#45484a',
-					'950': '#27292b',
-				},
+          50: "#f9fafa",
+          100: "#f3f4f4",
+          200: "#e6e7e8",
+          300: "#d1d5d6",
+          400: "#a5acaf", //main
+          500: "#959ca0",
+          600: "#777e82",
+          700: "#61676a",
+          800: "#505658",
+          900: "#45484a",
+          950: "#27292b",
+        },
       },
       keyframes: {
         zoom: {

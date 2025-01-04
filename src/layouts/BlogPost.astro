@@ -26,7 +26,7 @@ const {
   siteDescription={description + " Right Rudder Marketing Blog."}
   keywords={category + ", " + tags.join(", ") + keywords ? keywords : KEYWORDS}
 >
-  <div class="h-20 lg:h-28 w-full bg-muted-400"></div>
+  <div class="h-20 lg:h-32 w-full bg-white"></div>
 
   <section
     class="flex justify-center pt-2 bg-gradient-to-b from-primary-50 to-primary-100"
@@ -45,7 +45,7 @@ const {
           )
         }
       </div>
-      <div class="mx-auto max-w-4xl bg-white prose font-sans pt-12 pb-32 px-5">
+      <div class="mx-auto max-w-4xl bg-white pt-12 pb-32 px-5">
         <div class="title">
           <div class="date">
             <FormattedDate date={pubDate} />
@@ -57,28 +57,31 @@ const {
               )
             }
           </div>
-          <h1 class="text-5xl m-0 font-sans">{title}</h1>
-          <p class="text-sm font-light">Published by:</p>
-          <p class="-mt-5 text-base font-medium">{author}</p>
-          <div class="md:flex gap-2 hidden">
+          <h1 class="text-5xl m-0 font-serif">{title}</h1>
+          <p class="text-sm font-light">
+            Published by: <strong class="font-bold ml-2">{author}</strong>
+          </p>
+          <div class="md:flex mt-2 gap-2 hidden">
             <span
-              class="bg-primary-600 text-white inline-block px-3 py-1 rounded-md"
+              class="bg-primary-600 text-sm text-white inline-block px-3 py-1 rounded-md"
             >
               {category}
             </span>
             {
-              tags.slice(0, 3).map((tag) => (
-                <span
-                  class={`bg-teal-500 text-white inline-block px-3 py-1 rounded-md`}
-                >
-                  {tag}
-                </span>
-              ))
+              tags
+                .slice(0, 3)
+                .map((tag) => (
+                  <span
+                    class={`bg-primary-500 text-sm text-white inline-block px-3 py-1 rounded-md`}
+                  >
+                    {tag}
+                  </span>
+                ))
             }
           </div>
           <hr />
         </div>
-        <div class="flex relative justify-center pb-4">
+        <div class="mt-12 flex prose relative justify-center pb-4">
           <slot />
         </div>
       </div>

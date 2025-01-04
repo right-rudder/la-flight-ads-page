@@ -8,7 +8,7 @@ import {
   INSTAGRAM_URL,
   PHONE_NUMBER,
   COMPANY_NAME,
-  LOGO_PRIMARY
+  LOGO_PRIMARY,
 } from "../consts.ts";
 
 const Navbar = ({ pathname }) => {
@@ -50,11 +50,11 @@ const Navbar = ({ pathname }) => {
           item.link + "/" === pathname ||
           item.subsubmenu?.some(
             (subItem) =>
-              subItem.link === pathname || subItem.link + "/" === pathname
-          )
+              subItem.link === pathname || subItem.link + "/" === pathname,
+          ),
       ) ||
       menuItem?.subsubmenu?.some(
-        (item) => item.link === pathname || item.link + "/" === pathname
+        (item) => item.link === pathname || item.link + "/" === pathname,
       ) ||
       menuItem.link === pathname ||
       menuItem.link + "/" === pathname;
@@ -75,10 +75,10 @@ const Navbar = ({ pathname }) => {
   };
 
   return (
-    <nav className="w-full h-0 sticky inset-0 z-50 font-tourney">
+    <nav className="w-full h-0 sticky inset-0 z-50 font-serif">
       <div
         className={`${
-          navBar || openMobile ? "bg-primary-700" : "bg-transparent"
+          navBar || openMobile ? "bg-primary-800" : "bg-transparent"
         } duration-500`}
       >
         <div className="px-5 max-w-7xl mx-auto top-0">
@@ -96,8 +96,8 @@ const Navbar = ({ pathname }) => {
                   alt={`${COMPANY_NAME} logo`}
                   aria-label={`${COMPANY_NAME} logo`}
                   title={COMPANY_NAME}
-                  loading="lazy"
-                  className={`${navBar || openMobile ? "h-20 lg:h-26 bg-accent-500 p-2 px-8" : "h-20 lg:h-28"} object-contain duration-500`}
+                  loading="eager"
+                  className={`${navBar || openMobile ? "h-20 lg:h-26 bg-white p-2 px-8" : "mt-4 h-20 lg:h-28"} mx-auto object-contain duration-500`}
                 />
               </a>
               <div className="hidden lg:flex 2xl:justify-end w-full text-lg">
@@ -113,14 +113,14 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="group-last:block font-medium text-2xl duration-300 hover:underline decoration-accent-600 decoration-4 underline-offset-[10px] border-accent whitespace-nowrap group-last:font-normal group-last:bg-muted-400 group-last:px-0 group-last:rounded-sm group-last:hover:bg-accent-500 group-last:hover:no-underline group-last:hover:border-accent-500"
+                          className={`${navBar || openMobile ? "text-white group-last:bg-primary-100 group-last:text-primary-900" : "text-primary-900 group-last:bg-primary-800 group-last:text-white"} group-last:block font-medium text-xl duration-300 hover:underline decoration-primary-600 decoration-4 underline-offset-[10px] border-primary whitespace-nowrap group-last:font-normal group-last:px-0 group-last:rounded-sm group-last:hover:bg-primary-500 group-last:hover:text-primary-900 group-last:hover:no-underline group-last:hover:border-primary-500`}
                         >
-                          <span className="relative font-medium block text-white group-last:text-muted-950 group-last:py-3 group-last:px-5 group-last:hover:text-white">
+                          <span className="relative font-medium block group-last:py-3 group-last:px-5">
                             {item.name}
                           </span>
                         </a>
                       ) : (
-                        <span className="font-medium cursor-default text-white text-2xl duration-300 hover:underline decoration-accent-300 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap">
+                        <span className="font-medium cursor-default text-2xl duration-300 hover:underline decoration-primary-300 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap">
                           {item.name}
                         </span>
                       )}
@@ -131,7 +131,7 @@ const Navbar = ({ pathname }) => {
                           {item.submenu.map((subitem, subIndex) => (
                             <li
                               key={subIndex}
-                              className={`${isActive(subitem, pathname) ? "scale-110 bg-accent-600 text-white" : ""} relative hover:bg-accent-600 hover:scale-110 duration-200 px-3 hover:font-medium hover:shadow-sm drop-shadow-sm font-medium hover:text-white`}
+                              className={`${isActive(subitem, pathname) ? "scale-110 bg-primary-600 text-white" : ""} relative hover:bg-primary-600 hover:scale-110 duration-200 px-3 hover:font-medium hover:shadow-sm drop-shadow-sm font-medium hover:text-white`}
                               onMouseEnter={() => setSubHoveredIndex(subIndex)}
                               onMouseLeave={() => setSubHoveredIndex(null)}
                             >
@@ -158,7 +158,7 @@ const Navbar = ({ pathname }) => {
                                       (subsubitem, subsubIndex) => (
                                         <li
                                           key={subsubIndex}
-                                          className={`${isActive(subsubitem, pathname) ? "bg-accent" : ""} relative hover:bg-secondary`}
+                                          className={`${isActive(subsubitem, pathname) ? "bg-primary" : ""} relative hover:bg-secondary`}
                                         >
                                           <a
                                             href={subsubitem.link}
@@ -168,7 +168,7 @@ const Navbar = ({ pathname }) => {
                                             {subsubitem.name}
                                           </a>
                                         </li>
-                                      )
+                                      ),
                                     )}
                                   </ul>
                                 )}
@@ -238,7 +238,7 @@ const Navbar = ({ pathname }) => {
       >
         <div className="flex justify-end pl-5 pr-[26px] py-6">
           <svg
-            className={`${openMobile ? "opacity-100" : "opacity-0"} h-6 w-6 text-accent-100 cursor-pointer z-30 text-primary-900-50 duration-300`}
+            className={`${openMobile ? "opacity-100" : "opacity-0"} h-6 w-6 text-primary-100 cursor-pointer z-30 text-primary-900-50 duration-300`}
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="2.5"
@@ -269,7 +269,7 @@ const Navbar = ({ pathname }) => {
         </a>
 
         <div
-          className={`absolute w-full h-44 bg-accent-600 top-0 z-20 duration-500 ease-in-out  ${
+          className={`absolute w-full h-44 bg-primary-600 top-0 z-20 duration-500 ease-in-out  ${
             openMobile
               ? "translate-x-0 opacity-90"
               : "-translate-x-full opacity-0"
@@ -287,19 +287,19 @@ const Navbar = ({ pathname }) => {
                 <a
                   href={item.link}
                   target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                  className="font-normal text-3xl block p-5 duration-300 text-accent-600 border-accent-200 whitespace-nowrap group-last:bg-accent-600 group-last:text-white group-last:font-medium group-last:border-2 group-last:mt-5 group-last:py-4 group-last:px-8 group-last:text-center group-last:mx-5"
+                  className="font-normal text-3xl block p-5 duration-300 text-primary-600 border-primary-200 whitespace-nowrap group-last:bg-primary-600 group-last:text-white group-last:font-medium group-last:border-2 group-last:mt-5 group-last:py-4 group-last:px-8 group-last:text-center group-last:mx-5"
                 >
                   {item.name}
                 </a>
               ) : (
-                <div className="font-tourney relafont-thinfull justify-center flex cursor-pointer text-3xl duration-300  border-accent whitespace-nowrap">
-                  <p className="font-tourney text-accent-600">{item.name}</p>
+                <div className="font-serif relafont-thinfull justify-center flex cursor-pointer text-xl duration-300  border-primary whitespace-nowrap">
+                  <p className="font-serif text-primary-600">{item.name}</p>
                   <div
                     className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-primary/30 -rotate-90" : "bg-primary/30 rotate-90"} 
                     `}
                   >
                     <IoIosArrowForward
-                      className={`${hoveredIndex === index ? "text-accent-600" : "text-accent-600"} size-5`}
+                      className={`${hoveredIndex === index ? "text-primary-600" : "text-primary-600"} size-5`}
                     />
                   </div>
                 </div>
@@ -311,7 +311,7 @@ const Navbar = ({ pathname }) => {
                   {item.submenu.map((subitem, subIndex) => (
                     <li
                       key={subIndex}
-                      className="relative border-b border-primary-100/20 w-full text-accent-600 font-bold"
+                      className="relative border-b border-primary-100/20 w-full text-primary-600 font-bold"
                       onClick={(event) => handleSubItemClick(event, subIndex)}
                     >
                       {subitem.link ? (
@@ -323,14 +323,14 @@ const Navbar = ({ pathname }) => {
                           {subitem.name}
                         </a>
                       ) : (
-                        <div className="font-normal p-5 w-full justify-between flex cursor-pointer text-2xl duration-300 border-accent whitespace-nowrap">
+                        <div className="font-normal p-5 w-full justify-between flex cursor-pointer text-2xl duration-300 border-primary whitespace-nowrap">
                           <p>{subitem.name}</p>
                           <div
-                            className={`p-1 pointer-events-none duration-300 rounded-full ${subHoveredIndex === subIndex ? "bg-white rotate-90" : "bg-accent -rotate-90"} 
+                            className={`p-1 pointer-events-none duration-300 rounded-full ${subHoveredIndex === subIndex ? "bg-white rotate-90" : "bg-primary -rotate-90"} 
                     `}
                           >
                             <IoIosArrowForward
-                              className={`${subHoveredIndex === subIndex ? "text-accent-1000" : "text-accent-100"} size-5`}
+                              className={`${subHoveredIndex === subIndex ? "text-primary-1000" : "text-primary-100"} size-5`}
                             />
                           </div>
                         </div>
@@ -364,20 +364,28 @@ const Navbar = ({ pathname }) => {
 
         <div className="p-5 px-10 font-bold flexfont-thinustify-center align-middle items-center gap-5 overflow-hidden">
           <div className="flex gap-3 items-center">
-            <a aria-labelledby="Call Us Now" title="Call Us Now"
+            <a
+              aria-labelledby="Call Us Now"
+              title="Call Us Now"
               href={`tel:${PHONE_NUMBER}`}
-              className="border p-2 w-fit border-accent-200 rounded-full bg-black"
+              className="border p-2 w-fit border-primary-200 rounded-full bg-black"
             >
               <FaPhone className="size-4 text-white" />
             </a>
-            <a aria-labelledby="Call Us Now" title="Call Us Now" href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
+            <a
+              aria-labelledby="Call Us Now"
+              title="Call Us Now"
+              href={`tel:${PHONE_NUMBER}`}
+            >
+              {PHONE_NUMBER}
+            </a>
           </div>
 
           <div className="flex gap-3 mt-2 mb-16">
             <a href={FACEBOOK_URL} target="_blank">
               <span className="sr-only">Facebook</span>
               <svg
-                className="size-6 text-accent"
+                className="size-6 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -392,7 +400,7 @@ const Navbar = ({ pathname }) => {
             <a href={INSTAGRAM_URL} target="_blank">
               <span className="sr-only">Instagram</span>
               <svg
-                className="size-6 text-accent"
+                className="size-6 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"

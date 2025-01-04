@@ -12,11 +12,9 @@ const commercialPilot = {
     header: {
       stars: true,
       imagePath: "/src/assets/LAFA-CP-cover.jpg",
-      imageAlt:
-        "LAFA aircraft in flight, viewed from behind the pilots",
-      headerH1: `Commercial <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">Pilot</span>`,
-      paragraph:
-        `Take the next step toward a career in aviation with a Commercial Pilot License (CPL). At LA Flight Academy, we provide advanced training that prepares you for the professional world of aviation while refining your piloting skills.`,
+      imageAlt: "LAFA aircraft in flight, viewed from behind the pilots",
+      headerH1: `Commercial <br>Pilot</span>`,
+      paragraph: `Take the next step toward a career in aviation with a Commercial Pilot License (CPL). At LA Flight Academy, we provide advanced training that prepares you for the professional world of aviation while refining your piloting skills.`,
       buttons: [
         {
           name: "Enroll Today",

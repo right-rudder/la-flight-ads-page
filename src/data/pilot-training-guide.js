@@ -11,14 +11,15 @@ const pilotTrainingGuide = {
     header: {
       stars: true,
       imagePath: "/src/assets/plane-taking-off-runway.jpg",
-      imageAlt: "LA Flight Academy student pilot in training over scenic California",
-      headerH1: `PATHWAY TO <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">COMMERCIAL AIRLINE PILOT</span>`,
+      imageAlt:
+        "LA Flight Academy student pilot in training over scenic California",
+      headerH1: `PATHWAY TO <br>COMMERCIAL AIRLINE PILOT`,
       paragraph: `At LA Flight Academy, we’re here to guide you through every step of your journey to becoming a professional pilot, starting from your first flight to earning your ATP certificate.`,
       buttons: [
         {
           name: "Start Your Journey",
           link: "/enroll-now",
-          primary: false,
+          primary: true,
         },
         {
           name: "Discovery Flight",
