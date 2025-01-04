@@ -1,4 +1,4 @@
-# RRM Astro Minimal Template
+# LA Flight Academy Website Draft
 
 Integrations:
 
@@ -8,6 +8,6 @@ Integrations:
 - React
 - Prettier Astro
 
-
 ## First launch
+
 - `npm install`
