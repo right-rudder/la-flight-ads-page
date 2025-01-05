@@ -13,6 +13,8 @@ export const SITE_DESCRIPTION =
 export const KEYWORDS =
   "LA Flight Academy, Van Nuys flight school, how to become a pilot, flight school near Los Angeles, private pilot, discovery flight, introductory flight, instrument rating, commercial certificate, certified flight instructor, airline programs, how to become an airline pilot, flight training, pilot training, aviation school in California, Cessna 172 training, discovery flights Van Nuys, pilot school near me, flight training in Los Angeles, Burbank, Santa Monica, Glendale, Pasadena, Beverly Hills";
 
+export const OG_IMAGE = "/LAFA-OG-image.png";
+
 // CHANGE client business info
 export const COMPANY_NAME = "LA Flight Academy";
 export const COMPANY_NAME_CAPS = "LA FLIGHT ACADEMY";
@@ -26,12 +28,14 @@ export const AIRPORT = "Van Nuys Airport";
 export const AIRPORT_CODE = "VNY";
 export const GMAPS = "https://maps.app.goo.gl/HMpiYABaAeTVrubEA";
 export const EMAIL_ADDRESS = "fly@laflightacademy.com";
-export const FACEBOOK_URL = "https://www.facebook.com/p/LA-Flight-Academy-100064073860589/";
+export const FACEBOOK_URL =
+  "https://www.facebook.com/p/LA-Flight-Academy-100064073860589/";
 export const INSTAGRAM_URL = "https://www.instagram.com/laflightacademy/";
 export const LINKEDIN_URL = "";
 export const TWITTER_URL = "";
 export const YOUTUBE_URL = "";
-export const YELP_URL = "https://www.yelp.com/biz/la-flight-academy-los-angeles";
+export const YELP_URL =
+  "https://www.yelp.com/biz/la-flight-academy-los-angeles";
 export const GITHUB_URL = "";
 
 export const LOCATIONS = [
@@ -43,7 +47,7 @@ export const LOCATIONS = [
     zip: "91406",
     gMaps: "https://maps.app.goo.gl/HMpiYABaAeTVrubEA",
     phone: "(818) 636-3131",
-    forwardPhone: "(818) 636-3131"
+    forwardPhone: "(818) 636-3131",
   },
 ];
 export const COURSES = [
