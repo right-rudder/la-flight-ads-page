@@ -194,7 +194,7 @@ const Navbar = ({ pathname }) => {
                 <span className="sr-only">Open main menu</span>
 
                 <svg
-                  className={`${openMobile ? "hidden" : "block"} h-6 w-6 text-white`}
+                  className={`${openMobile ? "hidden" : "block"} h-6 w-6 text-primary-950`}
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2.0"
@@ -210,7 +210,7 @@ const Navbar = ({ pathname }) => {
                 </svg>
 
                 <svg
-                  className={`${openMobile ? "block" : "hidden"} h-6 w-6 text-white`}
+                  className={`${openMobile ? "block" : "hidden"} h-6 w-6 text-primary-950`}
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2.0"
@@ -238,7 +238,7 @@ const Navbar = ({ pathname }) => {
       >
         <div className="flex justify-end pl-5 pr-[26px] py-6">
           <svg
-            className={`${openMobile ? "opacity-100" : "opacity-0"} h-6 w-6 text-primary-100 cursor-pointer z-30 text-primary-900-50 duration-300`}
+            className={`${openMobile ? "opacity-100" : "opacity-0"} h-6 w-6 text-primary-800 cursor-pointer z-30 text-primary-900-50 duration-300`}
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="2.5"
@@ -269,37 +269,37 @@ const Navbar = ({ pathname }) => {
         </a>
 
         <div
-          className={`absolute w-full h-44 bg-primary-600 top-0 z-20 duration-500 ease-in-out  ${
+          className={`absolute w-full h-48 bg-white top-0 z-20 ${
             openMobile
-              ? "translate-x-0 opacity-90"
-              : "-translate-x-full opacity-0"
-          }`}
+              ? "translate-x-0 opacity-100"
+              : "-translate-x-full opacity-50"
+          } delay-500 duration-500 ease-in-out`}
         ></div>
 
-        <ul className="px-4 pb-3 mt-5 pt-2 flex flex-col align-middle items-center">
+        <ul className="px-3 pb-3 mt-6 pt-2 flex flex-col align-middle items-center bg-primary-700">
           {navbarLinks.map((item, index) => (
             <li
               key={index}
-              className="relative group border-b border-primary-100/20 last:border-none w-full text-center"
+              className="relative group border-b border-primary-100/20 last:border-none w-full text-center text-white"
               onClick={() => handleItemClick(index)}
             >
               {item.mobileLink ? (
                 <a
                   href={item.link}
                   target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                  className="font-normal text-3xl block p-5 duration-300 text-primary-600 border-primary-200 whitespace-nowrap group-last:bg-primary-600 group-last:text-white group-last:font-medium group-last:border-2 group-last:mt-5 group-last:py-4 group-last:px-8 group-last:text-center group-last:mx-5"
+                  className="font-normal text-xl block py-3 duration-300 whitespace-nowrap group-last:bg-primary-600 group-last:text-white group-last:font-medium group-last:border-2 group-last:mt-5 group-last:py-4 group-last:px-8 group-last:text-center group-last:mx-5"
                 >
                   {item.name}
                 </a>
               ) : (
-                <div className="font-serif relafont-thinfull justify-center flex cursor-pointer text-xl duration-300  border-primary whitespace-nowrap">
-                  <p className="font-serif text-primary-600">{item.name}</p>
+                <div className="font-serif justify-center flex cursor-pointer text-xl duration-300  border-primary whitespace-nowrap">
+                  <p className="font-serif py-3">{item.name}</p>
                   <div
-                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-primary/30 -rotate-90" : "bg-primary/30 rotate-90"} 
+                    className={`absolute right-2 top-2 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-primary-100/30 -rotate-90" : "bg-primary-900/30 rotate-90"} 
                     `}
                   >
                     <IoIosArrowForward
-                      className={`${hoveredIndex === index ? "text-primary-600" : "text-primary-600"} size-5`}
+                      className={`${hoveredIndex === index ? "text-primary-900" : "text-primary-100"} size-5`}
                     />
                   </div>
                 </div>
@@ -311,12 +311,12 @@ const Navbar = ({ pathname }) => {
                   {item.submenu.map((subitem, subIndex) => (
                     <li
                       key={subIndex}
-                      className="relative border-b border-primary-100/20 w-full text-primary-600 font-bold"
+                      className="relative border-b border-primary-100/20 w-full bg-white/10 font-bold"
                       onClick={(event) => handleSubItemClick(event, subIndex)}
                     >
                       {subitem.link ? (
                         <a
-                          className="p-1 block font-bold text-lg"
+                          className="p-1 block font-thin text-white py-2 text-lg"
                           href={subitem.link}
                           target={`${subitem.link.includes("http") ? "_blank" : "_self"}`}
                         >
@@ -362,30 +362,22 @@ const Navbar = ({ pathname }) => {
           ))}
         </ul>
 
-        <div className="p-5 px-10 font-bold flexfont-thinustify-center align-middle items-center gap-5 overflow-hidden">
-          <div className="flex gap-3 items-center">
-            <a
-              aria-labelledby="Call Us Now"
-              title="Call Us Now"
-              href={`tel:${PHONE_NUMBER}`}
-              className="border p-2 w-fit border-primary-200 rounded-full bg-black"
-            >
-              <FaPhone className="size-4 text-white" />
-            </a>
-            <a
-              aria-labelledby="Call Us Now"
-              title="Call Us Now"
-              href={`tel:${PHONE_NUMBER}`}
-            >
-              {PHONE_NUMBER}
-            </a>
-          </div>
+        <div className="font-normal flex flex-col justify-center align-middle items-center overflow-hidden bg-primary-700">
+          <a
+            aria-labelledby="Call Us Now"
+            title="Call Us Now"
+            href={`tel:${PHONE_NUMBER}`}
+            className="flex items-center justify-center py-4 gap-2 text-white w-full"
+          >
+            <FaPhone className="size-5 text-white" />
+            {PHONE_NUMBER}
+          </a>
 
-          <div className="flex gap-3 mt-2 mb-16">
+          <div className="flex gap-3 mt-2 mb-16 text-white">
             <a href={FACEBOOK_URL} target="_blank">
               <span className="sr-only">Facebook</span>
               <svg
-                className="size-6 text-primary"
+                className="size-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -400,7 +392,7 @@ const Navbar = ({ pathname }) => {
             <a href={INSTAGRAM_URL} target="_blank">
               <span className="sr-only">Instagram</span>
               <svg
-                className="size-6 text-primary"
+                className="size-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
