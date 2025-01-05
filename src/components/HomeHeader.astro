@@ -1,34 +1,54 @@
 ---
+const random = Math.floor(Math.random() * 10) % 2 === 0 ? true : false;
 import headerVideo from "../assets/146169-788789382_small.mp4";
+import ImageComp from "./ImageComp.astro";
 ---
 
 <section
-  class="relative h-screen overflow-hidden flex flex-col items-center justify-center p-0 m-0"
+  class="relative h-screen overflow-hidden flex items-center justify-center md:justify-end p-0 m-0"
   aria-label="Header section featuring a video background and text introducing LA Flight Academy"
 >
-  <video
-    autoplay
-    muted
-    loop
-    class="absolute h-full w-full brightness-125 saturate-50 object-cover object-center -z-30 inset-0"
-    aria-hidden="true"
-  >
-    <source src={headerVideo} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  {
+    random && (
+      <video
+        autoplay
+        muted
+        loop
+        class="absolute h-full w-full brightness-125 saturate-50 object-cover object-center -z-30 inset-0"
+        aria-hidden="true"
+      >
+        <source src={headerVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    )
+  }
+  {
+    !random && (
+      <div class="absolute -z-30 inset-0" aria-hidden="true">
+        <ImageComp
+          imagePath="/src/assets/lafa-pilot-programs-index-cover.jpg"
+          imageAlt="LA flight academy aircraft flying over Los Angeles, California"
+          loading="eager"
+          styles="object-cover h-full w-full object-center"
+        />
+      </div>
+    )
+  }
   <div
-    class="absolute h-full w-full bg-white opacity-40 -z-20 inset-0"
+    class="absolute h-full w-full bg-white opacity-60 md:opacity-40 -z-20 inset-0"
     aria-hidden="true"
   >
   </div>
-  <h1
-    class="text-5xl uppercase text-primary-700 font-serif md:text-6xl lg:text-7xl xl:text-8xl text-center font-medium tracking-wide drop-shadow-md"
-  >
-    LA Flight Academy
-  </h1>
-  <h2
-    class="text-2xl lg:text-5xl mt-3 text-white font-semibold tracking-wide text-center max-w-5xl drop-shadow-md"
-  >
-    Accelerated Flight Training Programs in Van Nuys
-  </h2>
+  <div class="px-4 md:pr-24 text-white text-center md:text-right max-w-2xl">
+    <p
+      class="text-6xl uppercase text-primary-700 font-serif md:text-7xl lg:text-8xl font-medium tracking-wide drop-shadow-md"
+    >
+      Get Your Wings
+    </p>
+    <h1
+      class="text-2xl lg:text-4xl mt-3 text-primary-900/90 font-semibold tracking-wide drop-shadow-md"
+    >
+      Accelerated Flight Training Programs in Los Angeles
+    </h1>
+  </div>
 </section>

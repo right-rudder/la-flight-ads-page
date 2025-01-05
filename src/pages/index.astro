@@ -1,19 +1,33 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HomeHeader from "../components/HomeHeader.astro";
-import Welcome from "../components/Welcome.astro";
-import FleetComp from "../components/FleetComp.astro";
-import fleetCompData from "../data/fleetComp";
 import CTAColor from "../components/CTAColor.astro";
 import CTAFlight from "../data/CTAFlight.js";
-import Financing from "../components/Financing.astro";
-import FinancingData from "../data/financingData.js";
-import Carousel from "../components/Carousel.astro";
 import Testimonials from "../components/Testimonials.astro";
 import testimonialsData from "../data/testimonialsData.js";
 import Form from "../components/Form.astro";
 import indexFormData from "../data/indexFormData.js";
 import homePage from "../data/homePage";
+import programsSwiper from "../data/programs";
+import ProgramSwiper from "../components/ProgramSwiper.astro";
+import BlogFeed from "../components/BlogFeed.astro";
+import PageSummary from "../components/PageSummary.astro";
+
+const blogfeed = {
+  upperHeading: "Our Blog",
+  heading: "LA Flight Academy News",
+  description:
+    "Stay up to date with the latest news, pilot resources and updates from LA Flight.",
+};
+
+const welcome = {
+  title: "Welcome to LA Flight Academy",
+  paragraphs: [
+    "At LA Flight Academy, we’re proud to offer one of the largest and best-maintained fleets in Los Angeles.",
+    "Based in Van Nuys, CA, we provide a safe, structured, and supportive environment for all aspiring pilots.",
+    "Whether you’re training for recreational flying or preparing for a professional aviation career, we offer personalized instruction, modern equipment, and comprehensive programs to help you achieve your goals.",
+  ],
+};
 
 const { data } = homePage;
 ---
@@ -24,11 +38,10 @@ const { data } = homePage;
   keywords={data.pageKeywords}
 >
   <HomeHeader />
-  <Welcome />
-  <FleetComp content={fleetCompData} />
-  <Financing content={FinancingData} />
-  <Carousel />
+  <PageSummary content={welcome} />
+  <ProgramSwiper content={programsSwiper} />
   <Testimonials content={testimonialsData} />
+  <BlogFeed data={blogfeed} />
   <CTAColor content={CTAFlight} />
-  <Form content={indexFormData} />
+  <script src="../scripts/creativeSwiper.js"></script>
 </BaseLayout>
