@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import { TbPlaneTilt } from "react-icons/tb";
+
+const { content } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+);
+if (!images[content.imagePath]) {
+  throw new Error(
+    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+  );
+}
+
+---
+
+<section class="h-min flex flex-col lg:flex-row relative">
+  {/* Fleet Image */}
+  <Image
+    src={images[content.imagePath]()}
+    alt={content.imageAlt || "Fleet image"}
+    loading="lazy"
+    class="relative -z-0 object-cover lg:w-6/12"
+  />
+
+  {/* Decorative Background */}
+  <div class="w-3/12 bg-muted-400 z-10 absolute h-full hidden lg:block lg:left-[40%] skew-x-12 overflow-hidden"></div>
+
+  {/* Fleet Content */}
+  <div class="z-20 w-full mx-auto px-5 lg:px-10 py-8 bg-muted-400 flex flex-col justify-center items-center lg:items-start gap-8">
+    {/* Header */}
+    <h2 class="text-4xl font-bold text-primary-800 text-center">
+      {content.header}
+    </h2>
+    <div class="h-1 w-24 bg-primary-700 rounded-sm"></div>
+
+    {/* Fleet Details */}
+    {content.fleet?.map((plane) => (
+      <article class="flex gap-4 items-start group">
+        <TbPlaneTilt className="h-11 w-11 text-primary-800 group-hover:animate-pulse" />
+        <div class="w-10/12">
+          <h3 class="text-xl font-semibold text-primary-700">
+            {plane.name} {plane.rates}
+          </h3>
+          <p class="text-base text-primary-600 leading-relaxed">
+            {plane.description}
+          </p>
+        </div>
+      </article>
+    ))}
+
+    {/* Call-to-Action Buttons */}
+    <div class="mt-6 w-full flex flex-wrap justify-start items-center gap-6">
+      {content.buttons?.map((btn) => (
+        <a
+          href={btn.link}
+          class="btn-accent w-full md:w-auto"
+          aria-label={`Navigate to ${btn.name}`}
+        >
+          {btn.name}
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

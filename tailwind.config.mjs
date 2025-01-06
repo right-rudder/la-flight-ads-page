@@ -1,8 +1,103 @@
+import defaultTheme from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	theme: {
-		extend: {},
-	},
-	plugins: [],
-}
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Vipnagorgialla", ...defaultTheme.fontFamily.sans],
+        sans2: ["Montserrat Variable", ...defaultTheme.fontFamily.sans],
+        bebas: ["Bebas Neue", ...defaultTheme.fontFamily.sans],
+        serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
+        tourney: ["Tourney Variable", ...defaultTheme.fontFamily.serif],
+        stock: [
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji",
+        ],
+      },
+      colors: {
+        accent: {
+					'50': '#fef2f2',
+					'100': '#fee2e3',
+					'200': '#fecacb',
+					'300': '#fca5a7',
+					'400': '#f87174',
+					'500': '#ef3e42', //main
+					'600': '#dc262a',
+					'700': '#b91c20',
+					'800': '#991b1e',
+					'900': '#7f1d1f',
+					'950': '#450a0b',
+				},
+        primary: {
+					'50': '#f0f8ff',
+					'100': '#dff0ff',
+					'200': '#b9e1fe',
+					'300': '#7bcbfe',
+					'400': '#34b0fc',
+					'500': '#0a97ed',
+					'600': '#0077cb',
+					'700': '#005a9c', //main
+					'800': '#055187',
+					'900': '#0a4370',
+					'950': '#072a4a',
+				},
+        muted: {
+					'50': '#f9fafa',
+					'100': '#f3f4f4',
+					'200': '#e6e7e8',
+					'300': '#d1d5d6',
+					'400': '#a5acaf', //main
+					'500': '#959ca0',
+					'600': '#777e82',
+					'700': '#61676a',
+					'800': '#505658',
+					'900': '#45484a',
+					'950': '#27292b',
+				},
+      },
+      keyframes: {
+        zoom: {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.2)" },
+        },
+      },
+      animation: {
+        "slow-zoom": "zoom 45s alternate infinite ease-in-out",
+        "mid-zoom": "zoom 18s alternate infinite ease-in-out",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/typography")],
+  safelist: [
+    "[counter-set:_num_var(--num-graduates)]",
+    "[counter-set:_num_var(--num-professionals)]",
+    "lg:-translate-x-[calc(0*33.33%)]",
+    "lg:-translate-x-[calc(1*33.33%)]",
+    "lg:-translate-x-[calc(2*33.33%)]",
+    "lg:-translate-x-[calc(3*33.33%)]",
+    "lg:-translate-x-[calc(4*33.33%)]",
+    "lg:-translate-x-[calc(5*33.33%)]",
+    "lg:-translate-x-[calc(6*33.33%)]",
+    "lg:-translate-x-[calc(7*33.33%)]",
+    "lg:-translate-x-[calc(8*33.33%)]",
+    "lg:-translate-x-[calc(9*33.33%)]",
+    "-translate-x-[calc(0*100%)]",
+    "-translate-x-[calc(1*100%)]",
+    "-translate-x-[calc(2*100%)]",
+    "-translate-x-[calc(3*100%)]",
+    "-translate-x-[calc(4*100%)]",
+    "-translate-x-[calc(5*100%)]",
+    "-translate-x-[calc(6*100%)]",
+    "-translate-x-[calc(7*100%)]",
+    "-translate-x-[calc(8*100%)]",
+    "-translate-x-[calc(9*100%)]",
+    "bg-red-700",
+    "bg-green-500",
+  ],
+};
