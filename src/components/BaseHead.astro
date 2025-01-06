@@ -1,10 +1,6 @@
 ---
 import "../styles/global.css";
-import {
-  COMPANY_NAME,
-  INSTAGRAM_URL,
-  PHONE_NUMBER,
-} from "../consts";
+import { COMPANY_NAME, INSTAGRAM_URL, PHONE_NUMBER, OG_IMAGE } from "../consts";
 
 interface Props {
   title: string;
@@ -17,12 +13,7 @@ const site = Astro.site || "http://localhost:4321";
 
 const canonicalURL = new URL(Astro.url.pathname, site);
 
-const {
-  title,
-  description,
-  keywords,
-  image = "/LA-Flight-Academy-logo-blue.png",
-} = Astro.props;
+const { title, description, keywords, image = OG_IMAGE } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -45,7 +36,7 @@ const {
     Nice to see you here.  Find new student pilots with Right Rudder Marketing.  https://rightruddermarketing.com/contact-us -->
 
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/LA-Flight-Academy-logo-blue.png" />
+<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 <meta name="generator" content={Astro.generator} />
 
 <!-- Canonical URL -->
@@ -73,28 +64,20 @@ const {
 
 <link rel="sitemap" href="/sitemap-index.xml" />
 
-<!-- Preconnect to Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Preload the Google Font stylesheet -->
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-<!-- Fallback if JavaScript is disabled -->
-<noscript>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</noscript>
-
-
 <!-- UPDATE GTAG PLEASE -->
 <!-- Google tag (gtag.js) -->
-<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-WMD4VK3FSW"></script>
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-WMD4VK3FSW"></script>
 <script type="text/partytown">
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-  gtag('config', 'G-WMD4VK3FSW');
+  gtag("config", "G-WMD4VK3FSW");
 </script>
 
 <!-- NEED TO UPDATE SCHEMA -->
@@ -124,7 +107,7 @@ const {
       "geoMidpoint": {
         "@type": "GeoCoordinates",
         "latitude": 34.216462801810444,
-        "longitude":  -118.50057594232919
+        "longitude": -118.50057594232919
       },
       "geoRadius": 9000
     },
@@ -138,7 +121,7 @@ const {
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 34.216462801810444,
-        "longitude":  -118.50057594232919
+      "longitude": -118.50057594232919
     },
     "openingHoursSpecification": [
       {

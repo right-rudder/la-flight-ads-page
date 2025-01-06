@@ -14,9 +14,8 @@ const privatePilotCourse = {
       imagePath: "/src/assets/lafa-private-pilot.jpg",
       imageAlt:
         "LA Flight Academy student preparing for their first solo flight at Van Nuys Airport",
-      headerH1: `Private <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">Pilot Course</span>`,
-      paragraph:
-        `This course is your first step in becoming a licensed pilot. Achieve your Private Pilot Certificate and gain the freedom to explore the skies for personal and recreational flying.`,
+      headerH1: `Private <br>Pilot Course</span>`,
+      paragraph: `This course is your first step in becoming a licensed pilot. Achieve your Private Pilot Certificate and gain the freedom to explore the skies for personal and recreational flying.`,
       buttons: [
         {
           name: "Enroll Today",
@@ -68,7 +67,8 @@ const privatePilotCourse = {
             "Learn to fly at Van Nuys Airport with experienced instructors. Our program includes 40 hours of flight training, covering takeoffs, landings, maneuvers, and emergency procedures. Night flying and simulated instrument training are also integrated to ensure well-rounded skill development.",
           ],
           imagePath: "/src/assets/lafa-taking-out-plane-for-lesson.jpg",
-          imageAlt: "Student pilot and instructor preparing for flight at Van Nuys",
+          imageAlt:
+            "Student pilot and instructor preparing for flight at Van Nuys",
         },
         {
           title: "Solo Flight Experience",
@@ -84,7 +84,8 @@ const privatePilotCourse = {
             "Prepare for cross-country and night flying with structured lessons designed to build confidence and proficiency. Navigate to unfamiliar airports, communicate with ATC, and operate safely in low-visibility conditions.",
           ],
           imagePath: "/src/assets/lafa-plane-over-mountains.jpg",
-          imageAlt: "LA Flight Academy aircraft on a cross-country training flight",
+          imageAlt:
+            "LA Flight Academy aircraft on a cross-country training flight",
         },
         {
           title: "Pass the FAA Knowledge Test",

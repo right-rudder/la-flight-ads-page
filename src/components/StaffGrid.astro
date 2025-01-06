@@ -10,16 +10,16 @@ const { data } = Astro.props;
 >
   <div class="mx-auto max-w-6xl lg:pr-4">
     <div class="my-9">
-      <p class="text-base font-semibold leading-7 text-accent-300 uppercase">
+      <p class="text-base font-semibold leading-7 text-primary-600 uppercase">
         {data.upperHeading}
       </p>
       <h1
-        class="mt-0 text-3xl font-bold tracking-tight text-muted-700 sm:text-4xl"
+        class="mt-0 text-5xl font-bold font-serif tracking-tight text-primary-800"
       >
         {data.heading}
       </h1>
       <p
-        class="mt-6 text-xl leading-8 text-muted-700"
+        class="mt-6 text-xl leading-8 text-muted-900"
         set:html={data.description}
       />
     </div>
@@ -54,10 +54,14 @@ const { data } = Astro.props;
     </svg>
   </div>
   <div class="mt-12 flex flex-col justify-center align-middle">
-    <h2 class="mt-0 text-3xl font-bold tracking-tight text-muted-700 sm:text-4xl self-center"
+    <h2
+      class="mt-0 text-6xl font-serif font-bold text-primary-700 self-center"
       set:html={data.membersTitle}
     />
-    <div class="h-2 w-3/12 bg-gradient-to-r from-primary-700 via-muted-200 to-accent-700 self-center rounded-sm mt-3 mb-8"></div>
+    <div
+      class="h-2 w-3/12 bg-gradient-to-r from-primary-700 via-primary-400 to-primary-700 self-center rounded-sm mt-3 mb-8"
+    >
+    </div>
     <ul role="list" class="flex flex-wrap justify-center gap-6 lg:gap-9">
       {
         data.members.map((member) => (

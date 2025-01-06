@@ -14,9 +14,8 @@ const multiEngineRating = {
       imagePath: "/src/assets/LAFA-ME-cover.jpg",
       imageAlt:
         "LA Flight Academy student flying a multi-engine Piper Seminole aircraft",
-      headerH1: `Multi-Engine <br class="hidden lg:block" ><span class="bg-gradient-to-br from-primary-700 via-muted-200 to-primary-700 bg-clip-text text-transparent">Rating</span>`,
-      paragraph:
-        `Master the complexities of multi-engine flight and take your piloting skills to the next level. At LA Flight Academy, we provide focused training to help you earn your Multi-Engine Rating quickly and efficiently, opening up a world of opportunities in aviation.`,
+      headerH1: `Multi-Engine <br>Rating</span>`,
+      paragraph: `Master the complexities of multi-engine flight and take your piloting skills to the next level. At LA Flight Academy, we provide focused training to help you earn your Multi-Engine Rating quickly and efficiently, opening up a world of opportunities in aviation.`,
       buttons: [
         {
           name: "Enroll Today",
