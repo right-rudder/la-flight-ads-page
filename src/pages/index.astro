@@ -10,6 +10,10 @@ import indexFormData from "../data/indexFormData.js";
 import homePage from "../data/homePage";
 import programsSwiper from "../data/programs";
 import ProgramSwiper from "../components/ProgramSwiper.astro";
+import FleetComp from "../components/FleetComp.astro";
+import fleetCompData from "../data/fleetComp";
+import CTAFinancing from "../components/CTAFinancing.astro";
+import financingCompData from "../data/financingComp";
 import BlogFeed from "../components/BlogFeed.astro";
 import PageSummary from "../components/PageSummary.astro";
 
@@ -40,6 +44,8 @@ const { data } = homePage;
   <HomeHeader />
   <PageSummary content={welcome} />
   <ProgramSwiper content={programsSwiper} />
+  <FleetComp content={fleetCompData}/>
+  <CTAFinancing content={financingCompData} />
   <Testimonials content={testimonialsData} />
   <BlogFeed data={blogfeed} />
   <CTAColor content={CTAFlight} />
