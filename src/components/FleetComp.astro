@@ -20,25 +20,25 @@ if (!images[content.imagePath]) {
   {/* Fleet Image */}
   <Image
     src={images[content.imagePath]()}
-    alt={content.imageAlt || "Fleet image"}
+    alt={content.imageAlt || "LA Flight Academy aircraft on the runway"}
     loading="lazy"
     class="relative -z-0 object-cover lg:w-6/12"
   />
 
   {/* Decorative Background */}
-  <div class="w-3/12 bg-muted-400 z-10 absolute h-full hidden lg:block lg:left-[40%] skew-x-12 overflow-hidden"></div>
+  <div class="w-3/12 bg-muted-200 z-10 absolute h-full hidden lg:block lg:left-[40%] skew-x-12 overflow-hidden"></div>
 
   {/* Fleet Content */}
-  <div class="z-20 w-full mx-auto px-5 lg:px-10 py-8 bg-muted-400 flex flex-col justify-center items-center lg:items-start gap-8">
+  <div class="z-20 w-full lg:mx-auto px-5 lg:px-10 py-8 bg-muted-200 flex flex-col justify-center items-start gap-8">
     {/* Header */}
-    <h2 class="text-4xl font-bold text-primary-800 text-center">
+    <h2 class="text-4xl font-bold text-primary-800 text-center self-center">
       {content.header}
     </h2>
-    <div class="h-1 w-24 bg-primary-700 rounded-sm"></div>
+    <div class="h-1 w-24 bg-primary-700 rounded-sm self-center"></div>
 
     {/* Fleet Details */}
     {content.fleet?.map((plane) => (
-      <article class="flex gap-4 items-start group">
+      <article class="flex gap-4 items-start justify-start text-left pl-8 group">
         <TbPlaneTilt className="h-11 w-11 text-primary-800 group-hover:animate-pulse" />
         <div class="w-10/12">
           <h3 class="text-xl font-semibold text-primary-700">
@@ -56,7 +56,7 @@ if (!images[content.imagePath]) {
       {content.buttons?.map((btn) => (
         <a
           href={btn.link}
-          class="btn-accent w-full md:w-auto"
+          class="btn-accent w-full md:w-auto mx-auto"
           aria-label={`Navigate to ${btn.name}`}
         >
           {btn.name}
