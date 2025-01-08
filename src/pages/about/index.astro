@@ -1,11 +1,13 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeaderScreen from "../../components/HeaderScreen.astro";
-import StaffGrid from "../../components/StaffGrid.astro";
 import CTAColor from "../../components/CTAColor.astro";
 import CTAFlight from "../../data/CTAFlight.js";
 import about from "../../data/about.js";
 import AboutUs from "../../components/AboutUs.astro";
+import Form from "../../components/Form.astro";
+import indexFormData from "../../data/indexFormData.js";
+
 
 const { data } = about;
 ---
@@ -17,9 +19,8 @@ const { data } = about;
 >
 
   <HeaderScreen content={data.header} />
-  <!-- <StaffGrid data={data.staffGrid} /> -->
-
   <AboutUs />
+  <Form content={indexFormData}/>
   <CTAColor content={CTAFlight}/>
 
 </BaseLayout>
