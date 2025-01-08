@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import StaffGrid from "../../components/StaffGrid.astro";
+import CTAColor from "../../components/CTAColor.astro";
+import CTAFlight from "../../data/CTAFlight.js";
+import about from "../../data/about.js";
+import AboutUs from "../../components/AboutUs.astro";
+
+const { data } = about;
+---
+
+<BaseLayout 
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+
+  <HeaderScreen content={data.header} />
+  <!-- <StaffGrid data={data.staffGrid} /> -->
+
+  <AboutUs />
+  <CTAColor content={CTAFlight}/>
+
+</BaseLayout>
