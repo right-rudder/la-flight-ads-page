@@ -1,0 +1,25 @@
+---
+import galleryData from '../data/galleryData';
+import ImageCompGallery from './ImageCompGallery.astro';
+
+const { pictures } = galleryData.data;
+---
+
+<section class="gallery-section py-12 bg-gray-100">
+  <div class="container mx-auto px-4">
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {pictures.map((image) => (
+        <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <ImageCompGallery
+            imagePath={image.imagePath}
+            imageAlt={image.imageAlt}
+            loading="eager"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
