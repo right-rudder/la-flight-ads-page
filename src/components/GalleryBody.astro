@@ -9,17 +9,80 @@ const { pictures } = galleryData.data;
   <div class="container mx-auto px-4">
 
     <!-- Gallery Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      {pictures.map((image) => (
-        <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+    <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {pictures.map((image, index) => (
+        <div
+          class="gallery-item overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+          data-index={index}
+          data-image-path={image.imagePath}
+          data-image-alt={image.imageAlt}
+        >
           <ImageCompGallery
             imagePath={image.imagePath}
             imageAlt={image.imageAlt}
             loading="eager"
-            class="w-full h-full object-cover"
+            styles="w-full h-full object-cover"
           />
         </div>
       ))}
     </div>
   </div>
+
+  <!-- Modal -->
+  <div id="image-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-75 backdrop-blur-sm">
+    <div class="relative">
+      <button
+        id="close-modal"
+        class="absolute top-2 right-2 text-white bg-gray-900 rounded-full p-1 lg:p-2 text-xs lg:text-md hover:bg-gray-700"
+      >
+        ✖
+      </button>
+      <img
+        id="modal-image"
+        src=""
+        alt=""
+        class="max-w-[90vw] max-h-[90vh] w-auto h-auto rounded-lg"
+      />
+    </div>
+  </div>
+
+  <!-- Add JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('image-modal');
+      const modalImage = document.getElementById('modal-image');
+      const closeModal = document.getElementById('close-modal');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const imagePath = item.getAttribute('data-image-path');
+          const imageAlt = item.getAttribute('data-image-alt');
+
+          modalImage.src = imagePath;
+          modalImage.alt = imageAlt;
+
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      closeModal.addEventListener('click', () => {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      });
+
+      // Close modal when clicking outside the image
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('flex');
+          modal.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  </script>
 </section>
