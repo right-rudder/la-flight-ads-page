@@ -6,8 +6,8 @@ const {
   imagePath,
   imageAlt,
   quality = 60,
-  styles = "w-full h-full object-cover",
-  loading = "eager",
+  styles,
+  loading,
 } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
