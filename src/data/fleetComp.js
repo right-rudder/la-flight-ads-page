@@ -107,7 +107,7 @@ const fleetCompData = {
   buttons: [
     {
       name: "Learn More",
-      link: "/about/fleet",
+      link: "/packages/fleet",
       primary: true,
     },
   ],
