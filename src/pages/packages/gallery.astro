@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import CTAColor from "../../components/CTAColor.astro";
+import CTAFlight from "../../data/CTAFlight.js";
+import GalleryBody from "../../components/GalleryBody.astro";
+import ProgramSwiper from "../../components/ProgramSwiper.astro";
+import programsSwiper from "../../data/programs";
+
+import galleryData from "../../data/galleryData.js";
+
+const { data } = galleryData;
+
+---
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+  >
+  
+  <HeaderScreen content ={data.header} />
+  <GalleryBody />
+  <ProgramSwiper content={programsSwiper} />
+  <CTAColor content={CTAFlight} />
+  
+  <script src="../../scripts/creativeSwiper.js"></script>
+</BaseLayout>
