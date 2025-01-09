@@ -3,7 +3,7 @@ import {
 } from "/src/consts.ts";
 
 // Dynamically import all images from the folder
-const images = import.meta.glob("/src/assets/gallery/*.{jpeg,jpg,png,gif,webp}", { eager: true });
+const images = import.meta.glob("/public/gallery/*.{jpeg,jpg,png,gif,webp}", { eager: true });
 
 const galleryData = {
   data: {
@@ -39,7 +39,8 @@ const galleryData = {
     pictures: Object.keys(images).map((path) => {
       const filename = path.split("/").pop(); // Get file name for alt text
       return {
-        imagePath: path, // Remove `/src` to match your assets URL
+        imagePath: path,
+        imagePathPub: path.replace("/public", ""), // Remove `/public` URL
         imageAlt: filename?.replace(/[-_]/g, " ").replace(/\.[^/.]+$/, "") || "Gallery image", // Generate alt text from filename
       };
     }),
