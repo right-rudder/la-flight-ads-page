@@ -5,13 +5,9 @@ import CTAColor from "../components/CTAColor.astro";
 import CTAFlight from "../data/CTAFlight.js";
 import Testimonials from "../components/Testimonials.astro";
 import testimonialsData from "../data/testimonialsData.js";
-import Form from "../components/Form.astro";
-import indexFormData from "../data/indexFormData.js";
 import homePage from "../data/homePage";
 import programsSwiper from "../data/programs";
 import ProgramSwiper from "../components/ProgramSwiper.astro";
-import FleetComp from "../components/FleetComp.astro";
-import fleetCompData from "../data/fleetComp";
 import CTAFinancing from "../components/CTAFinancing.astro";
 import financingCompData from "../data/financingComp";
 import BlogFeed from "../components/BlogFeed.astro";
@@ -44,7 +40,6 @@ const { data } = homePage;
   <HomeHeader />
   <PageSummary content={welcome} />
   <ProgramSwiper content={programsSwiper} />
-  <FleetComp content={fleetCompData}/>
   <CTAFinancing content={financingCompData} />
   <Testimonials content={testimonialsData} />
   <BlogFeed data={blogfeed} />
