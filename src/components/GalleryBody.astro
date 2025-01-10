@@ -16,6 +16,8 @@ const { pictures } = galleryData.data;
           data-index={index}
           data-image-path={image.imagePathPub}
           data-image-alt={image.imageAlt}
+          data-widths={JSON.stringify([240, 540, 720, 1080, 1440])}
+          data-sizes="(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1200px) 720px, (max-width: 1600px) 1080px, 1440px"
         >
           <ImageCompGallery
             imagePath={image.imagePath}
@@ -44,6 +46,9 @@ const { pictures } = galleryData.data;
         src=""
         alt=""
         class="max-w-[90vw] max-h-[90vh] w-auto h-auto rounded-lg"
+        sizes=""
+        srcset=""
+        loading="lazy"
       />
     </div>
   </div>
@@ -60,8 +65,17 @@ const { pictures } = galleryData.data;
         item.addEventListener('click', () => {
           const imagePath = item.getAttribute('data-image-path');
           const imageAlt = item.getAttribute('data-image-alt');
+          const widths = JSON.parse(item.getAttribute('data-widths'));
+          const sizes = item.getAttribute('data-sizes');
 
-          modalImage.src = imagePath;
+          // Generate srcset attribute for responsive images
+          const srcset = widths
+            .map((width) => `${imagePath}?w=${width} ${width}w`)
+            .join(', ');
+
+          modalImage.src = `${imagePath}?w=720`; // Default resolution for fast loading
+          modalImage.srcset = srcset;
+          modalImage.sizes = sizes;
           modalImage.alt = imageAlt;
 
           modal.classList.remove('hidden');
@@ -74,7 +88,9 @@ const { pictures } = galleryData.data;
       closeModal.addEventListener('click', () => {
         modal.classList.remove('flex');
         modal.classList.add('hidden');
-        modalImage.src = "/plane-loading-gif.gif";
+        modalImage.src = "";
+        modalImage.srcset = "";
+        modalImage.sizes = "";
         document.body.style.overflow = '';
       });
 
@@ -83,7 +99,9 @@ const { pictures } = galleryData.data;
         if (e.target === modal) {
           modal.classList.remove('flex');
           modal.classList.add('hidden');
-          modalImage.src = "/plane-loading-gif.gif";
+          modalImage.src = "";
+          modalImage.srcset = "";
+          modalImage.sizes = "";
           document.body.style.overflow = '';
         }
       });
