@@ -8,6 +8,8 @@ const {
   quality = 30,
   styles,
   loading,
+  widths,
+  sizes
 } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -25,4 +27,6 @@ if (!images[imagePath])
   class={styles}
   quality={quality}
   loading={loading}
+  widths={widths}
+  sizes={sizes}
 />

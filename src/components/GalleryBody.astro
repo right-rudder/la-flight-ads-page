@@ -22,6 +22,8 @@ const { pictures } = galleryData.data;
             imageAlt={image.imageAlt}
             loading="eager"
             styles="w-full h-full object-cover"
+            widths={[240, 540, 720, 1080, 1440]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1200px) 720px, (max-width: 1600px) 1080px, 1440px`}
           />
         </div>
       ))}
@@ -72,6 +74,7 @@ const { pictures } = galleryData.data;
       closeModal.addEventListener('click', () => {
         modal.classList.remove('flex');
         modal.classList.add('hidden');
+        modalImage.src = "/plane-loading-gif.gif";
         document.body.style.overflow = '';
       });
 
@@ -80,6 +83,7 @@ const { pictures } = galleryData.data;
         if (e.target === modal) {
           modal.classList.remove('flex');
           modal.classList.add('hidden');
+          modalImage.src = "/plane-loading-gif.gif";
           document.body.style.overflow = '';
         }
       });
