@@ -36,11 +36,34 @@ export const navbarLinks = [
       },
     ],
   },
+  // {
+  //   name: "Packages",
+  //   link: "/packages/gallery",
+  //   mobileLink: false,
+  //   submenu: [
+  //     {
+  //       name: "Gallery",
+  //       link: "/packages/gallery",
+  //     },
+  //     {
+  //       name: "Fleet",
+  //       link: "/packages/fleet",
+  //     },
+  //     {
+  //       name: "Crew",
+  //       link: "/packages/crew",
+  //     },
+  //   ],
+  // },
   {
-    name: "Packages",
-    link: "/packages/gallery",
+    name: "About",
+    link: "/about",
     mobileLink: false,
     submenu: [
+      {
+        name: "About Us",
+        link: "/about",
+      },
       {
         name: "Gallery",
         link: "/packages/gallery",
@@ -52,17 +75,6 @@ export const navbarLinks = [
       {
         name: "Crew",
         link: "/packages/crew",
-      },
-    ],
-  },
-  {
-    name: "About",
-    link: "/about",
-    mobileLink: false,
-    submenu: [
-      {
-        name: "About Us",
-        link: "/about",
       },
       {
         name: "Financing",
