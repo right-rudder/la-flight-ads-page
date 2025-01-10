@@ -16,16 +16,16 @@ const { pictures } = galleryData.data;
           data-index={index}
           data-image-path={image.imagePathPub}
           data-image-alt={image.imageAlt}
-          data-widths={JSON.stringify([240, 540, 720, 1080, 1440])}
-          data-sizes="(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1200px) 720px, (max-width: 1600px) 1080px, 1440px"
+          data-widths={JSON.stringify([240, 540, 720, 1080, 1440, 1980])}
+          data-sizes="(max-width: 300px) 240px, (max-width: 660px) 540px, (max-width: 900px) 720px, (max-width: 1200px) 1080px, (max-width: 1800px) 1440px, 1920px"
         >
           <ImageCompGallery
             imagePath={image.imagePath}
             imageAlt={image.imageAlt}
-            loading="eager"
+            loading="lazy"
             styles="w-full h-full object-cover"
             widths={[240, 540, 720, 1080, 1440, 1980]}
-            sizes={`(max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px`}
+            sizes={`(max-width: 300px) 240px, (max-width: 660px) 540px, (max-width: 900px) 720px, (max-width: 1200px) 1080px, (max-width: 1800px) 1440px, 1920px`}
           />
         </div>
       ))}
@@ -48,7 +48,7 @@ const { pictures } = galleryData.data;
         class="max-w-[90vw] max-h-[90vh] w-auto h-auto rounded-lg"
         sizes=""
         srcset=""
-        loading="lazy"
+        loading="eager"
       />
     </div>
   </div>
