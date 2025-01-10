@@ -56,12 +56,6 @@ export const navbarLinks = [
     ],
   },
   {
-    name: "Financing",
-    link: "https://apply.stratus.finance/laflightacademy1303242",
-    mobileLink: true,
-    submenu: [],
-  },
-  {
     name: "About",
     link: "/about",
     mobileLink: false,
@@ -70,6 +64,10 @@ export const navbarLinks = [
         name: "About Us",
         link: "/about",
       },
+      {
+        name: "Financing",
+        link: "https://apply.stratus.finance/laflightacademy1303242",
+      },    
       {
         name: "Blog",
         link: "/blog",

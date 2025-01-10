@@ -59,7 +59,7 @@ const commercialPilot = {
             "Our ground school sessions provide in-depth instruction on advanced aerodynamics, commercial flight operations, FAA regulations, and safety protocols. We’ll also cover topics such as weight and balance, performance calculations, and advanced navigation techniques.",
             "These classes are designed to prepare you for the FAA Commercial Pilot Knowledge Test, ensuring you have a solid foundation in the theoretical aspects of commercial flying.",
           ],
-          imagePath: "/src/assets/avery-evans-studying.jpg",
+          imagePath: "/src/assets/lafa-student-taking-ground-lessons-2.jpg",
           imageAlt: "Students in a classroom at LA Flight Academy",
         },
         {
