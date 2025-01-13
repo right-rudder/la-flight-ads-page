@@ -8,7 +8,18 @@ import ImageComp from "./ImageComp.astro";
   class="relative h-screen overflow-hidden flex items-center justify-center md:justify-end p-0 m-0"
   aria-label="Header section featuring a video background and text introducing LA Flight Academy"
 >
-  {
+  <div class="absolute -z-30 inset-0" aria-hidden="true">
+    <ImageComp
+      imagePath="/src/assets/LAFA-PP-cover.jpg"
+      imageAlt="LA flight academy aircraft flying over Los Angeles, California"
+      loading="eager"
+      styles="object-cover h-full w-full object-center animate-slow-zoom"
+      widths={[240, 540, 720, 1080, 1440, 1980]}
+      sizes={`(max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px`}
+    />
+  </div>
+
+  <!-- {
     random && (
       <video
         autoplay
@@ -26,7 +37,7 @@ import ImageComp from "./ImageComp.astro";
     !random && (
       <div class="absolute -z-30 inset-0" aria-hidden="true">
         <ImageComp
-          imagePath="/src/assets/lafa-pilot-programs-index-cover.jpg"
+          imagePath="/src/assets/lafa-pilot-student-plane-piper-cherokee-ready-to-take-off.jpg"
           imageAlt="LA flight academy aircraft flying over Los Angeles, California"
           loading="eager"
           styles="object-cover h-full w-full object-center"
@@ -35,7 +46,7 @@ import ImageComp from "./ImageComp.astro";
         />
       </div>
     )
-  }
+  } -->
   <div
     class="absolute h-full w-full bg-white opacity-60 md:opacity-40 -z-20 inset-0"
     aria-hidden="true"
@@ -52,5 +63,9 @@ import ImageComp from "./ImageComp.astro";
     >
       Accelerated Flight Training Programs in Los Angeles
     </h1>
+    <div class="pt-16 w-full flex justify-end gap-8 md:gap-16">
+      <a href="/enroll-now" class="btn-primary text-2xl">Enroll</a>
+      <a href="/path" class="btn-primary text-2xl">How to become a pilot</a>  
+    </div>
   </div>
 </section>
