@@ -24,7 +24,7 @@ const pilotTrainingGuide = {
         {
           name: "Discovery Flight",
           link: "/discovery-flight",
-          primary: false,
+          primary: true,
         },
       ],
     },
