@@ -99,9 +99,19 @@ const fleetCompData = {
     {
       name: "N4313F",
       rates: "($175HR/$165 block)",
-      description: "$175/hour or $165/hour (10 hour block)",
+      description:
+        "This Piper Cherokee is a reliable and versatile piston-single aircraft, ideal for Private Pilot and Time-Building training. Manufactured in 1978.",
       image: "/src/assets/N4313F.jpg",
-      details: ["$175/hour or $165/hour (10 hour block)"],
+      details: [
+        "1978 Piper Cherokee (P28A)",
+        "160hp — Piston-Single",
+        "Garmin GNS430 GPS",
+        "Traditional Round-Gauge Panel",
+        "Comfortable Four-Seat Configuration",
+        "Time-Building and Private Pilot Training",
+        "$160/hour (wet)",
+        "$150/hour 10 hour block (wet)",
+      ],
     },
   ],
   buttons: [
