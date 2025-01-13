@@ -36,6 +36,11 @@ export const navbarLinks = [
       },
     ],
   },
+  {
+    name: "Financing",
+    link: "https://apply.stratus.finance/laflightacademy1303242",
+    mobileLink: true,
+  },    
   // {
   //   name: "Packages",
   //   link: "/packages/gallery",
@@ -65,10 +70,6 @@ export const navbarLinks = [
         link: "/about",
       },
       {
-        name: "Gallery",
-        link: "/packages/gallery",
-      },
-      {
         name: "Fleet",
         link: "/packages/fleet",
       },
@@ -77,14 +78,15 @@ export const navbarLinks = [
         link: "/packages/crew",
       },
       {
-        name: "Financing",
-        link: "https://apply.stratus.finance/laflightacademy1303242",
-      },    
-      {
         name: "Blog",
         link: "/blog",
       },
     ],
+  },
+  {
+    name: "Gallery",
+    link: "/packages/gallery",
+    mobileLink: true,
   },
   {
     name: "Enroll Today",
