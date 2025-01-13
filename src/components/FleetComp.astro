@@ -16,7 +16,7 @@ if (!images[content.imagePath]) {
 
 ---
 
-<section class="h-min flex flex-col lg:flex-row relative">
+<section class="h-min flex flex-col lg:flex-row relative my-4">
   {/* Fleet Image */}
   <Image
     src={images[content.imagePath]()}
@@ -33,7 +33,7 @@ if (!images[content.imagePath]) {
   {/* Fleet Content */}
   <div class="z-20 w-full lg:mx-auto px-5 lg:px-10 py-8 bg-muted-200 flex flex-col justify-center items-start gap-8">
     {/* Header */}
-    <h2 class="text-4xl font-bold text-primary-800 text-center self-center">
+    <h2 class="text-4xl font-bold text-primary-800 text-center self-center font-serif">
       {content.header}
     </h2>
     <div class="h-1 w-24 bg-primary-700 rounded-sm self-center"></div>
@@ -58,7 +58,7 @@ if (!images[content.imagePath]) {
       {content.buttons?.map((btn) => (
         <a
           href={btn.link}
-          class="btn-accent w-full md:w-auto mx-auto"
+          class="btn-accent w-full md:w-auto mx-auto text-2xl"
           aria-label={`Navigate to ${btn.name}`}
         >
           {btn.name}
