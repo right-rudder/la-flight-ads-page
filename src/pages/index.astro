@@ -11,7 +11,12 @@ import ProgramSwiper from "../components/ProgramSwiper.astro";
 import CTAFinancing from "../components/CTAFinancing.astro";
 import financingCompData from "../data/financingComp";
 import BlogFeed from "../components/BlogFeed.astro";
-import PageSummary from "../components/PageSummary.astro";
+import Welcome from "../components/Welcome.astro";
+import FleetComp from "../components/FleetComp.astro";
+import fleetCompData from "../data/fleetComp";
+import CTAQuiz from "../components/CTAQuiz.astro";
+import CTAQuizData from "../data/CTAQuiz";
+
 
 const blogfeed = {
   upperHeading: "Our Blog",
@@ -38,8 +43,10 @@ const { data } = homePage;
   keywords={data.pageKeywords}
 >
   <HomeHeader />
-  <PageSummary content={welcome} />
+  <Welcome content={welcome} />
   <ProgramSwiper content={programsSwiper} />
+  <CTAQuiz content={CTAQuizData} />
+  <FleetComp content={fleetCompData}/>
   <CTAFinancing content={financingCompData} />
   <Testimonials content={testimonialsData} />
   <BlogFeed data={blogfeed} />
