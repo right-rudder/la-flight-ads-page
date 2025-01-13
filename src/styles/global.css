@@ -53,6 +53,10 @@
     object-position: 30%;
   }
 
+  .object-left-40 {
+    object-position: 40%;
+  }
+
   .backdrop-blur-sm {
     backdrop-filter: blur(10px);
   }  
