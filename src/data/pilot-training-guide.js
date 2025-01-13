@@ -1,7 +1,7 @@
 const pilotTrainingGuide = {
   data: {
     //SEO Header Stuff
-    pageTitle: "ASCEND to a Pilot Carreer | LA Flight Academy",
+    pageTitle: "ASCENT to a Pilot Career | LA Flight Academy",
     pageDescription:
       "Follow LA Flight Academy’s step-by-step guide to becoming a professional pilot. From earning your Private Pilot License to landing a job with a commercial airline, discover the complete pathway to success in aviation.",
     pageKeywords:
