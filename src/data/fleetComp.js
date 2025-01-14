@@ -11,7 +11,7 @@ const fleetCompData = {
     header: {
       stars: true,
       imagePath: "/src/assets/fleet-top.jpg",
-      imageAlt: "Photograph of an LA Flight Academy aircraft on the runway",
+      imageAlt: "Three LA Flight Academy aircraft on the patio",
       headerH1: `Our <br><span>FLEET</span>`,
       paragraph: `LA Flight Academy’s fleet is meticulously maintained to provide a safe, modern, and reliable training environment. Explore our range of Cessna and Piper aircraft, ideal for both beginners and advanced pilots.`,
       buttons: [
@@ -24,7 +24,7 @@ const fleetCompData = {
     },
   },
   imagePath: "/src/assets/LAFA-welcome-inside-plane.webp",
-  imageAlt: "LA Flight Academy picture of the inside of a plane",
+  imageAlt: "Inside of an LA Flight Academy aircraft on the runway",
   header: `Our Fleet`,
   fleet: [
     {
@@ -99,15 +99,25 @@ const fleetCompData = {
     {
       name: "N4313F",
       rates: "($175HR/$165 block)",
-      description: "$175/hour or $165/hour (10 hour block)",
+      description:
+        "This Piper Cherokee is a reliable and versatile piston-single aircraft, ideal for Private Pilot and Time-Building training. Manufactured in 1978.",
       image: "/src/assets/N4313F.jpg",
-      details: ["$175/hour or $165/hour (10 hour block)"],
+      details: [
+        "1978 Piper Cherokee (P28A)",
+        "160hp — Piston-Single",
+        "Garmin GNS430 GPS",
+        "Traditional Round-Gauge Panel",
+        "Comfortable Four-Seat Configuration",
+        "Time-Building and Private Pilot Training",
+        "$160/hour (wet)",
+        "$150/hour 10 hour block (wet)",
+      ],
     },
   ],
   buttons: [
     {
       name: "Learn More",
-      link: "/about/fleet",
+      link: "/packages/fleet",
       primary: true,
     },
   ],

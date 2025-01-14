@@ -60,7 +60,7 @@ const instrumentRating = {
             "Our ground school curriculum provides 15 hours of instruction focused on topics such as advanced weather theory, instrument navigation, IFR flight planning, and the National Airspace System. These lessons lay the foundation for understanding the complex world of instrument flying.",
             "With the guidance of our experienced instructors, you’ll prepare to pass the FAA Instrument Rating Knowledge Test, which assesses your understanding of instrument flight principles and regulations.",
           ],
-          imagePath: "/src/assets/avery-evans-studying.jpg",
+          imagePath: "/src/assets/lafa-student-taking-ground-lessons.jpg",
           imageAlt: "Students in a classroom at LA Flight Academy",
         },
         {

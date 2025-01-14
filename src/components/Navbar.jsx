@@ -113,7 +113,7 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className={`${navBar || openMobile ? "text-white group-last:bg-primary-100 group-last:text-primary-900" : "text-primary-900 group-last:bg-primary-800 group-last:text-white"} group-last:block font-medium text-xl duration-300 hover:underline decoration-primary-600 decoration-4 underline-offset-[10px] border-primary whitespace-nowrap group-last:font-normal group-last:px-0 group-last:rounded-sm group-last:hover:bg-primary-500 group-last:hover:text-primary-900 group-last:hover:no-underline group-last:hover:border-primary-500`}
+                          className={`${navBar || openMobile ? "text-white group-last:bg-primary-100 group-last:text-primary-900" : "text-primary-900 group-last:bg-primary-800 group-last:text-white"} group-last:block font-medium text-xl duration-300 hover:underline decoration-primary-600 decoration-4 underline-offset-[10px] border-primary whitespace-nowrap group-last:font-normal group-last:px-0 group-last:rounded-sm group-last:hover:bg-primary-500 group-last:hover:text-white group-last:hover:no-underline group-last:hover:border-primary-500`}
                         >
                           <span className="relative font-medium block group-last:py-3 group-last:px-5">
                             {item.name}
@@ -194,7 +194,7 @@ const Navbar = ({ pathname }) => {
                 <span className="sr-only">Open main menu</span>
 
                 <svg
-                  className={`${openMobile ? "hidden" : "block"} h-6 w-6 text-primary-950`}
+                  className={`${openMobile ? "hidden" : "block"} ${navBar ? "text-white" : "text-primary-900"} h-6 w-6 `}
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2.0"

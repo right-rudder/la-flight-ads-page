@@ -11,7 +11,7 @@ const privatePilotCourse = {
     // Top Header
     header: {
       stars: true,
-      imagePath: "/src/assets/lafa-private-pilot.jpg",
+      imagePath: "/src/assets/lafa-pilot-student-plane-piper-cherokee-ready-to-take-off.jpg",
       imageAlt:
         "LA Flight Academy student preparing for their first solo flight at Van Nuys Airport",
       headerH1: `Private <br>Pilot Course</span>`,
@@ -58,7 +58,7 @@ const privatePilotCourse = {
           paragraphs: [
             "Our ground school equips you with essential knowledge in aerodynamics, navigation, weather, regulations, and more. With expert instructors and tailored study materials, you'll be prepared to ace the FAA Knowledge Test and build a solid foundation for flight training.",
           ],
-          imagePath: "/src/assets/avery-evans-studying.jpg",
+          imagePath: "/src/assets/lafa-student-taking-ground-lessons-2.jpg",
           imageAlt: "LA Flight Academy students during a ground school session",
         },
         {

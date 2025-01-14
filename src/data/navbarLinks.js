@@ -36,30 +36,56 @@ export const navbarLinks = [
       },
     ],
   },
-  {
-    name: "Financing",
-    link: "https://apply.stratus.finance/laflightacademy1303242",
-    mobileLink: true,
-    submenu: [],
-  },
+  // {
+  //   name: "Packages",
+  //   link: "/packages/gallery",
+  //   mobileLink: false,
+  //   submenu: [
+  //     {
+  //       name: "Gallery",
+  //       link: "/packages/gallery",
+  //     },
+  //     {
+  //       name: "Fleet",
+  //       link: "/packages/fleet",
+  //     },
+  //     {
+  //       name: "Crew",
+  //       link: "/packages/crew",
+  //     },
+  //   ],
+  // },
   {
     name: "About",
-    link: "/about/crew",
+    link: "/about",
     mobileLink: false,
     submenu: [
       {
-        name: "Crew",
-        link: "/about/crew",
+        name: "About Us",
+        link: "/about",
       },
       {
         name: "Fleet",
-        link: "/about/fleet",
+        link: "/packages/fleet",
+      },
+      {
+        name: "Crew",
+        link: "/packages/crew",
+      },
+      {
+        name: "Financing",
+        link: "https://apply.stratus.finance/laflightacademy1303242",
       },
       {
         name: "Blog",
         link: "/blog",
       },
     ],
+  },
+  {
+    name: "Gallery",
+    link: "/packages/gallery",
+    mobileLink: true,
   },
   {
     name: "Enroll Today",
