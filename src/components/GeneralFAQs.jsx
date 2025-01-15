@@ -3,7 +3,6 @@ import { IoIosArrowForward } from "react-icons/io";
 import parse from "html-react-parser";
 
 const GeneralFAQs = () => {
-
   const faqs = [
     {
       question: "Where is LA Flight Academy located?",
@@ -83,8 +82,9 @@ const GeneralFAQs = () => {
   ];
 
   const [openQuestions, setOpenQuestions] = useState(
-    new Array(faqs.length).fill(false),
+    new Array(faqs.length).fill(false)
   );
+  const [showAll, setShowAll] = useState(false);
 
   const toggleFAQ = (index) => {
     const updatedOpenQuestions = [...openQuestions];
@@ -92,17 +92,19 @@ const GeneralFAQs = () => {
     setOpenQuestions(updatedOpenQuestions);
   };
 
+  const visibleFAQs = showAll ? faqs : faqs.slice(0, 7);
+
   return (
     <div className="flex flex-col gap-5 max-w-3xl mt-10 lg:mt-0 mx-5">
       <h2 className="uppercase text-primary-800/80 tracking-widest text-center">
         FAQ's
       </h2>
-      <h3 className="text-4xl lg:text-6xl mx-auto text-center mb-5 text-primary-800">
+      <h3 className="text-4xl lg:text-6xl mx-auto font-serif text-center mb-5 text-primary-800">
         {"Frequently Asked Questions"}
       </h3>
       <div className="flex flex-col gap-5 w-full">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border-b border-main-black/30 pb-2">
+        {visibleFAQs.map((faq, index) => (
+          <div key={index} className="border-b border-main-black/30 pb-2" data-aos="fade up">
             <button
               onClick={() => toggleFAQ(index)}
               className="text-xl lg:text-2xl w-full text-left flex justify-between py-3 text-primary-800/90 hover:text-main-blue"
@@ -119,12 +121,20 @@ const GeneralFAQs = () => {
                 openQuestions[index] ? "max-h-min" : "max-h-0"
               }`}
             >
-              <div className="text-primary-800/60 text-lg lg:text-xl pl-5">
+              <div className="text-primary-800/80 text-lg lg:text-xl pl-5">
                 {parse(faq.answer)}
               </div>
             </div>
           </div>
         ))}
+        {!showAll && (
+          <button
+            onClick={() => setShowAll(true)}
+            className="btn-primary self-center"
+          >
+            Show More
+          </button>
+        )}
       </div>
     </div>
   );
