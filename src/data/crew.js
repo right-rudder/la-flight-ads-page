@@ -63,11 +63,11 @@ const crew = {
           imagePath: "/src/assets/Cameron-Diamond-CFI.jpg",
           imageAlt: "Cameron Diamond, CFI at LA Flight Academy",
         },
-        {
-          name: `Roman Kozlenko<br><small class="text-white font-normal text-sm">CFI</small>`,
-          imagePath: "/src/assets/Roman-Kozlenko-CFI.jpg",
-          imageAlt: "Roman Kozlenko, CFI at LA Flight Academy",
-        },
+        // {
+        //   name: `Roman Kozlenko<br><small class="text-white font-normal text-sm">CFI</small>`,
+        //   imagePath: "/src/assets/Roman-Kozlenko-CFI.jpg",
+        //   imageAlt: "Roman Kozlenko, CFI at LA Flight Academy",
+        // },
         {
           name: `Parker Capp<br><small class="text-white font-normal text-sm">CFI</small>`,
           imagePath: "/src/assets/Parker-Capp-CFI.jpg",
