@@ -78,7 +78,7 @@ const Navbar = ({ pathname }) => {
     <nav className="w-full h-0 sticky inset-0 z-50 font-serif">
       <div
         className={`${
-          navBar || openMobile ? "bg-primary-800" : "bg-transparent"
+          navBar || openMobile ? "bg-primary-800" : "bg-gradient-to-b from-white/60 via-white/60 to-transparent pb-10"
         } duration-500`}
       >
         <div className="px-5 max-w-7xl mx-auto top-0">
@@ -97,7 +97,7 @@ const Navbar = ({ pathname }) => {
                   aria-label={`${COMPANY_NAME} logo`}
                   title={COMPANY_NAME}
                   loading="eager"
-                  className={`${navBar || openMobile ? "h-20 lg:h-26 bg-white p-2 px-8" : "mt-4 h-20 lg:h-28"} mx-auto object-contain duration-500`}
+                  className={`${navBar || openMobile ? "h-20 lg:h-20 bg-white p-1 px-8" : "mt-4 h-20 lg:h-28"} mx-auto object-contain duration-500`}
                 />
               </a>
               <div className="hidden lg:flex 2xl:justify-end w-full text-lg">
