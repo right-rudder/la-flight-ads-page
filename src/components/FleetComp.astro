@@ -16,7 +16,7 @@ if (!images[content.imagePath]) {
 
 ---
 
-<section class="h-min flex flex-col lg:flex-row relative my-4">
+<section class="h-min flex flex-col lg:flex-row relative my-16">
   {/* Fleet Image */}
   <Image
     src={images[content.imagePath]()}
@@ -40,7 +40,7 @@ if (!images[content.imagePath]) {
 
     {/* Fleet Details */}
     {content.fleet?.map((plane) => (
-      <article class="flex gap-4 items-start justify-start text-left pl-8 group">
+      <article class="flex gap-4 items-start justify-start text-left pl-8 group" data-aos="fade-right">
         <TbPlaneTilt className="h-11 w-11 text-primary-800 group-hover:animate-pulse" />
         <div class="w-10/12">
           <h3 class="text-xl font-semibold text-primary-700">
