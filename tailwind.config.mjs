@@ -9,6 +9,7 @@ export default {
         sans: ["Quicksand Variable", ...defaultTheme.fontFamily.sans],
         bebas: ["Bebas Neue", ...defaultTheme.fontFamily.sans],
         serif: ["Roboto Slab Variable", ...defaultTheme.fontFamily.serif],
+        logo: ["Zilla Slab", ...defaultTheme.fontFamily.serif],
         tourney: ["Tourney Variable", ...defaultTheme.fontFamily.serif],
         stock: [
           "ui-sans-serif",
