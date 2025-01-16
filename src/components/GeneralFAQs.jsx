@@ -10,7 +10,7 @@ const GeneralFAQs = () => {
         "We’re located at Van Nuys Airport in Los Angeles, CA, one of the busiest general aviation airports in the world.",
     },
     {
-      question: "What are LAF's hours of operation?",
+      question: "What are LAFA's hours of operation?",
       answer:
         "We operate Monday through Sunday from 8:00 AM to 9:00 PM. For after-hours inquiries, you can contact us directly at (818) 389-1771.",
     },
