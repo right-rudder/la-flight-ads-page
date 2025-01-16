@@ -21,9 +21,9 @@ const quizPage = {
     header: {
       stars: true,
       imagePath:
-        "/src/assets/uft-logo-new-bg-gradient-blue.png",
+        "/src/assets/lafa-cfi-watching-student-maneuver-plane-piper-cherokee-outside-hangar.jpg",
       imageAlt: `${COMPANY_NAME} logo`,
-      headerH1: `<div class="bg-gradient-to-br from-accent-500 via-accent-200 to-accent-400 bg-clip-text text-transparent">Contact</div><div class="bg-gradient-to-br from-accent-500 via-accent-200 to-accent-400 bg-clip-text text-transparent">${COMPANY_NAME}</div>`,
+      headerH1: `Quiz</br>${COMPANY_NAME}`,
       paragraph:
         `Whether you’re ready to start your flight training, schedule maintenance for your aircraft, or simply have questions about our programs, the team at ${COMPANY_NAME} is here to assist you.`,
       buttons: [
@@ -35,11 +35,6 @@ const quizPage = {
         {
           name: "Discovery Flight",
           link: "/discovery-flight",
-          primary: false,
-        },
-        {
-          name: "Maintenance Form",
-          link: "/services/maintenance",
           primary: false,
         },
       ],
