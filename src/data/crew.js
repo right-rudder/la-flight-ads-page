@@ -74,7 +74,7 @@ const crew = {
           imageAlt: "Parker Capp, CFI at LA Flight Academy",
         },
         {
-          name: `Matthew Ronder<br><small class="text-white font-normal text-sm">Seid-CFI</small>`,
+          name: `Matthew Ronder-Seid<br><small class="text-white font-normal text-sm">CFI</small>`,
           imagePath: "/src/assets/Matthew-Ronder-Seid-CFI.jpg",
           imageAlt: "Matthew Ronder, Seid-CFI at LA Flight Academy",
         },
