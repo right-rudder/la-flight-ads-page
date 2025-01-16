@@ -22,8 +22,8 @@ const content = {
 ---
 
 <section class="py-8 bg-white">
-  <div class="flex flex-row justify-center gap-20">
-    <div class="w-4/12">
+  <div class="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-20">
+    <div class="w-10/12 lg:w-4/12">
       <h3 class="text-base font-semibold leading-7 text-primary-600 uppercase"
         set:html={content.upperH}
       />
@@ -35,7 +35,7 @@ const content = {
         set:html={content.text}
       />
     </div>
-    <div class="w-4/12 h-[80vh] overflow-hidden rounded-sm">
+    <div class="lg:w-4/12 h-[80vh] overflow-hidden rounded-sm">
       <ImageComp
         imagePath={content.imgPath}
         imageAlt={content.imgAlt}
@@ -46,15 +46,15 @@ const content = {
       />
     </div>
   </div>
-  <div class="flex flex-row justify-center gap-12 py-8">
-    <div class="w-4/12 flex flex-row justify-center items-center gap-4 p-10 py-6 border border-muted-400 transition-all duration-500 delay-100 hover:border-primary-400 hover:scale-105">
+  <div class="flex flex-col lg:flex-row justify-center gap-12 mx-4 py-8">
+    <div class="lg:w-4/12 flex flex-row justify-center items-center gap-4 p-10 py-6 border border-muted-400 transition-all duration-500 delay-100 hover:border-primary-400 hover:scale-105">
       <BsArrowUpRightSquareFill className="text-9xl text-center self-center text-primary-400"/>
       <div class="">
         <h2 class="text-2xl text-primary-950 font-bold">{content.missionH}</h2>
         <p class="">{content.missionP}</p>
       </div>
     </div>
-    <div class="w-4/12 flex flex-row justify-center items-center gap-4 p-10 py-6 border border-muted-400 transition-all duration-500 delay-100 hover:border-primary-400 hover:scale-105">
+    <div class="lg:w-4/12 flex flex-row justify-center items-center gap-4 p-10 py-6 border border-muted-400 transition-all duration-500 delay-100 hover:border-primary-400 hover:scale-105">
       <IoMdCheckboxOutline className="text-9xl text-center self-center text-primary-400"/>
       <div>
         <h2 class="text-2xl text-primary-950 font-bold">{content.visionH}</h2>
