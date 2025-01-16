@@ -14,7 +14,7 @@ const resultA = {
 
     header: {
       imagePath:
-        "/src/assets/lafa-cfi-watching-student-maneuver-plane-piper-cherokee-outside-hangar.jpg",
+        "/src/assets/lafa-pilot-student-plane-piper-cherokee-ready-to-take-off.jpg",
       imageAlt: `${COMPANY_NAME} CFI watching as student prepares to take first solo flight`,
       headerH1: "Sky's the Limit!",
       paragraph:
