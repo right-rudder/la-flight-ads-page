@@ -315,19 +315,31 @@ const REDIRECT_URL = content.redirect_url;
 
         // Serialize the form data
         const formData = new FormData(contactForm);
-        // Collect quiz answers
-        const answers = {};
-        formData.forEach((value, key) => (answers[key] = value));
 
-        // Calculate the most chosen option
-        const counts = { A: 0, B: 0, C: 0, D: 0 };
+        // Collect and count the quiz answers
+        const counts = { A: 0, B: 0, C: 0, D: 0 }; // Count for each category
+        const answerValues = { A: [], B: [], C: [], D: [] }; // Stores answers for each category
 
-        // Iterate through answers and count occurrences
+        // Iterate through all form entries
         for (const [key, value] of formData.entries()) {
-          if (counts[value] !== undefined) {
-            counts[value]++;
+          if (value.includes("freedom to explore") || value.includes("Navigate a solo flight")) {
+            counts.A++;
+            answerValues.A.push(value);
+          }
+          if (value.includes("technical challenges") || value.includes("Study thoroughly")) {
+            counts.B++;
+            answerValues.B.push(value);
+          }
+          if (value.includes("Helping others") || value.includes("Becoming an instructor")) {
+            counts.C++;
+            answerValues.C.push(value);
+          }
+          if (value.includes("thrill of adventure") || value.includes("Flying alongside")) {
+            counts.D++;
+            answerValues.D.push(value);
           }
         }
+
 
         // Log counts for debugging
         console.log("Counts:", counts);
