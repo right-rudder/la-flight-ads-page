@@ -4,11 +4,11 @@
 
 @layer components {
   .btn-primary {
-    @apply text-center font-bebas text-xl uppercase font-bold py-3 px-6 bg-primary-800 w-fit h-fit text-white rounded-sm hover:bg-primary-950 duration-300;
+    @apply text-center tracking-wide font-bebas font-light text-xl lg:text-2xl uppercase py-3 px-6 bg-primary-800 w-fit h-fit text-white rounded-sm hover:bg-primary-950 duration-300;
   }
 
   .btn-accent {
-    @apply text-center font-bebas uppercase py-3 px-6 w-fit rounded-sm duration-300 bg-primary-500 text-primary-950 font-medium text-xl hover:bg-primary-900 hover:text-white;
+    @apply text-center tracking-wide font-bebas font-light uppercase py-3 px-6 w-fit rounded-sm duration-300 bg-primary-100 text-primary-950 text-xl hover:bg-primary-900 hover:text-white;
   }
 
   .btn-animate {
@@ -64,6 +64,13 @@
   .gallery-item:hover img {
     transform: scale(1.05);
     transition: transform 0.3s ease;
-  }  
-}
+  }
 
+  .fade-out {
+    background-image:linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.1) 50%, black 100%), linear-gradient(to right, black 0%, transparent 10%, transparent 90%, black 100%), url(../assets/bg-clouds-from-above.webp);
+  }
+
+  /* * {
+    border:1px solid red;
+  } */
+}

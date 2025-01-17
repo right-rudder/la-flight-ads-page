@@ -11,12 +11,20 @@ export const footerLinks = [
         link: "/discovery-flight",
       },
       {
+        name: "Carreer Path",
+        link: "/path",
+      },
+      {
         name: "Flight Training",
         link: "/programs",
       },
       {
         name: "Contact Us",
         link: "/contact",
+      },
+      {
+        name: "Quiz",
+        link: "/quiz",
       },
     ],
   },
@@ -57,7 +65,7 @@ export const footerLinks = [
         link: "/about",
       },
       {
-        name: "Crew",
+        name: "Instructors",
         link: "/packages/crew",
       },
       {

@@ -20,8 +20,8 @@ export const COMPANY_NAME = "LA Flight Academy";
 export const COMPANY_NAME_CAPS = "LA FLIGHT ACADEMY";
 export const COMPANY_NICKNAME = "LAFA";
 export const LOGO_PRIMARY = "/LA-Flight-Academy-logo-blue.png";
-export const LOGO_SECONDARY = "";
-export const PHONE_NUMBER = "(818) 636-3131";
+export const LOGO_SECONDARY = "/LAFA-favicon.png";
+export const PHONE_NUMBER = "(818) 389-1771";
 export const ADDRESS_LINE_1 = "7900 Balboa Blvd., Unit G6";
 export const ADDRESS_LINE_2 = "Van Nuys, CA 91406";
 export const AIRPORT = "Van Nuys Airport";
@@ -46,8 +46,8 @@ export const LOCATIONS = [
     state: "CA",
     zip: "91406",
     gMaps: "https://maps.app.goo.gl/HMpiYABaAeTVrubEA",
-    phone: "(818) 636-3131",
-    forwardPhone: "(818) 636-3131",
+    phone: "(818) 389-1771",
+    forwardPhone: "(818) 389-1771",
   },
 ];
 export const COURSES = [

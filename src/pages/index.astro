@@ -6,8 +6,8 @@ import CTAFlight from "../data/CTAFlight.js";
 import Testimonials from "../components/Testimonials.astro";
 import testimonialsData from "../data/testimonialsData.js";
 import homePage from "../data/homePage";
-import programsSwiper from "../data/programs";
-import ProgramSwiper from "../components/ProgramSwiper.astro";
+import GridPrograms from "../components/GridPrograms.astro";
+import programs from "../data/programs";
 import CTAFinancing from "../components/CTAFinancing.astro";
 import financingCompData from "../data/financingComp";
 import BlogFeed from "../components/BlogFeed.astro";
@@ -16,6 +16,7 @@ import FleetComp from "../components/FleetComp.astro";
 import fleetCompData from "../data/fleetComp";
 import CTAQuiz from "../components/CTAQuiz.astro";
 import CTAQuizData from "../data/CTAQuiz";
+import GeneralFAQs from "../components/GeneralFAQs";
 
 
 const blogfeed = {
@@ -44,9 +45,14 @@ const { data } = homePage;
 >
   <HomeHeader />
   <Welcome content={welcome} />
-  <ProgramSwiper content={programsSwiper} />
+  <GridPrograms content={programs} />
   <CTAQuiz content={CTAQuizData} />
   <FleetComp content={fleetCompData}/>
+  <section class="my-14">
+    <div class="max-w-7xl mx-auto flex justify-center">
+      <GeneralFAQs client:visible />
+    </div>
+  </section>
   <CTAFinancing content={financingCompData} />
   <Testimonials content={testimonialsData} />
   <BlogFeed data={blogfeed} />

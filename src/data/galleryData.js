@@ -25,12 +25,12 @@ const galleryData = {
         {
           name: "Enroll Today",
           link: "/enroll-now",
-          primary: true,
+          primary: false,
         },
         {
           name: "Contact Us",
           link: "/contact",
-          primary: true,
+          primary: false,
         },
       ],
     },

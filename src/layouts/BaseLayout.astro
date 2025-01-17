@@ -7,10 +7,13 @@ import "@fontsource-variable/roboto-slab";
 import "@fontsource/bebas-neue";
 import "@fontsource-variable/quicksand";
 import "@fontsource-variable/tourney";
+import '@fontsource/zilla-slab';
 import Navbar from "../components/Navbar";
 const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords, ogImage } = Astro.props;
 import Banner from "../components/Banner.astro";
+import 'aos/dist/aos.css';
+
 ---
 
 <!doctype html>
@@ -31,5 +34,9 @@ import Banner from "../components/Banner.astro";
     </main>
     <Footer />
     <!-- <ChatWidget /> -->
+    <script>
+      import AOS from "aos";
+      AOS.init();
+    </script>
   </body>
 </html>

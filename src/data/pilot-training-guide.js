@@ -19,12 +19,12 @@ const pilotTrainingGuide = {
         {
           name: "Start Your Journey",
           link: "/enroll-now",
-          primary: true,
+          primary: false,
         },
         {
           name: "Discovery Flight",
           link: "/discovery-flight",
-          primary: true,
+          primary: false,
         },
       ],
     },

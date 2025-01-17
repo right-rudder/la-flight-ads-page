@@ -1,12 +1,24 @@
 export const navbarLinks = [
   {
-    name: "Pilot Path",
+    name: "Home",
+    link: "/",
+    mobileLink: true,
+    submenu: [],
+  },
+  {
+    name: "Instructors",
+    link: "/packages/crew",
+    mobileLink: true,
+    submenu: [],
+  },
+  {
+    name: "Career Path",
     link: "/path",
     mobileLink: true,
     submenu: [],
   },
   {
-    name: "Programs",
+    name: "Courses",
     link: "/programs",
     mobileLink: false,
     submenu: [
@@ -56,6 +68,12 @@ export const navbarLinks = [
   //   ],
   // },
   {
+    name: "Fleet",
+    link: "/packages/fleet",
+    mobileLink: true,
+    submenu: [],
+  },
+  {
     name: "About",
     link: "/about",
     mobileLink: false,
@@ -65,27 +83,18 @@ export const navbarLinks = [
         link: "/about",
       },
       {
-        name: "Fleet",
-        link: "/packages/fleet",
-      },
-      {
-        name: "Crew",
-        link: "/packages/crew",
-      },
-      {
         name: "Financing",
         link: "https://apply.stratus.finance/laflightacademy1303242",
+      },
+      {
+        name: "Gallery",
+        link: "/packages/gallery",
       },
       {
         name: "Blog",
         link: "/blog",
       },
     ],
-  },
-  {
-    name: "Gallery",
-    link: "/packages/gallery",
-    mobileLink: true,
   },
   {
     name: "Enroll Today",

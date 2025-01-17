@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
 import QuizForm from "../../components/Quiz.astro";
 import quizPage from "../../data/quiz-data";
 
@@ -12,8 +13,7 @@ const { data } = quizPage;
   keywords={data.pageKeywords}
 >
   <!-- <HeaderScreen content={data.header} /> -->
-  <div class="w-full h-32">
-  </div>
+  <HeaderScreen content={data.header} />
   <QuizForm content={data.info} />
 
   <script src="../../scripts/emailValidation.js"></script>
