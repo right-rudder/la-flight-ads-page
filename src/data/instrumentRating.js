@@ -64,15 +64,6 @@ const instrumentRating = {
           imageAlt: "Students in a classroom at LA Flight Academy",
         },
         {
-          title: "Simulated Flight Training",
-          paragraphs: [
-            "Using advanced flight simulators, you’ll gain hands-on experience with IFR procedures and navigation. Simulators provide a safe and effective way to practice scenarios such as entering holding patterns, flying instrument approaches, and handling emergency situations.",
-            "These sessions are designed to build your proficiency and confidence in operating solely by reference to instruments.",
-          ],
-          imagePath: "/src/assets/Flight-Simulation-Training.webp",
-          imageAlt: "Student practicing on an IFR simulator",
-        },
-        {
           title: "Flight Training",
           paragraphs: [
             "Your in-aircraft training begins with mastering IFR procedures, such as precision and non-precision approaches, departure and arrival procedures, and en-route navigation. You’ll log 40 hours of instrument time, including 15 hours with an instructor.",
