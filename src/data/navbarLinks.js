@@ -6,12 +6,6 @@ export const navbarLinks = [
     submenu: [],
   },
   {
-    name: "Instructors",
-    link: "/packages/crew",
-    mobileLink: true,
-    submenu: [],
-  },
-  {
     name: "Career Path",
     link: "/path",
     mobileLink: true,
@@ -70,6 +64,12 @@ export const navbarLinks = [
   {
     name: "Fleet",
     link: "/packages/fleet",
+    mobileLink: true,
+    submenu: [],
+  },
+  {
+    name: "Instructors",
+    link: "/packages/crew",
     mobileLink: true,
     submenu: [],
   },
