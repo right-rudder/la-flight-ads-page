@@ -11,7 +11,7 @@ export const footerLinks = [
         link: "/discovery-flight",
       },
       {
-        name: "Carreer Path",
+        name: "Career Path",
         link: "/path",
       },
       {

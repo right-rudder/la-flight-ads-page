@@ -76,7 +76,22 @@ const crew = {
         {
           name: `Matthew Ronder-Seid<br><small class="text-white font-normal text-sm">CFI</small>`,
           imagePath: "/src/assets/Matthew-Ronder-Seid-CFI.jpg",
-          imageAlt: "Matthew Ronder, Seid-CFI at LA Flight Academy",
+          imageAlt: "Matthew Ronder-Seid, CFI at LA Flight Academy",
+        },
+        {
+          name: `Jack Keshishian<br><small class="text-white font-normal text-sm">CFI</small>`,
+          imagePath: "/src/assets/profile-silhouette.png",
+          imageAlt: "Jack Keshishian, CFI at LA Flight Academy",
+        },
+        {
+          name: `Chris Ghazarian<br><small class="text-white font-normal text-sm">CFI</small>`,
+          imagePath: "/src/assets/profile-silhouette.png",
+          imageAlt: "Chris Ghazarian, CFI at LA Flight Academy",
+        },
+        {
+          name: `Andre Dassin<br><small class="text-white font-normal text-sm">CFI</small>`,
+          imagePath: "/src/assets/profile-silhouette.png",
+          imageAlt: "Andre Dassin, CFI at LA Flight Academy",
         },
       ],
     },
