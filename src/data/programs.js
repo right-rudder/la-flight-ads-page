@@ -50,7 +50,7 @@ const programs = {
       imageAlt: "LAFA aircraft taking off at sunset",
       description:
         "Looking to specialize? Explore spin training, BFRs, IPCs, and more advanced programs to enhance your skills.",
-      link: "/programs/advanced-training",
+      link: "/programs/advanced-trainings",
     },
   ],
 };
