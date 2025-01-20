@@ -54,7 +54,7 @@ const crew = {
           imageAlt: "Alex Feldman, Chief Pilot and CFI-I of LA Flight Academy",
         },
         {
-          name: `Cameron Diamond<br><small class="text-white font-normal text-sm">Asst Chief Pilot</small>`,
+          name: `Cameron Diamond<br><small class="text-white font-normal text-sm">Asst Chief Pilot, CFI, MEI</small>`,
           imagePath: "/src/assets/Cameron-Diamond-CFI.jpg",
           imageAlt: "Cameron Diamond, CFI at LA Flight Academy",
         },
