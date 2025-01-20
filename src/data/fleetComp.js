@@ -32,7 +32,7 @@ const fleetCompData = {
       rates: "($380hr/$350 block)",
       description:
         "This 260hp fuel Injected aircraft is ideal for Commercial Multi-Engine and MEI Training.",
-      image: "/src/assets/N120B.jpg",
+      image: "/src/assets/lafa-plane-beechcraft-twin-engine-outside-hangar.jpg",
       details: [
         "1962 Beechcraft 95-A55 Twin Engine",
         "260hp per Engine — Fuel Injected",
@@ -50,7 +50,7 @@ const fleetCompData = {
       rates: "($185hr/$175 block)",
       description:
         "This 180HP fuel injected four seat aircraft is ideal for Instrument, Commercial and CFI training. Manufactured in 1999.",
-      image: "/src/assets/N252SP.jpg",
+      image: "/src/assets/lafa-plane-cessna-172s-outside-hangar.jpg",
       details: [
         "1999 Cessna 172S",
         "180hp — Fuel Injected",
@@ -84,7 +84,7 @@ const fleetCompData = {
       rates: "($175hr/$165 block)",
       description:
         "This Piper Archer 2 PA28-181 is a four seat, 180HP, low wing aircraft that is ideal for Private Pilot, Instrument, Commercial and CFI Training.",
-      image: "/src/assets/N7901C.png",
+      image: "/src/assets/lafa-plane-piper-archer-outside-hangar.jpg",
       details: [
         "1975 Piper Archer 2 PA28-181",
         "180hp Carbureted",
@@ -101,7 +101,7 @@ const fleetCompData = {
       rates: "($175HR/$165 block)",
       description:
         "This Piper Cherokee is a reliable and versatile piston-single aircraft, ideal for Private Pilot and Time-Building training. Manufactured in 1978.",
-      image: "/src/assets/N4313F.jpg",
+      image: "/src/assets/lafa-plane-piper-cherokee-outside-hangar.jpg",
       details: [
         "1978 Piper Cherokee (P28A)",
         "160hp — Piston-Single",
