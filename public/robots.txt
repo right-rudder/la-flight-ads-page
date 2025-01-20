@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://laflightacademy.com/sitemap-index.xml
