@@ -25,9 +25,13 @@ import 'aos/dist/aos.css';
       keywords={keywords || KEYWORDS}
       image={ogImage || OG_IMAGE}
     />
-    <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body class="font-sans2 bg-white">
+    <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV9ZQVKS"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
     <Banner />
     <Navbar pathname={pathname} client:load />
     <main>
