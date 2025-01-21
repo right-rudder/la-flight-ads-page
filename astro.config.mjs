@@ -8,4 +8,14 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: "https://laflightacademy.com",
   integrations: [tailwind(), partytown(), sitemap(), react()],
+  redirects: {
+    '/contact': '/contactUs',
+    '/the-fleet': '/packages/fleet',
+    '/image-gallery': '/packages/gallery',
+    '/about-us': '/about',
+    '/our-instructors': '/packages/crew',
+    '/team-showcase': '/packages/crew',
+    '/service/certified-flight-instructor': '/programs/certified-flight-instructor',
+    "/team-showcase/[...slug]": "/packages/crew",
+  }
 });

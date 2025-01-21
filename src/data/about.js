@@ -19,7 +19,7 @@ const about = {
       buttons: [
         {
           name: "Get in Touch",
-          link: "/contact",
+          link: "/contactUs",
           primary: false,
         },
         {
