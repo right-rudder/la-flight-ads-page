@@ -19,7 +19,7 @@ const crew = {
       buttons: [
         {
           name: "Get in Touch",
-          link: "/contact",
+          link: "/contactUs",
           primary: false,
         },
         {

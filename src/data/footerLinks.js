@@ -20,7 +20,7 @@ export const footerLinks = [
       },
       {
         name: "Contact Us",
-        link: "/contact",
+        link: "/contactUs",
       },
       {
         name: "Quiz",

@@ -29,7 +29,7 @@ const galleryData = {
         },
         {
           name: "Contact Us",
-          link: "/contact",
+          link: "/contactUs",
           primary: false,
         },
       ],
