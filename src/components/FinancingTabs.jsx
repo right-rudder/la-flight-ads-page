@@ -71,12 +71,7 @@ const FinancingTabs = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200">
-        <div className="max-w-7xl px-10 flex flex-col items-center py-10">
-          <h2 className="text-3xl font-semibold text-center tracking-tight pb-10">
+          <h2 className="text-3xl font-semibold text-center tracking-tight p-10">
             FAQs
           </h2>
           <div className="tracking-wider">
