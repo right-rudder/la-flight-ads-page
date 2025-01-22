@@ -41,9 +41,9 @@ import CTAQuizData from "../data/CTAQuiz";
           class="h-6 sm:h-10 lg:h-16"
         />
         <img
-          src="/Avemcologo.png"
-          alt="Avemco logo"
-          class="h-5 sm:h-8 lg:h-14"
+          src="/ftf-logo.webp"
+          alt="Flight Training Finance logo"
+          class="h-6 sm:h-10 lg:h-16"
         />
       </div>
     </div>
@@ -51,7 +51,9 @@ import CTAQuizData from "../data/CTAQuiz";
 
   <FinancingTabs client:load />
 
-  <CTAQuiz content={CTAQuizData} />
+  <div class="my-8">
+    <CTAQuiz content={CTAQuizData} />
+  </div>
 
   <!-- Contact Us Form -->
   <ContactUs />
