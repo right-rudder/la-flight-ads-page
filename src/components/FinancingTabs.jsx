@@ -180,7 +180,7 @@ const FinancingTabs = () => {
         <div className="tracking-wider">
           <p className="pt-5">
             Embarking on your journey to becoming a pilot is an exciting
-            endeavor, and at Red Arrow, we understand the importance of making
+            endeavor, and at LAFA, we understand the importance of making
             flight training accessible to everyone. That's why we've partnered
             with Flight Training Finance to offer tailored financing solutions
             designed to support your flight goals.
@@ -227,14 +227,14 @@ const FinancingTabs = () => {
           </p>
           <p className="pt-10 font-semibold text-xl">Partnering for Success</p>
           <p className="pt-5">
-            Red Arrow and Flight Training Finance have come together to
+            LAFA and Flight Training Finance have come together to
             streamline the financing process, making flight training more
             accessible to aspiring pilots like you. Take the first step towards
             your aviation goals by exploring our financing options today.
           </p>
           <p className="pt-5">
             Don't let financial barriers hold you back from reaching new
-            heights. Start your journey with Red Arrow and Flight Training
+            heights. Start your journey with LA Flight Academy and Flight Training
             Finance.
           </p>
 
