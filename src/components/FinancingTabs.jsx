@@ -3,286 +3,6 @@ import { useState } from "react";
 const FinancingTabs = () => {
   const [currentTab, setCurrentTab] = useState("Quick Comparison");
 
-  const meritize = (
-    <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 overflow-hidden">
-      <div className="max-w-7xl px-10 flex flex-col items-center py-10">
-        <div className="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
-          <div>
-            <h2 className="text-5xl font-semibold text-center tracking-tight">
-              Finance with Meritize
-            </h2>
-            <h3 className="pt-3 text-2xl text-center">
-              Don’t let finances limit your pilot aspirations
-            </h3>
-          </div>
-          <img
-            src="/meritize-logo.webp"
-            alt="Meritize logo"
-            className="h-24 w-48 md:w-64 object-cover"
-          />
-        </div>
-        <div className="tracking-wider">
-          <p className="pt-5">
-            Red Arrow has teamed up with the Meritize platform* to offer our
-            students a unique financing option. Meritize works with students,
-            educators, and employers to help people excel in skills-based
-            careers.
-          </p>
-          <p className="pt-5">
-            Meritize knows you are more than your credit score, and that is why
-            they look at your past achievements to enhance your loan options.
-          </p>
-          <p className="pt-5">
-            A few reasons why the Meritize Platform is a great option for
-            students include:
-          </p>
-          <ul className="list-disc pl-10">
-            <li>
-              Fixed and variable interest rates available** Flexible payment
-              options, including deferring full principal and interest payments
-              until 3 months after you complete your training
-            </li>
-            <li>Customer support is available 6 days a week</li>
-            <li>0.25% interest rate deduction if you sign up for autopay***</li>
-          </ul>
-          <p className="pt-5">With a Meritize loan, you can...</p>
-          <ul className="list-disc pl-10">
-            <li>
-              Use your transcript to enhance your credit and improve your loan
-              options
-            </li>
-            <li>Get pre-approved in minutes</li>
-            <li>Fund the full cost of attendance on your own merit</li>
-            <li>Choose affordable fixed or variable rates</li>
-            <li>
-              Repayment terms are flexible by offering deferred payment
-              schedules while you are in school
-            </li>
-            <li>Loan terms up to 20 years</li>
-            <li>
-              Avoid prepayment penalty fees if you choose to pay your loan off
-              early
-            </li>
-            <li>
-              Get access to free Meritize Career Success Services for job and
-              career support
-            </li>
-          </ul>
-          <p className="pt-5">
-            Checking your loan options with Meritize has never been easier. You
-            can fill out a short application to check your loan options without
-            impacting your credit score.
-          </p>
-          <p className="pt-5">
-            If loan options are available to you, Meritize will request your
-            merit information to finalize your application. This could be in the
-            form of:
-          </p>
-          <ul className="list-disc pl-10">
-            <li>
-              Academic Experience (Official or unofficial transcript or HSE
-              certification)
-            </li>
-            <li>Military Experience (DD214)</li>
-          </ul>
-          <p className="pt-5">
-            Want to learn more? Check out their FAQ page here:
-            <a
-              href="https://www.meritize.com/students/faq/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="hover:text-blue-800 hover:underline text-blue-600"
-            >
-              https://www.meritize.com/students/faq/
-            </a>{" "}
-            or give them a call at 833-MERIT-4-U.
-          </p>
-          <p>
-            Ready to see if you qualify? Check your options here:
-            <a
-              href="https://apply.meritize.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="hover:text-blue-800 hover:underline text-blue-600"
-            >
-              https://apply.meritize.com/
-            </a>
-          </p>
-          <p className="pt-5">
-            *Red Arrow Flight Academy does not endorse a particular lender, nor
-            is it affiliated with Meritize Financial, Inc. ("Meritize") or the
-            Meritize platform.
-          </p>
-          <p className="pt-5 text-xs">
-            Meritize Lending, LLC, NMLS ID 1661035 (NMLS Consumer Access
-            <a
-              href="https://www.nmlsconsumeraccess.org/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="hover:text-blue-800 hover:underline text-blue-600"
-            >
-              https://www.nmlsconsumeraccess.org/
-            </a>
-            )
-          </p>
-          <p className="pt-1 text-xs">
-            Meritize Financial, Inc. NMLS ID 1986399 (NMLS Consumer Access
-            <a
-              href="https://www.nmlsconsumeraccess.org/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="hover:text-blue-800 hover:underline text-blue-600"
-            >
-              https://www.nmlsconsumeraccess.org/
-            </a>
-            )
-          </p>
-          <p className="pt-1 text-xs">
-            Terms and Conditions apply. Meritize branded loan products are
-            educational loans issued by Meritize Lending, LLC**. Meritize
-            reserves the right to modify or discontinue products and benefits at
-            any time without notice. To qualify, a borrower must be a U.S.
-            citizen, permanent resident or hold an Employment Authorization
-            Document and meet Meritize’s underwriting requirements. If approved
-            for a loan the actual loan amount, term, payment, and APR amount of
-            loan that a customer qualifies for may vary based on credit
-            determination, state law, and other factors. Meritize does not
-            warrant or guarantee any claims made herein, including, but not
-            limited to, gaining admission to a program, concerning the quality
-            or financial strength of any educational institution, securing
-            funding or obtaining employment. Our final loan offer may differ as
-            a result of the school chosen and the associated cost of tuition.
-            Not all schools are eligible for funding. Meritize does not offer
-            educational loans in the following states: IN, ME, ND, NV, SD, VT,
-            WI, WV, WY, PR. All rights reserved.
-          </p>
-          <p className="pt-1 text-xs">
-            **For residents of SC, loan is made by Meritize Financial, Inc.
-          </p>
-          <p className="pt-1 text-xs">*Variable rates are subject to change.</p>
-          <p className="pt-5">
-            Red Arrow has teamed up with the Meritize platform* to offer our
-            student’s a unique financing option. Meritize works with students,
-            educators, and employers to help people excel in skills-based
-            careers.
-          </p>
-          <p className="pt-5">
-            Meritize knows you are more than your credit score, and that is why
-            they look at your past achievements to potentially enhance your loan
-            options.
-          </p>
-          <p className="pt-5">
-            A few reasons why the Meritize Platform is a great option for
-            students include:
-          </p>
-          <ul className="list-disc pl-10">
-            <li>
-              Fixed and variable interest rates available** Flexible payment
-              options, including deferring full principal and interest payments
-              until 3 months after you complete your training
-            </li>
-            <li>Customer support available 6 days a week</li>
-            <li>0.25% interest rate deduction if you sign up for autopay***</li>
-          </ul>
-          <p className="pt-5">
-            Checking your loan options with Meritize has never been easier. You
-            can fill out a short application to check your loan options without
-            impacting your credit score.
-          </p>
-          <p className="pt-5">
-            If loan options are available to you, Meritize will request your
-            merit information to finalize your application. This could be in the
-            form of:
-          </p>
-          <ul className="list-disc pl-10">
-            <li>
-              Academic Experience (Official or unofficial transcript or HSE
-              certification)
-            </li>
-            <li>Military Experience (DD214)</li>
-          </ul>
-          <p className="pt-5">
-            Want to learn more? Check out their FAQ page here:
-          </p>
-          <p>
-            <a
-              href="https://www.meritize.com/students/faq/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="hover:text-blue-800 hover:underline text-blue-600"
-            >
-              https://www.meritize.com/students/faq/
-            </a>{" "}
-            or give them a call at 833-MERIT-4-U.
-          </p>
-          <p>
-            Ready to see if you qualify? Check your options here:
-            <a
-              href="https://apply.meritize.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="hover:text-blue-800 hover:underline text-blue-600"
-            >
-              https://apply.meritize.com/
-            </a>
-          </p>
-          <p className="pt-5">
-            *Red Arrow Flight Academy does not endorse a particular lender, nor
-            is it affiliated with Meritize Financial, Inc. ("Meritize") or the
-            Meritize platform.
-          </p>
-          <p className="pt-5 text-xs">
-            Meritize Lending, LLC, NMLS ID 1661035 (NMLS Consumer Access
-            <a
-              href="https://www.nmlsconsumeraccess.org/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="hover:text-blue-800 hover:underline text-blue-600"
-            >
-              https://www.nmlsconsumeraccess.org/
-            </a>
-            )
-          </p>
-          <p className="pt-1 text-xs">
-            Meritize Financial, Inc. NMLS ID 1986399 (NMLS Consumer Access
-            <a
-              href="https://www.nmlsconsumeraccess.org/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="hover:text-blue-800 hover:underline text-blue-600"
-            >
-              https://www.nmlsconsumeraccess.org/
-            </a>
-            )
-          </p>
-          <p className="pt-1 text-xs">
-            Terms and Conditions apply. Meritize branded loan products are
-            educational loans issued by Meritize Lending, LLC**. Meritize
-            reserves the right to modify or discontinue products and benefits at
-            any time without notice. To qualify, a borrower must be a U.S.
-            citizen, permanent resident or hold an Employment Authorization
-            Document and meet Meritize’s underwriting requirements. If approved
-            for a loan the actual loan amount, term, payment, and APR amount of
-            loan that a customer qualifies for may vary based on credit
-            determination, state law, and other factors. Meritize does not
-            warrant or guarantee any claims made herein, including, but not
-            limited to, gaining admission to a program, concerning the quality
-            or financial strength of any educational institution, securing
-            funding or obtaining employment. Our final loan offer may differ as
-            a result of the school chosen and the associated cost of tuition.
-            Not all schools are eligible for funding. Meritize does not offer
-            educational loans in the following states: IN, ME, ND, NV, SD, VT,
-            WI, WV, WY, PR. All rights reserved.
-          </p>
-          <p className="pt-1 text-xs">
-            **For residents of SC, loan is made by Meritize Financial, Inc.
-          </p>
-          <p className="pt-1 text-xs">*Variable rates are subject to change.</p>
-        </div>
-      </div>
-    </section>
-  );
-
   const stratusFinancial = (
     <>
       <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200">
@@ -293,7 +13,7 @@ const FinancingTabs = () => {
                 Finance with Stratus Financial
               </h2>
               <h3 className="pt-3 text-2xl text-center">
-                Leverage financial support here
+                Flexible financing to support your aviation goals
               </h3>
             </div>
             <img
@@ -304,16 +24,16 @@ const FinancingTabs = () => {
           </div>
           <div className="tracking-wider flex flex-col items-center">
             <p className="pt-5">
-              Red Arrow Flight Academy is pleased to partner with Stratus
-              Financial to make pilot training more affordable for our
-              interested students! Take advantage of Stratus Financial’s unique
-              loan structures and get up in the air in no time.
+              LA Flight Academy is proud to partner with Stratus Financial to
+              make flight training more accessible for aspiring pilots. Take
+              advantage of flexible loan structures and achieve your aviation
+              dreams.
             </p>
             <a
-              href="https://stratus.finance/apply/redarrow1175019/"
+              href="https://stratus.finance/apply/laflightacademy1303242/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#0bc1e1] cursor-pointer my-5 w-fit font-bold uppercase py-3 px-5 rounded-xl hover:scale-105 duration-200"
+              className="btn-primary m-8"
             >
               Apply Now
             </a>
@@ -353,13 +73,6 @@ const FinancingTabs = () => {
           </div>
         </div>
       </section>
-      <div className="overflow-auto">
-        <img
-          src="/img/financing/stratus-financial-banner.webp"
-          alt="Stratus Financial Banner"
-          className="min-w-[80rem]"
-        />
-      </div>
 
       <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200">
         <div className="max-w-7xl px-10 flex flex-col items-center py-10">
@@ -371,8 +84,8 @@ const FinancingTabs = () => {
               What factors does Stratus Financial consider?
             </p>
             <p>
-              We base our loan approval on the borrower and co-borrower’s (e.g.
-              parents, siblings, friends) merit on the following:
+              We base our loan approval on the borrower and co-borrower’s merit
+              on the following:
             </p>
             <ul className="list-disc pl-10">
               <li>FICO score</li>
@@ -387,38 +100,31 @@ const FinancingTabs = () => {
               How soon can I be approved for my loan?
             </p>
             <p>
-              We do initial underwriting within 1-2 hours. If all documents
-              required are submitted to us, we process and prepare the final
-              loan documents within one (1) day. We fund the loan within three
-              (3) business days after all parties have signed the loan
-              documents.
+              Initial underwriting is done within 1-2 hours. If all required
+              documents are submitted, final loan documents are prepared within
+              one (1) day. Loan funding occurs within three (3) business days
+              after all parties have signed.
             </p>
             <p className="font-semibold pt-5">
-              Will there be a penalty for paying off the loan early in the
-              future?
+              Will there be a penalty for early loan repayment?
             </p>
-            <p>You may repay the loan in whole or in part without penalty.</p>
+            <p>No, you may repay the loan in full or in part without penalty.</p>
             <p className="font-semibold pt-5">
-              Are there any prerequisites to applying for a loan? (e.g. is it a
-              pre-requisite to have a co-signer?)
+              Are there prerequisites for applying for a loan?
             </p>
             <p>
-              We only require applicants to complete the Loan Application Form
-              to apply. Once you have filled it out, we would determine if the
-              information you provided would require you to have a co-borrower
-              to qualify.
+              Applicants need to complete the Loan Application Form. Based on
+              the provided information, a co-borrower may be required.
             </p>
-            <p className="font-semibold pt-5">
-              How will the funds be transferred?
-            </p>
-            <p>Stratus Financial pays directly to your school.</p>
+            <p className="font-semibold pt-5">How are the funds transferred?</p>
+            <p>Stratus Financial pays the funds directly to LA Flight Academy.</p>
           </div>
-          <div className="pt-10 self-start">
+          {/* <div className="pt-10 self-start">
             <h3 className="font-semibold text-xl">Additional Resources</h3>
             <ul className="list-disc pl-10">
               <li>
                 <a
-                  href="../../public/files/stratus-financial-brochure.pdf"
+                  href="/files/stratus-financial-brochure.pdf"
                   download="stratus-financial-brochure.pdf"
                   className="hover:text-blue-800 hover:underline text-blue-600"
                 >
@@ -427,7 +133,7 @@ const FinancingTabs = () => {
               </li>
               <li>
                 <a
-                  href="../../public/files/stratus-financial-booklet.pdf"
+                  href="/files/stratus-financial-booklet.pdf"
                   download="stratus-financial-booklet.pdf"
                   className="hover:text-blue-800 hover:underline text-blue-600"
                 >
@@ -436,7 +142,7 @@ const FinancingTabs = () => {
               </li>
               <li>
                 <a
-                  href="../../public/files/stratus-financial-one-page.pdf"
+                  href="/files/stratus-financial-one-page.pdf"
                   download="stratus-financial-one-page.pdf"
                   className="hover:text-blue-800 hover:underline text-blue-600"
                 >
@@ -444,12 +150,12 @@ const FinancingTabs = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <a
-            href="https://stratus.finance/apply/redarrow1175019/"
+            href="https://stratus.finance/apply/laflightacademy1303242/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#0bc1e1] cursor-pointer my-5 w-fit font-bold uppercase py-3 px-5 rounded-xl hover:scale-105 duration-200"
+            className="btn-primary m-8"
           >
             Apply Now
           </a>
@@ -537,7 +243,7 @@ const FinancingTabs = () => {
             Finance.
           </p>
 
-          <p className="pt-10 font-semibold text-xl">Additional Resources</p>
+          {/* <p className="pt-10 font-semibold text-xl">Additional Resources</p>
           <ul className="list-disc pl-10">
             <li>
               <a
@@ -557,9 +263,19 @@ const FinancingTabs = () => {
                 FTF Brochure
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
+      
+      <a
+        href="https://www.flighttrainingfinancellc.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn-primary m-8"
+      >
+        Apply Now
+      </a>
+
     </section>
   );
   const quickComparison = (
@@ -602,29 +318,6 @@ const FinancingTabs = () => {
                 </tr>
               </thead>
               <tbody>
-                {/* <tr>
-                  <td className="border border-gray-500 p-3">Meritize</td>
-                  <td className="border border-gray-500 p-3">
-                    Individual application based on FICO score and other merits
-                  </td>
-                  <td className="border border-gray-500 p-3">From 0 to CFI</td>
-                  <td className="border border-gray-500 p-3">
-                    18 months for 0 to CFI; 1 year if starting post-PPL
-                  </td>
-                  <td className="border border-gray-500 p-3">
-                    Post-acceptance; affects rate only
-                  </td>
-                  <td className="border border-gray-500 p-3">
-                    After finishing commercial or CFI
-                  </td>
-                  <td className="border border-gray-500 p-3">
-                    One-third or half of the total loan, based on financing
-                    amount
-                  </td>
-                  <td className="border border-gray-500 p-3">
-                    Begins immediately
-                  </td>
-                </tr> */}
                 <tr>
                   <td className="border border-gray-500 p-3 font-semibold">
                     Stratus Financial
@@ -701,7 +394,6 @@ const FinancingTabs = () => {
           onChange={(e) => setCurrentTab(e.target.value)}
         >
           <option>Quick Comparison</option>
-          {/* <option>Meritize</option> */}
           <option>Stratus Financial</option>
           <option>Flight Training Finance</option>
         </select>
@@ -722,17 +414,6 @@ const FinancingTabs = () => {
               className={`${currentTab === "Quick Comparison" ? "bg-main-red" : "bg-transparent"} absolute inset-x-0 bottom-0 h-0.5`}
             ></span>
           </div>
-          {/* <div
-            className={`${currentTab === "Meritize" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
-            aria-current="page"
-            onClick={() => setCurrentTab("Meritize")}
-          >
-            <span>Meritize</span>
-            <span
-              aria-hidden="true"
-              className={`${currentTab === "Meritize" ? "bg-main-red" : "bg-transparent"} absolute inset-x-0 bottom-0 h-0.5`}
-            ></span>
-          </div> */}
           <div
             className={`${currentTab === "Stratus Financial" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
             onClick={() => setCurrentTab("Stratus Financial")}
@@ -756,7 +437,6 @@ const FinancingTabs = () => {
         </div>
       </div>
 
-      {currentTab === "Meritize" && meritize}
       {currentTab === "Stratus Financial" && stratusFinancial}
       {currentTab === "Flight Training Finance" && flightTrainingFinance}
       {currentTab === "Quick Comparison" && quickComparison}
