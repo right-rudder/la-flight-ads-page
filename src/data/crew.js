@@ -68,11 +68,6 @@ const crew = {
           imagePath: "/src/assets/lafa-headshot-of-cfi-dror-waissengrin-2.jpg",
           imageAlt: "Dror Waissengrin, CFI-I at LA Flight Academy",
         },
-        // {
-        //   name: `Roman Kozlenko<br><small class="text-white font-normal text-sm">CFI</small>`,
-        //   imagePath: "/src/assets/Roman-Kozlenko-CFI.jpg",
-        //   imageAlt: "Roman Kozlenko, CFI at LA Flight Academy",
-        // },
         {
           name: `Matthew Ronder-Seid<br><small class="text-white font-normal text-sm">CFI</small>`,
           imagePath: "/src/assets/lafa-headshot-of-cfi-matthew-ronder-2.jpg",
