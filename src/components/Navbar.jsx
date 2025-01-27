@@ -9,6 +9,7 @@ import {
   PHONE_NUMBER,
   COMPANY_NAME,
   LOGO_PRIMARY,
+  LOGO_SECONDARY,
 } from "../consts.ts";
 
 const Navbar = ({ pathname }) => {
@@ -81,27 +82,27 @@ const Navbar = ({ pathname }) => {
           navBar || openMobile ? "bg-primary-800" : "bg-gradient-to-b from-white/60 via-white/60 to-transparent pb-10"
         } duration-500`}
       >
-        <div className="px-5 max-w-7xl mx-auto top-0">
+        <div className="px-5 w-full max-w-8xl mx-auto top-0">
           <div
-            className={`${navBar || openMobile ? "lg:h-20" : "lg:h-28"} relative flex h-20 align-middle justify-between transition-all`}
+            className={`${navBar || openMobile ? "lg:h-20" : "lg:h-28"} relative flex h-20 align-middle justify-around transition-all`}
             id="navbar"
           >
-            <div className="flex w-full items-center justify-between flex-auto">
+            <div className="flex w-full items-center justify-left flex-auto">
               <a
                 href="/"
-                className="relative hover:brightness-110 duration-200 ease-in-out w-1/3"
+                className="relative hover:brightness-110 duration-200 ease-in-out lg:w-1/3 "
               >
                 <img
-                  src={LOGO_PRIMARY}
+                  src={`${navBar || openMobile ? LOGO_SECONDARY : LOGO_PRIMARY}`}
                   alt={`${COMPANY_NAME} logo`}
                   aria-label={`${COMPANY_NAME} logo`}
                   title={COMPANY_NAME}
                   loading="eager"
-                  className={`${navBar || openMobile ? "h-20 lg:h-20 bg-white p-1 px-8" : "mt-4 h-20 lg:h-28"} mx-auto object-contain duration-500`}
+                  className={`${navBar || openMobile ? "h-20 lg:h-20 p-1" : "mt-4 h-20 lg:h-28"} mx-auto object-contain duration-500`}
                 />
               </a>
-              <div className="hidden lg:flex 2xl:justify-end w-full text-lg">
-                <ul className="flex justify-between align-middle w-11/12 gap-5 items-center">
+              <div className="hidden mx-auto lg:flex text-lg">
+                <ul className="flex justify-between align-middle gap-5 items-center">
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
@@ -233,7 +234,7 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           openMobile ? "max-h-screen" : "max-h-0"
-        } overflow-x-hidden duration-700 ease-in-out h-screen lg:hidden absolute w-full bg-white z-20 top-0`}
+        } overflow-x-hidden duration-700 ease-in-out h-screen lg:hidden absolute w-full max-w-2xl right-0 bg-white z-20 top-0`}
         id="mobile-menu"
       >
         <div className="flex justify-end pl-5 pr-[26px] py-6">
