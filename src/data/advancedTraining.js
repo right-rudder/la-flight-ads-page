@@ -46,9 +46,9 @@ const advancedTrainings = {
       ],
       steps: [
         {
-          title: "Aircraft Training",
+          title: "Complex Aircraft Training",
           paragraphs: [
-            "Learn to operate aircraft equipped with retractable landing gear, constant-speed propellers, and advanced avionics. This training enhances your proficiency and prepares you for real-world flight operations.",
+            "Learn to operate complex aircraft equipped with retractable landing gear, constant-speed propellers, and advanced avionics. This training enhances your proficiency and prepares you for real-world flight operations.",
             "Hands-on sessions focus on systems management, emergency procedures, and efficient performance in a variety of scenarios.",
           ],
           imagePath: "/src/assets/LAFA-CTA-bg.webp",
