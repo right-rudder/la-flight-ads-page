@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import parse from "html-react-parser";
+import { PHONE_NUMBER } from "../consts";
 
 const GeneralFAQs = () => {
   const faqs = [
@@ -12,7 +13,7 @@ const GeneralFAQs = () => {
     {
       question: "What are LAFA's hours of operation?",
       answer:
-        "We operate Monday through Sunday from 8:00 AM to 9:00 PM. For after-hours inquiries, you can contact us directly at (818) 389-1771.",
+        `We operate Monday through Sunday from 8:00 AM to 9:00 PM. For after-hours inquiries, you can contact us directly at ${PHONE_NUMBER}.`,
     },
     {
       question: "What pilot training programs does LA Flight Academy offer?",

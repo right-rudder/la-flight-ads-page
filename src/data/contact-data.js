@@ -23,7 +23,7 @@ const contactPage = {
       imagePath:
         "/src/assets/contact-cover.jpg",
       imageAlt: `${COMPANY_NAME} logo`,
-      headerH1: `<div class="bg-gradient-to-br from-primary-900 via-primary-700 to-primary-900 bg-clip-text text-transparent">Contact</div><span>${COMPANY_NAME}</span>`,
+      headerH1: `Contact</br>${COMPANY_NAME}`,
       paragraph:
         `Whether you’re ready to start your flight training, schedule maintenance for your aircraft, or simply have questions about our programs, the team at ${COMPANY_NAME} is here to assist you.`,
       buttons: [

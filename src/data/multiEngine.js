@@ -60,7 +60,7 @@ const multiEngineRating = {
             "Ground school covers critical concepts such as multi-engine aerodynamics, weight and balance, single-engine operations, and system failures. You’ll learn how to handle emergencies like engine-out scenarios and how to manage asymmetric thrust.",
             "This foundational knowledge prepares you to safely and confidently operate multi-engine aircraft in all phases of flight.",
           ],
-          imagePath: "/src/assets/lafa-student-taking-ground-lessons.jpg",
+          imagePath: "/src/assets/ground-school-multi.jpg",
           imageAlt: "Students in a classroom discussing multi-engine theory",
         },
         {
