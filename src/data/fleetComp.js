@@ -10,7 +10,7 @@ const fleetCompData = {
     // Top Header
     header: {
       stars: true,
-      imagePath: "/src/assets/lafa-cessna-172s-being-pulled-from-main-hangar.jpg",
+      imagePath: "/src/assets/lafa-plane-piper-archer-inside-hangar-bw.webp",
       imageAlt: "Three LA Flight Academy aircraft on the patio",
       headerH1: `Our <br><span>FLEET</span>`,
       paragraph: `LA Flight Academy’s fleet is meticulously maintained to provide a safe, modern, and reliable training environment. Explore our range of Cessna and Piper aircraft, ideal for both beginners and advanced pilots.`,
