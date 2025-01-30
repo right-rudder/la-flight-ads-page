@@ -60,7 +60,7 @@ const cfi = {
             "Ground training emphasizes instructional techniques, advanced aerodynamics, and FAA regulations. You’ll learn how to teach complex maneuvers, evaluate students, and conduct thorough pre-flight briefings.",
             "Our comprehensive ground school ensures you are well-prepared to pass the FAA Fundamentals of Instructing (FOI) exam and excel in your teaching role.",
           ],
-          imagePath: "/src/assets/lafa-student-taking-ground-lessons-2.jpg",
+          imagePath: "/src/assets/jason-coudriet-studying.jpg",
           imageAlt: "CFI candidate studying FAA teaching techniques",
         },
         {
@@ -78,7 +78,7 @@ const cfi = {
             "A successful CFI is not just knowledgeable but also approachable and adaptable. During training, you’ll refine your ability to communicate effectively with diverse student personalities and learning styles.",
             "We provide you with the tools to develop your own teaching methods while ensuring adherence to FAA standards.",
           ],
-          imagePath: "/src/assets/jason-coudriet-studying.jpg",
+          imagePath: "/src/assets/ground-school-cfi.jpg",
           imageAlt: "Instructor mentoring a student during flight training",
         },
         {
