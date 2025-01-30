@@ -49,7 +49,7 @@ const crew = {
       membersTitle: "Our Instructors",
       members: [
         {
-          name: `Alex Feldman<br><small class="text-white font-normal text-sm">Chief Pilot, CFI-I</small>`,
+          name: `Alex Feldman<br><small class="text-white font-normal text-sm">Chief Pilot, CFI-I, MEI</small>`,
           imagePath: "/src/assets/lafa-headshot-of-cfi-alex-feldman.jpg",
           imageAlt: "Alex Feldman, Chief Pilot, CFI-I, and MEI of LA Flight Academy",
         },
