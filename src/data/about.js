@@ -11,11 +11,11 @@ const about = {
 
     // Top Header
     header: {
-      imagePath: "/src/assets/lafa-crew-header.jpg",
+      imagePath: "/src/assets/lafa-plane-beechcraft-twin-engine-inside-hangar.jpg",
       imageAlt: "Aircraft inside LA Flight Academy hangar at Van Nuys Airport",
-      headerH1: `Experience</br><span>Excellence in Flight Training</span>`,
+      headerH1: `ABOUT US`,
       paragraph:
-        "Our team of experienced flight instructors and aviation professionals at LA Flight Academy is dedicated to providing world-class training. Learn more about our team and how they can help you achieve your dreams in aviation.",
+        "LA Flight Academy is dedicated to providing top-tier flight training with a focus on real-world skills, personalized instruction, and a streamlined path to success. With a highly experienced team, well-maintained aircraft, and a strong track record of student achievement, we prepare pilots for confident, capable careers in aviation.",
       buttons: [
         {
           name: "Get in Touch",
