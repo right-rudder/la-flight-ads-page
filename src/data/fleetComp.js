@@ -55,7 +55,7 @@ const fleetCompData = {
         "1999 Cessna 172S",
         "180hp — Fuel Injected",
         "Garmin 750 Touchpad GPS with Bluetooth Flightstream",
-        "G5 Directional Gyro",
+        "Dual G5's (Attitude Indicator & Directional Gyro)",
         "Autopilot",
         "IFR Certified",
         "Ideal for Instrument, Commercial and CFI Training",
@@ -83,10 +83,10 @@ const fleetCompData = {
       name: "N7901C",
       rates: "($175hr/$165 block)",
       description:
-        "This Piper Archer 2 PA28-181 is a four seat, 180HP, low wing aircraft that is ideal for Private Pilot, Instrument, Commercial and CFI Training.",
+        "This Piper Archer II PA28-181 is a four seat, 180HP, low wing aircraft that is ideal for Private Pilot, Instrument, Commercial and CFI Training.",
       image: "/src/assets/lafa-plane-piper-archer-outside-hangar.jpg",
       details: [
-        "1975 Piper Archer 2 PA28-181",
+        "1975 Piper Archer II PA28-181",
         "180hp Carbureted",
         "Garmin 430 GPS",
         "Dual VOR’s and Comm’s",
@@ -103,7 +103,7 @@ const fleetCompData = {
         "This Piper Archer II is a reliable and versatile piston-single aircraft, ideal for Private Pilot and Time-Building training. Manufactured in 1978.",
       image: "/src/assets/lafa-plane-piper-cherokee-outside-hangar.jpg",
       details: [
-        "1978 Piper Archer II PA28",
+        "1978 Piper Archer II PA28-181",
         "180hp — Piston-Single",
         "Garmin GNS430 GPS",
         "Traditional Round-Gauge Panel",
@@ -114,13 +114,13 @@ const fleetCompData = {
       ],
     },
     {
-      name: "N8165R",
+      name: "N8156R",
       rates: "($165HR/$155 block)",
       description:
         "This Piper Warrior II is a reliable and versatile piston-single aircraft, ideal for Private Pilot and Time-Building training. Manufactured in 1979.",
       image: "/src/assets/lafa-plane-piper-warrior-ii-outside-hangar.jpg",
       details: [
-        "1979 Piper Warrior II (PA28)",
+        "1979 Piper Warrior II PA28-161",
         "160hp — Piston-Single",
         "Garmin GNS430 GPS",
         "Traditional Round-Gauge Panel",
