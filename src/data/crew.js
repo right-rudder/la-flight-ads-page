@@ -11,7 +11,7 @@ const crew = {
 
     // Top Header
     header: {
-      imagePath: "/src/assets/crew-top.png",
+      imagePath: "/src/assets/lafa-crew-top-checking-propeller.jpg",
       imageAlt: "LA Flight Academy CFIs",
       headerH1: `Experience</br><span>Excellence in Flight Training</span>`,
       paragraph:
@@ -31,7 +31,7 @@ const crew = {
     },
 
     staffGrid: {
-      imagePath: "/src/assets/crew-top.png",
+      imagePath: "/src/assets/lafa-plane-2.jpg",
       imageAlt: "LA Flight Academy team standing near aircraft",
       upperHeading: "Meet Our Team",
       heading: "About Us",
