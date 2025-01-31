@@ -54,9 +54,9 @@ const crew = {
           imageAlt: "Alex Feldman, Chief Pilot, CFI-I, and MEI of LA Flight Academy",
         },
         {
-          name: `Cameron Diamond<br><small class="text-white font-normal text-sm">Asst Chief Pilot, CFI, MEI</small>`,
+          name: `Cameron Diamond<br><small class="text-white font-normal text-sm">Asst Chief Pilot, CFI-I, MEI</small>`,
           imagePath: "/src/assets/lafa-headshot-of-cfi-cameron-diamond.jpg",
-          imageAlt: "Cameron Diamond, CFI at LA Flight Academy",
+          imageAlt: "Cameron Diamond, Asst Chief Pilot, CFI-I, MEI at LA Flight Academy",
         },
         {
           name: `Parker Capp<br><small class="text-white font-normal text-sm">CFI</small>`,
@@ -89,9 +89,9 @@ const crew = {
           imageAlt: "Andre Dassin, CFI at LA Flight Academy",
         },
         {
-          name: `Mason Morrow<br><small class="text-white font-normal text-sm">CFI</small>`,
+          name: `Mason Morrow<br><small class="text-white font-normal text-sm">CFI-I</small>`,
           imagePath: "/src/assets/lafa-headshot-of-cfi-mason-morrow.jpg",
-          imageAlt: "Mason Morrow, CFI at LA Flight Academy",
+          imageAlt: "Mason Morrow, CFI-I at LA Flight Academy",
         },
       ],
     },
