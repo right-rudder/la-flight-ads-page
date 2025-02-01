@@ -55,7 +55,7 @@ const fleetCompData = {
         "1999 Cessna 172S",
         "180hp — Fuel Injected",
         "Garmin 750 Touchpad GPS with Bluetooth Flightstream",
-        "Dual G5's (Altitude Indicator & Directional Gyro)",
+        "Dual G5's (Attitude Indicator & Directional Gyro)",
         "Autopilot",
         "IFR Certified",
         "Ideal for Instrument, Commercial and CFI Training",
