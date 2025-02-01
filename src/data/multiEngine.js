@@ -49,10 +49,10 @@ const multiEngineRating = {
           title: "Meet Eligibility Requirements",
           paragraphs: [
             "To begin training, you must hold a valid Private Pilot License (PPL) or higher. Instrument proficiency is recommended to enhance your training experience, although it is not required.",
-            "We also recommend having logged time in complex aircraft or higher-performance planes to familiarize yourself with advanced flight systems.",
+            "Training in our Beechcraft Baron allows you to earn your Multi-Engine rating, Complex endorsement, and High-Performance endorsement—all in one. Unlike many twin-engine trainers with lower horsepower, our Baron’s 260 HP per engine ensures you meet high-performance aircraft requirements while gaining valuable multi-engine experience.",
           ],
           imagePath: "/src/assets/lafa-plane-beechcraft-twin-engine-outside-hangar.jpg",
-          imageAlt: "Pilot reviewing logbook for multi-engine eligibility",
+          imageAlt: "LAFA plane, Beechcraft Twin-Engine outside hangar at KVNY",
         },
         {
           title: "Ground School Training",
@@ -67,7 +67,7 @@ const multiEngineRating = {
           title: "Flight Training in Multi-Engine Aircraft",
           paragraphs: [
             "You’ll conduct hands-on training in one of our multi-engine aircraft, such as the Piper Seminole, gaining experience with advanced systems like twin-engine performance, variable pitch propellers, and retractable gear.",
-            "Our instructors will guide you through critical maneuvers, including engine-out procedures, Vmc demonstrations, and precision landings, ensuring you’re confident in the cockpit of a twin-engine aircraft.",
+            "Our instructors will guide you through critical maneuvers, including engine-out procedures, VMC demonstrations, and precision landings, ensuring you’re confident in the cockpit of a twin-engine aircraft.",
           ],
           imagePath: "/src/assets/lafa-flight-lesson.jpg",
           imageAlt: "Instructor and student flying a multi-engine aircraft",
