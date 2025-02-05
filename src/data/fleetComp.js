@@ -122,7 +122,7 @@ const fleetCompData = {
       details: [
         "1979 Piper Warrior II PA28-161",
         "160hp — Piston-Single",
-        "Garmin GNS430 GPS",
+        "Garmin GNS650 GPS",
         "Traditional Round-Gauge Panel",
         "Comfortable Four-Seat Configuration",
         "Time-Building and Private Pilot Training",
