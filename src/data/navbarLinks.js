@@ -74,6 +74,12 @@ export const navbarLinks = [
     submenu: [],
   },
   {
+    name: "Financing",
+    link: "/financing",
+    mobileLink: true,
+    submenu: [],
+  },
+  {
     name: "About",
     link: "/about",
     mobileLink: false,
@@ -81,10 +87,6 @@ export const navbarLinks = [
       {
         name: "About Us",
         link: "/about",
-      },
-      {
-        name: "Financing",
-        link: "/financing",
       },
       {
         name: "Insurance",
