@@ -102,11 +102,11 @@ const Navbar = ({ pathname }) => {
                 />
               </a>
               <div className="hidden mx-auto lg:flex text-lg">
-                <ul className="flex justify-between align-middle gap-5 items-center">
+                <ul className="flex justify-between align-middle gap-2 xl:gap-5 items-center">
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
-                      className={`${isActive(item, pathname) ? "decoration-transparent underline font-normal" : "font-thin"} py-5 uppercase tracking-widest relative group last:no-underline last:px-0`}
+                      className={`${isActive(item, pathname) ? "decoration-transparent underline font-normal" : "font-thin"} py-5 uppercase xl:tracking-widest relative group last:no-underline last:px-0`}
                       onMouseEnter={() => setHoveredIndex(index)}
                       onMouseLeave={() => setHoveredIndex(null)}
                     >
