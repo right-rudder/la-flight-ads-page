@@ -76,7 +76,7 @@ export const navbarLinks = [
   {
     name: "Financing",
     link: "/financing",
-    mobileLink: true,
+    mobileLink: false,
     submenu: [
       {
         name: "Financing",
