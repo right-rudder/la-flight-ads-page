@@ -36,11 +36,11 @@ const crew = {
       upperHeading: "Meet Our Team",
       heading: "About Us",
       description: `
-        LA Flight Academy (LAF) was established at Van Nuys Airport with a vision to provide high-quality flight training in the competitive Los Angeles area. What started as a passion project quickly evolved into a leading flight school with over 1,000 graduates and a 100% checkride pass rate.<br>
+        LA Flight Academy (LAFA) was established at Van Nuys Airport with a vision to provide high-quality flight training in the competitive Los Angeles area. What started as a passion project quickly evolved into a leading flight school with over 1,000 graduates and a 100% checkride pass rate.<br>
 
         Our commitment to excellence is reflected in our carefully curated team of experienced Certified Flight Instructors (CFIs), who have a combined 13,000+ flight hours and bring a wealth of real-world aviation expertise. Many of our instructors are trained in-house, ensuring a cohesive, family-like atmosphere that supports student success.<br>
 
-        LAFA offers a range of programs, from Private Pilot Licenses (PPL) to advanced certifications like Certified Flight Instructor (CFI), Multi-Engine Instructor (MEI), and Airline Transport Pilot (ATP). We also specialize in accelerated multi-engine training, attracting students nationwide with an average completion time of 1.5 weeks.<br>
+        LAFA offers a range of programs, from Private Pilot License (PPL) to advanced certifications like Certified Flight Instructor (CFI), Multi-Engine Instructor (MEI), and Airline Transport Pilot (ATP). We also specialize in accelerated multi-engine training, attracting students nationwide with an average completion time of 1.5 weeks.<br>
 
         Our modern fleet features IFR-capable aircraft equipped with Garmin Dual G5s and advanced avionics, providing students with hands-on experience using the latest technology. Additionally, we maintain strong relationships with Designated Pilot Examiners (DPEs), ensuring a smooth path to certification for our students.<br>
 
