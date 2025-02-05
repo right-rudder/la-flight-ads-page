@@ -105,7 +105,7 @@ const fleetCompData = {
       details: [
         "1978 Piper Archer II PA28-181",
         "180hp — Piston-Single",
-        "Garmin GNS430 GPS",
+        "Garmin 430 GPS",
         "Traditional Round-Gauge Panel",
         "Comfortable Four-Seat Configuration",
         "Time-Building and Private Pilot Training",
@@ -122,7 +122,7 @@ const fleetCompData = {
       details: [
         "1979 Piper Warrior II PA28-161",
         "160hp — Piston-Single",
-        "Garmin GNS650 GPS",
+        "Garmin 650 GPS",
         "Traditional Round-Gauge Panel",
         "Comfortable Four-Seat Configuration",
         "Time-Building and Private Pilot Training",
