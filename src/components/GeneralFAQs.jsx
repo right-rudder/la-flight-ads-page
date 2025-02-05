@@ -66,7 +66,7 @@ const GeneralFAQs = () => {
         "<ul className='list-disc ml-5'><li>Affordable but premium-quality training</li><li>Relationships with Designated Pilot Examiners (DPEs), making it easier to schedule checkrides</li><li>Personalized instruction, pairing students with instructors based on personality and learning style</li><li>A family-like environment that fosters camaraderie among students and instructors</li></ul>",
     },
     {
-      question: "Does LAF offer discovery flights?",
+      question: "Does LAFA offer discovery flights?",
       answer:
         "Yes! Discovery flights are the perfect way to experience what it’s like to pilot an aircraft. Learn more on our Discovery Flights page.",
     },

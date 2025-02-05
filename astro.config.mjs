@@ -9,7 +9,7 @@ export default defineConfig({
   site: "https://laflightacademy.com",
   integrations: [tailwind(), partytown(), sitemap(), react()],
   redirects: {
-    '/contact': '/contactUs',
+    '/contact': '/contact-us',
     '/the-fleet': '/packages/fleet',
     '/image-gallery': '/packages/gallery',
     '/about-us': '/about',

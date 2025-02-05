@@ -74,14 +74,10 @@ export const navbarLinks = [
     submenu: [],
   },
   {
-    name: "About",
-    link: "/about",
+    name: "Financing",
+    link: "/financing",
     mobileLink: false,
     submenu: [
-      {
-        name: "About Us",
-        link: "/about",
-      },
       {
         name: "Financing",
         link: "/financing",
@@ -89,6 +85,17 @@ export const navbarLinks = [
       {
         name: "Insurance",
         link: "https://www.avemco.com/products/renter?partner=LA16",
+      },
+    ],
+  },
+  {
+    name: "About",
+    link: "/about",
+    mobileLink: false,
+    submenu: [
+      {
+        name: "About Us",
+        link: "/about",
       },
       {
         name: "Gallery",
