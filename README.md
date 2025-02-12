@@ -10,4 +10,5 @@ Integrations:
 
 ## First launch
 
-- `npm install`
+- `npm install` - installs dependencies
+- `npm run dev` - runs localserver on `http://localhost:4321/`
