@@ -4,7 +4,7 @@ export const SITE_TITLE =
 
 // CHANGE default meta description -> should only be used in homepage technically, but is there for a fallback in case a page is missed
 export const SITE_DESCRIPTION =
-  "LA Flight Academy, located at Van Nuys Airport, offers personalized flight training with a well-maintained fleet. Whether you're pursuing aviation as a hobby or a career, our experienced instructors provide a safe, transparent, and enjoyable learning environment. Explore our programs, fleet, and financing options today.";
+  "LA Flight Academy, located at Van Nuys Airport, offers personalized flight training with a well-maintained fleet. Whether you're pursuing aviation as a hobby or a career, our experienced instructors provide a safe, transparent, and enjoyable learning environment.  Explore our programs and fleet options today.";
 
 //SEO tip -> keyword + city 1
 //Should have between 5-10 different localities to mix and match keywords
