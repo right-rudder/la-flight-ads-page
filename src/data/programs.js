@@ -10,7 +10,7 @@ const programs = {
       imageAlt: "Photograph of an LAFA training aircraft on the runway",
       description:
         "Take the first step toward becoming a pilot with our comprehensive Private Pilot Course.",
-      link: "/programs/private-pilot-course",
+      link: "https://laflightacademy.com/programs/private-pilot-course",
     },
     {
       title: "Instrument Rating",
@@ -18,7 +18,7 @@ const programs = {
       imageAlt: "Close-up of LAFA aircraft instruments",
       description:
         "Enhance your skills and safely navigate through low-visibility conditions with our Instrument Rating course.",
-      link: "/programs/instrument-rating",
+      link: "https://laflightacademy.com/programs/instrument-rating",
     },
     {
       title: "Commercial Pilot",
@@ -26,7 +26,7 @@ const programs = {
       imageAlt: "LAFA aircraft in flight, viewed from behind the pilots",
       description:
         "Pursue your career as a professional pilot with our structured Commercial Pilot Course.",
-      link: "/programs/commercial-pilot",
+      link: "https://laflightacademy.com/programs/commercial-pilot",
     },
     {
       title: "Multi-Engine Rating",
@@ -34,7 +34,7 @@ const programs = {
       imageAlt: "LAFA's multi-engine aircraft on runway viewed from the front",
       description:
         "Expand your capabilities with our Multi-Engine Rating course, designed to elevate your aviation skills.",
-      link: "/programs/multi-engine-rating",
+      link: "https://laflightacademy.com/programs/multi-engine-rating",
     },
     {
       title: "Certified Flight Instructor",
@@ -42,7 +42,7 @@ const programs = {
       imageAlt: "LAFA instructor checking on plane instruments",
       description:
         "Share your passion for flying and inspire the next generation of pilots by becoming a Certified Flight Instructor.",
-      link: "/programs/certified-flight-instructor",
+      link: "https://laflightacademy.com/programs/certified-flight-instructor",
     },
     {
       title: "Advanced Training & Add-Ons",
@@ -50,7 +50,7 @@ const programs = {
       imageAlt: "LAFA aircraft taking off at sunset",
       description:
         "Looking to specialize? Explore Spin Training, BFRs, IPCs, and more advanced programs to enhance your skills.",
-      link: "/programs/advanced-trainings",
+      link: "https://laflightacademy.com/programs/advanced-trainings",
     },
   ],
 };
