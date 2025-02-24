@@ -15,12 +15,12 @@ const data404 = {
       buttons: [
         {
           name: "Home Page",
-          link: "/",
+          link: "https://laflightacademy.com/",
           primary: false,
         },
         {
           name: "Contact us",
-          link: "/contact-us",
+          link: "https://laflightacademy.com/contact-us",
           primary: false,
         },
       ],
