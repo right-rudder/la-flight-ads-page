@@ -1,44 +1,44 @@
 export const navbarLinks = [
   {
     name: "Home",
-    link: "/",
+    link: "https://laflightacademy.com/",
     mobileLink: true,
     submenu: [],
   },
   {
     name: "Career Path",
-    link: "/path",
+    link: "https://laflightacademy.com/path",
     mobileLink: true,
     submenu: [],
   },
   {
     name: "Courses",
-    link: "/programs",
+    link: "https://laflightacademy.com/programs",
     mobileLink: false,
     submenu: [
       {
         name: "Private Pilot",
-        link: "/programs/private-pilot-course",
+        link: "https://laflightacademy.com/programs/private-pilot-course",
       },
       {
         name: "Instrument Rating",
-        link: "/programs/instrument-rating",
+        link: "https://laflightacademy.com/programs/instrument-rating",
       },
       {
         name: "Commercial Pilot",
-        link: "/programs/commercial-pilot",
+        link: "https://laflightacademy.com/programs/commercial-pilot",
       },
       {
         name: "Multi-Engine Rating",
-        link: "/programs/multi-engine-rating",
+        link: "https://laflightacademy.com/programs/multi-engine-rating",
       },
       {
         name: "Flight Instructor",
-        link: "/programs/certified-flight-instructor",
+        link: "https://laflightacademy.com/programs/certified-flight-instructor",
       },
       {
         name: "Advanced Training",
-        link: "/programs/advanced-trainings",
+        link: "https://laflightacademy.com/programs/advanced-trainings",
       },
     ],
   },
@@ -63,13 +63,13 @@ export const navbarLinks = [
   // },
   {
     name: "Fleet",
-    link: "/packages/fleet",
+    link: "https://laflightacademy.com/packages/fleet",
     mobileLink: true,
     submenu: [],
   },
   {
     name: "Instructors",
-    link: "/packages/crew",
+    link: "https://laflightacademy.com/packages/crew",
     mobileLink: true,
     submenu: [],
   },
@@ -90,26 +90,26 @@ export const navbarLinks = [
   // },
   {
     name: "About",
-    link: "/about",
+    link: "https://laflightacademy.com/about",
     mobileLink: false,
     submenu: [
       {
         name: "About Us",
-        link: "/about",
+        link: "https://laflightacademy.com/about",
       },
       {
         name: "Gallery",
-        link: "/packages/gallery",
+        link: "https://laflightacademy.com/packages/gallery",
       },
       {
         name: "Blog",
-        link: "/blog",
+        link: "https://laflightacademy.com/blog",
       },
     ],
   },
   {
     name: "Enroll Today",
-    link: "/enroll-now",
+    link: "https://laflightacademy.com/enroll-now",
     mobileLink: true,
     submenu: [],
   },
