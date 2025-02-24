@@ -4,27 +4,27 @@ export const footerLinks = [
     links: [
       {
         name: "Home",
-        link: "/",
+        link: "https://laflightacademy.com/",
       },
       {
         name: "Discovery Flight",
-        link: "/discovery-flight",
+        link: "https://laflightacademy.com/discovery-flight",
       },
       {
         name: "Career Path",
-        link: "/path",
+        link: "https://laflightacademy.com/path",
       },
       {
         name: "Flight Training",
-        link: "/programs",
+        link: "https://laflightacademy.com/programs",
       },
       {
         name: "Contact Us",
-        link: "/contact-us",
+        link: "https://laflightacademy.com/contact-us",
       },
       {
         name: "Quiz",
-        link: "/quiz",
+        link: "https://laflightacademy.com/quiz",
       },
     ],
   },
@@ -33,27 +33,27 @@ export const footerLinks = [
     links: [
       {
         name: "Private Pilot",
-        link: "/programs/private-pilot-course",
+        link: "https://laflightacademy.com/programs/private-pilot-course",
       },
       {
         name: "Instrument Rating",
-        link: "/programs/instrument-rating",
+        link: "https://laflightacademy.com/programs/instrument-rating",
       },
       {
         name: "Commercial Pilot",
-        link: "/programs/commercial-pilot",
+        link: "https://laflightacademy.com/programs/commercial-pilot",
       },
       {
         name: "Multi-Engine Rating",
-        link: "/programs/multi-engine-rating",
+        link: "https://laflightacademy.com/programs/multi-engine-rating",
       },
       {
         name: "Flight Instructor",
-        link: "/programs/certified-flight-instructor",
+        link: "https://laflightacademy.com/programs/certified-flight-instructor",
       },
       {
         name: "Advanced Training",
-        link: "/programs/advanced-trainings",
+        link: "https://laflightacademy.com/programs/advanced-trainings",
       },
     ],
   },
@@ -62,15 +62,15 @@ export const footerLinks = [
     links: [
       {
         name: "About Us",
-        link: "/about",
+        link: "https://laflightacademy.com/about",
       },
       {
         name: "Instructors",
-        link: "/packages/crew",
+        link: "https://laflightacademy.com/packages/crew",
       },
       {
         name: "Fleet",
-        link: "/packages/fleet",
+        link: "https://laflightacademy.com/packages/fleet",
       },
       // {
       //   name: "Financing",
@@ -82,11 +82,11 @@ export const footerLinks = [
       // },
       {
         name: "Gallery",
-        link: "/packages/gallery",
+        link: "https://laflightacademy.com/packages/gallery",
       },
       {
         name: "Blog",
-        link: "/blog",
+        link: "https://laflightacademy.com/blog",
       },
     ],
   },
