@@ -7,7 +7,7 @@ const CTAQuiz = {
   buttons: [
     {
       name: "Take Quiz",
-      link: "/quiz",
+      link: "https://laflightacademy.com/quiz",
       primary: true,
     },
   ],
