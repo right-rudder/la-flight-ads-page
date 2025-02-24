@@ -134,7 +134,7 @@ const fleetCompData = {
   buttons: [
     {
       name: "Learn More",
-      link: "/packages/fleet",
+      link: "https://laflightacademy.com/packages/fleet",
       primary: true,
     },
   ],
