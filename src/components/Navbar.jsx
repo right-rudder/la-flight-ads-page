@@ -113,7 +113,6 @@ const Navbar = ({ pathname }) => {
                       {item.link ? (
                         <a
                           href={item.link}
-                          target={`${item.link.includes("http") ? "_blank" : "_self"}`}
                           className={`${navBar || openMobile ? "text-white group-last:bg-primary-100 group-last:text-primary-900" : "text-primary-900 group-last:bg-primary-800 group-last:text-white"} group-last:block font-medium text-xl duration-300 hover:underline decoration-primary-600 decoration-4 underline-offset-[10px] border-primary whitespace-nowrap group-last:font-normal group-last:px-0 group-last:rounded-sm group-last:hover:bg-primary-500 group-last:hover:text-white group-last:hover:no-underline group-last:hover:border-primary-500`}
                         >
                           <span className="relative font-medium block group-last:py-3 group-last:px-5">
@@ -140,7 +139,6 @@ const Navbar = ({ pathname }) => {
                                 <a
                                   className="p-3 block"
                                   href={subitem.link}
-                                  target={`${subitem.link.includes("http") ? "_blank" : "_self"}`}
                                 >
                                   {subitem.name}
                                 </a>
@@ -163,7 +161,6 @@ const Navbar = ({ pathname }) => {
                                         >
                                           <a
                                             href={subsubitem.link}
-                                            target={`${subsubitem.link.includes("http") ? "_blank" : "_self"}`}
                                             className="block p-3"
                                           >
                                             {subsubitem.name}
@@ -287,7 +284,6 @@ const Navbar = ({ pathname }) => {
               {item.mobileLink ? (
                 <a
                   href={item.link}
-                  target={`${item.link.includes("http") ? "_blank" : "_self"}`}
                   className="font-normal text-xl block py-3 duration-300 whitespace-nowrap group-last:bg-primary-600 group-last:text-white group-last:font-medium group-last:border-2 group-last:mt-5 group-last:py-4 group-last:px-8 group-last:text-center group-last:mx-5"
                 >
                   {item.name}
@@ -319,7 +315,6 @@ const Navbar = ({ pathname }) => {
                         <a
                           className="p-1 block font-thin text-white py-2 text-lg"
                           href={subitem.link}
-                          target={`${subitem.link.includes("http") ? "_blank" : "_self"}`}
                         >
                           {subitem.name}
                         </a>
@@ -345,7 +340,6 @@ const Navbar = ({ pathname }) => {
                             <li key={subsubIndex} className="relative">
                               <a
                                 href={subsubitem.link}
-                                target={`${subsubitem.link.includes("http") ? "_blank" : "_self"}`}
                                 className="block p-5 font-normal"
                                 font-thin
                               >
